@@ -174,7 +174,6 @@ print("Tensorflow result node:\n", tfResult, "\n")
 
 # or maybe in the right way for tensorflow
 with tf.Session() as sess:
-    sess.run(tf.global_variables_initializer())
     writer = tf.summary.FileWriter('./graphs', sess.graph)
     node = sess.run(tfResult)
     print("Tensorflow result:\n", node, "\n")
@@ -231,8 +230,6 @@ even with a name.
 ```python
 # Starting the session
 with tf.Session() as sess:
-    # initialize all variables
-    sess.run(tf.global_variables_initializer())
     # provide the results for tensorboard (a visualization tool)
     writer = tf.summary.FileWriter('./graphs', sess.graph)
     # evaluate the value of a certain node

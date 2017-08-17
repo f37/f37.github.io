@@ -21,7 +21,7 @@ Let's take the easiest unit possible. A tensor of rank zero. A scalar.
 
 I'm optimistic that you know the derivation of $x ^{2} + 1$. You know the 
 chain rule and the basic patterns of building a derivation. Python for 
-example is unaware of this principle unfortunally.  
+example is unaware of this principle unfortunately.  
 Tensorflow knows the derivation of basic mathematical functions and can 
 reconstruct the chain rule over the graph structure, similar to you. Therefore 
 derivations are an easy task for it.
