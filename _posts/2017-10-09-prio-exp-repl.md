@@ -146,7 +146,7 @@ with $n<\hat{n}$ and $m=S(n)+\nu$.
 That implies $S(\hat{n})<S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}} 
 \Rightarrow 
 \nu>S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin 
-\[0,n\]_{\mathbb{N}}$. 
+\[0,n\]$. 
 This is a contradiction against the assumption.
 
 This means results in the functions being equal. $\square$
