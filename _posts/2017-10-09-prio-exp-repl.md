@@ -114,17 +114,38 @@ This is a contradiction for $\hat{\nu} \geq 0 \text{ or } \nu \leq n$.
 
 This results in uniqueness of $\hat{d}$.
 
-We constructed a well defined function 
+We constructed a well defined function. \square
 
 #### Equality
 
 I claim that $\hat{d}(m)=d(m) \forall m \in \mathbb{N}$
 
-Suppose  $\hat{d}(m)<d(m)$
+Suppose  $d(m)<\hat{d}(m)$:
 
 This would mean that $\exists \hat{n}$ with $m=S(\hat{n})$ for $\nu \in \[0,
 \hat{n}\]$ with $S(\hat{n}) > m$. It would follow that $\nu < 0 \Rightarrow 
-\nu \notin \[0,\hat{n}\]$
+\nu \notin \[0,\hat{n}\]$. This is a contradiction against the assumption.
+
+Suppose  $d(m)>\hat{d}(m)$:
+
+This would mean that $\exists \hat{n},n \in \mathbb{N}$ with $S(\hat{n})<m$ 
+with $n<\hat{n}$ and $m=S(n)+\nu$.
+That implies $S(\hat{n})<S(n)+\nu \text{ for } \nu \in \[0,n\] \Rightarrow 
+\nu>S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin \[0,n\]$. This 
+is a contradiction against the assumption.
+
+This means results in the functions being equal. \square
+
+#### Formular to calculate d(m) explicitly
+
+We now that $d(m)$ is uniquely determined by a n that satisfies $m=S(n) + 
+\nu$ for $\nu \in \[0,n\]$.
+
+So we have to solve for n.
+
+Remember that $S(n)=\dfrac{n^{2}+n}{2}$. Define $q:=2(m-\nu)$ and solve the 
+following quadratic equation:
+$n^{2}+n-q=0$. So $d(m)=\square$
 
 ### Conclusions and future work
 
