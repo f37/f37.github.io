@@ -65,3 +65,13 @@ $max{n \in \mathbb{N}|{\sum_{i=1}^{N}p_{i} < rand}$. This can be equally
 converted to the problem:
 $d(m)=max{n \in \mathbb{N}|{S(n) < rand S(n)}=
 max{n \in \mathbb{N}|{S(n) < m}$ where $m:=rand S(n)$
+
+### Claim
+$d(m)={n \in \mathbb{N}| m=S(n)+\nu for \nu \in \[0,n\]}$!
+
+####well-defined
+**Existence**
+$\forall m \in \mathbb{N} \exists \hat{n}=max{n \in \mathbb{N}|{S(n) < m}$
+choose for d(m): ${n=\hat{n}, \nu=m-s(n)}$. This raises the question if 
+$\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n \Rightarrow S(n+1)
+\leq m $ But this is contradicting with the maximum propertx
