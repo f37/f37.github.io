@@ -60,7 +60,7 @@ For that approach, for that specific rank based distribution I want to
 suggest a sampling method with constant time $O(1)$
 
 The Algorithm above formulates the recursive search after 
-$max
+$\text{max}
 \begin{Bmatrix}
 n \in \mathbb{N} \mid \sum_{i=1}^{n}p_{i} \leq \text{rand}
 \end{Bmatrix}$. 
@@ -75,7 +75,7 @@ n \in \mathbb{N} \mid S(n) \leq \text{rand} \cdot S(N)
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix}$ 
-where $m:=rand \cdot S(N)$
+where $m:=\text{rand} \cdot S(N)$
 
 ### Claim
 Define 
@@ -90,7 +90,7 @@ I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
 ##### Existence
 
-$\forall m \in \mathbb{N} \exists \hat{n}=max
+$\forall m \in \mathbb{N} \exists \hat{n}=\text{max}
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix} $.
@@ -119,7 +119,7 @@ We constructed a well defined function. $\square$
 #### Equality
 
 I claim that $d(m)=\hat{d}(m) \forall m \in \mathbb{N}$, i.e.
-$max
+$\text{max}
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix}
