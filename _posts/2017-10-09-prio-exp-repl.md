@@ -188,7 +188,7 @@ $\tilde{m}=min
 \end{Bmatrix}$, due to $\tilde{m}=S(d(m)+1)+\tilde{\nu}$.
 
 So we can conclude:
-$d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < d(m)+1 \square$.
+$d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < d(m)+1$. $\square$
 
 ### Conclusions and future work
 
