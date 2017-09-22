@@ -185,7 +185,7 @@ $\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} <
 $\tilde{m}=min
 \begin{Bmatrix}
 \hat{d}(\tilde{m})>d(m)
-\end{Bmatrix}
+\end{Bmatrix}$, due to $\tilde{m}=S(d(m)+1)+\tilde{\nu}$
 
 ### Conclusions and future work
 
