@@ -35,7 +35,7 @@ Sorting in log time.
 
 
 ## Rank based
-Consider a Memory with size $N$. The experience should by drawn prioritized 
+Consider a Memory with size $N$. The experience should be drawn prioritized 
 after the index $i$ with probability $p_{i}=\frac{i}{\sum_{j=1}^{N}j}$.
 
 Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
@@ -75,7 +75,7 @@ max
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix}$ 
-where $m:=rand \cdot S(n)$
+where $m:=rand \cdot S(N)$
 
 ### Claim
 Define 
@@ -154,10 +154,10 @@ This results in the functions being equal. $\square$
 
 #### Formula to calculate d(m) explicitly
 
-We now that $d(m)$ is uniquely determined by a n that satisfies $m=S(n) + 
-\nu$ for $\nu \in \[0,n\]_{\mathbb{N}}$.
+We know that $d(m)$ is uniquely determined by $n \in \mathbb{N} that satisfies 
+$m=S(n) + \nu$ for $\nu \in \[0,n\]_{\mathbb{N}}$.
 
-So we have to solve for n.
+So we have to solve for $n$.
 
 Remember that $S(n)=\dfrac{n^{2}+n}{2}$. Define $q:=2(m-\nu)$ and solve the 
 following quadratic equation:
@@ -168,7 +168,8 @@ This may raise some questions because $\nu$ is depending on m but we don't
 know a explicit formula to determine $\nu$. Thats why we need to establish 
 a statement that is independent of $\nu$.
 
-...
+##### Claim
+
 
 Finally $d(m)=\lfloor\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}\rfloor$
 
