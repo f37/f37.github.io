@@ -144,7 +144,8 @@ Suppose  $d(m)>\hat{d}(m)$:
 This would mean that 
 $\exists \hat{n},n \in \mathbb{N}, n<\hat{n}$ with $S(\hat{n}) \leq m$ and 
 $m=S(n)+\nu$.
-That implies $S(\hat{n})<S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}} 
+That implies 
+$S(\hat{n}) \leq S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}} 
 \Rightarrow 
 \nu>S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin 
 \[0,n\]$. 
