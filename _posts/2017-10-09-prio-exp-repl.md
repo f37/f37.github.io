@@ -81,7 +81,7 @@ where $m:=rand \cdot S(n)$
 Define 
 $\hat{d}(m):=
 \begin{Bmatrix} 
-n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]
+n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}}
 \end{Bmatrix} $
 
 I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
@@ -95,7 +95,7 @@ $\forall m \in \mathbb{N} \exists \hat{n}=max
 n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix} $.
 Choose for $\hat{d}(m)$: $n=\hat{n} \text{ and } \nu=m-S(n)$. This raises the 
-question if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n 
+question if $\nu \in \[0,n\]_{\mathbb{N}}$. Obviously $\nu \geq 0$. Suppose $\nu>n 
 \Rightarrow S(n+1)
 \leq m $, but this is contradicting with the maximum property. 
 
@@ -105,7 +105,8 @@ As a result $\forall m \in \mathbb{N} \exists \hat{d}(m)$.
 
 Suppose $\exists \hat{n}, n \in \mathbb{N} \text{ with } \hat{n} \neq n$, but 
 $\exists
-\hat{\nu} \in \[0,\hat{n}\] \text{ and } \nu \in \[0,n\]$ with 
+\hat{\nu} \in \[0,\hat{n}\]_{\mathbb{N}} \text{ and } \nu \in 
+\[0,n\]_{\mathbb{N}}$ with 
 $S(\hat{n})+\hat{\nu}=S(n)+\nu$.
 Without loss of generality assume that $\hat{n} > n$. This means that 
 $S(\hat{n})-S(n) \geq \hat{n}$ equivalently $\nu - \hat{\nu} \geq \hat{n}$.
@@ -124,30 +125,32 @@ n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix}
 =
 \begin{Bmatrix} 
-n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]
+n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}}
 \end{Bmatrix} $
 
 
 Suppose  $d(m)<\hat{d}(m)$:
 
 This would mean that $\exists \hat{n}$ with $m=S(\hat{n})$ for $\nu \in \[0,
-\hat{n}\]$ with $S(\hat{n}) > m$. It would follow that $\nu < 0 \Rightarrow 
-\nu \notin \[0,\hat{n}\]$. This is a contradiction against the assumption.
+\hat{n}\]_{\mathbb{N}}$ with $S(\hat{n}) > m$. It would follow that $\nu < 0 \Rightarrow 
+\nu \notin \[0,\hat{n}\]_{\mathbb{N}}$. This is a contradiction against the assumption.
 
 Suppose  $d(m)>\hat{d}(m)$:
 
 This would mean that $\exists \hat{n},n \in \mathbb{N}$ with $S(\hat{n})<m$ 
 with $n<\hat{n}$ and $m=S(n)+\nu$.
-That implies $S(\hat{n})<S(n)+\nu \text{ for } \nu \in \[0,n\] \Rightarrow 
-\nu>S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin \[0,n\]$. This 
-is a contradiction against the assumption.
+That implies $S(\hat{n})<S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}} 
+\Rightarrow 
+\nu>S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin 
+\[0,n\]_{\mathbb{N}}$. 
+This is a contradiction against the assumption.
 
 This means results in the functions being equal. $\square$
 
 #### Formula to calculate d(m) explicitly
 
 We now that $d(m)$ is uniquely determined by a n that satisfies $m=S(n) + 
-\nu$ for $\nu \in \[0,n\]$.
+\nu$ for $\nu \in \[0,n\]_{\mathbb{N}}$.
 
 So we have to solve for n.
 
