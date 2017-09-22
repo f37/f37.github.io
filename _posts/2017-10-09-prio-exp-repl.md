@@ -142,8 +142,8 @@ This is a contradiction against the assumption.
 Suppose  $d(m)>\hat{d}(m)$:
 
 This would mean that 
-$\exists \hat{n},n \in \mathbb{N}$ with $S(\hat{n}) \leq m$ 
-with $n<\hat{n}$ and $m=S(n)+\nu$.
+$\exists \hat{n},n \in \mathbb{N}, $n<\hat{n}$ with $S(\hat{n}) \leq m$ and 
+$m=S(n)+\nu$.
 That implies $S(\hat{n})<S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}} 
 \Rightarrow 
 \nu>S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin 
