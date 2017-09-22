@@ -69,25 +69,26 @@ This can be
 equally converted to the problem:
 $d(m)=max
 \begin{Bmatrix} 
-n \in \mathbb{N} \mid S(n) < rand S(n)
+n \in \mathbb{N} \mid S(n) < rand \cdot S(n)
 \end{Bmatrix}
 =
 max
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) < m
 \end{Bmatrix}$ 
-where $m:=rand S(n)$
+where $m:=rand \cdot S(n)$
 
 ### Claim
 Define 
-$\hat{d}(m)_=
+$\hat{d}(m):=
 \begin{Bmatrix} 
-n \in \mathbb{N} \mid m=S(n)+\nu for \nu \in \[0,n\]
+n \in \mathbb{N} \mid m=S(n)+\nu \text{for} \nu \in \[0,n\]
 \end{Bmatrix} $
 
 I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
 ####well-defined
+
 **Existence**
 $\forall m \in \mathbb{N} \exists \hat{n}=max
 \begin{Bmatrix} 
