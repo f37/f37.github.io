@@ -4,7 +4,7 @@ comments: true
 title:  "Prioritized Experience Replay"
 excerpt: "Consider a rank-based prioritized binary heap with sampling in 
 constant time O(1)"
-date:   2017-10-9
+date:   2017-10-09
 mathjax: true
 ---
 
