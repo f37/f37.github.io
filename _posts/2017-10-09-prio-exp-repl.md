@@ -87,7 +87,7 @@ n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]
 
 I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
-####well-defined
+#### well-defined
 
 **Existence**
 
@@ -95,7 +95,7 @@ $\forall m \in \mathbb{N} \exists \hat{n}=max
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) < m
 \end{Bmatrix} $.
-Choose for $\hat{d(m)}$: $n=\hat{n} \text{ and } \nu=m-s(n)$. This raises the 
+Choose for $\hat{d}(m)$: $n=\hat{n} \text{ and } \nu=m-s(n)$. This raises the 
 question if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n 
 \Rightarrow S(n+1)
 \leq m $, but this is contradicting with the maximum property. So $\forall n
@@ -103,3 +103,6 @@ question if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n
  
 **Uniqueness**
 
+Suppose $\hat{n}, n \in \mathbb{N} \text( with ) \hat{n} \neq n$, but $\exists
+ \hat{\nu} \in \[0,\hat{n}\] and \nu \in \[0,n\]$ with 
+ $\hat{n}+\hat{\nu}=m=n+\nu$
