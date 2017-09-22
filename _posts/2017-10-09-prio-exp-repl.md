@@ -103,7 +103,8 @@ question if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n
  
 **Uniqueness**
 
-Suppose $\hat{n}, n \in \mathbb{N} \text{ with } \hat{n} \neq n$, but $\exists
-\hat{\nu} \in \[0,\hat{n}\] and \nu \in \[0,n\]$ with 
+Suppose $\exists \hat{n}, n \in \mathbb{N} \text{ with } \hat{n} \neq n$, but 
+$\exists
+\hat{\nu} \in \[0,\hat{n}\] \text{ and } \nu \in \[0,n\]$ with 
 $\hat{n}+\hat{\nu}=m=n+\nu$.
 Without loss of generality assume that $\hat{n} > n$
