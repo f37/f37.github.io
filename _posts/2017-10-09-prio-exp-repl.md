@@ -67,9 +67,11 @@ n \in \mathbb{N} \mid \sum_{i=1}^{N}p_{i} < rand
 This can be 
 equally converted to the problem:
 $d(m)=max\begin{Bmatrix} n \in \mathbb{N} \mid S(n) < rand S(n)
-\end{Bmatrix}=
+\end{Bmatrix}
+=
 max\begin{Bmatrix} n \in \mathbb{N}}{S(n) < m
-\end{Bmatrix}$ where $m:=rand S(n)$
+\end{Bmatrix}$ 
+where $m:=rand S(n)$
 
 ### Claim
 Define 
