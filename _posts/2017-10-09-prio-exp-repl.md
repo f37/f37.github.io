@@ -117,7 +117,16 @@ We constructed a well defined function. $\square$
 
 #### Equality
 
-I claim that $\hat{d}(m)=d(m) \forall m \in \mathbb{N}$
+I claim that $d(m)=\hat{d}(m) \forall m \in \mathbb{N}$, i.e.
+$max
+\begin{Bmatrix} 
+n \in \mathbb{N} \mid S(n) \leq m
+\end{Bmatrix}
+=
+\begin{Bmatrix} 
+n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]
+\end{Bmatrix} $
+
 
 Suppose  $d(m)<\hat{d}(m)$:
 
