@@ -196,7 +196,7 @@ So we can conclude:
 $d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < d(m)+1$. $\square$
 
 As a special you can also show that $d(m)=\lfloor\sqrt{2m}\rfloor$:
-Obviously $d(m) \leq \sqrt(2m)$ (square equation twice to check). Left to 
+Obviously $d(m) \leq \sqrt{2m}$ (square equation twice to check). Left to 
 check is weather $\sqrt{2m} < d(m)+1$.
 
 For that consider $m <= S(d(m)+1) - 1$. With that we get 
