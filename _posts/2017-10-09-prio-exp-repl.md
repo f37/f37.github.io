@@ -172,7 +172,7 @@ a statement that is independent of $\nu$.
 
 I claim that it suffices to calculate
 $d(m)=\lfloor\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}\rfloor$
-even more I claim $d(m)=\lfloor\sqrt{2m}\rfloor$
+even more I suppose $d(m)=\lfloor\sqrt{2m}\rfloor$
 
 Because 
 
