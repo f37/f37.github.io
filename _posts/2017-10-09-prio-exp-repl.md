@@ -177,17 +177,19 @@ even more I suppose $d(m)=\lfloor\sqrt{2m}\rfloor$
 
 For that we realize: 
 
-$d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} \tag{I}$
-
-$\sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2} \leq
+$d(m)=\sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2} \leq
 \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < 
 \sqrt{2 \cdot S(d(m)+1)+\dfrac{1}{4}}-\dfrac{1}{2} =
-\sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}
-\tag{II}$ for $\tilde{m}$ satisfying 
+\sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}$ 
+for 
+$\tilde{m}$ 
+satisfying 
 $\tilde{m}=min_{\tilde{m}}
 \begin{Bmatrix}
 \hat{d}(\tilde{m})>d(m)
-\end{Bmatrix}$, due to $\tilde{m}=S(d(m)+1)+\tilde{\nu}$.
+\end{Bmatrix}$, 
+due to 
+$\tilde{m}=S(d(m)+1)+\tilde{\nu}$.
 
 So we can conclude:
 $d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < d(m)+1$. $\square$
