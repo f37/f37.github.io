@@ -100,7 +100,7 @@ question if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n
 \Rightarrow S(n+1)
 \leq m $, but this is contradicting with the maximum property. 
 
-As a result $\forall n \in \mathbb{N} \exists \hat{d}(m)$.
+As a result $\forall m \in \mathbb{N} \exists \hat{d}(m)$.
  
 **Uniqueness**
 
