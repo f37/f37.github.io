@@ -174,7 +174,14 @@ I claim that it suffices to calculate
 $d(m)=\lfloor\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}\rfloor$
 even more I claim $d(m)=\lfloor\sqrt{2m}\rfloor$
 
-Because $d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} \tag{I}$
+Because 
+
+$d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} \tag{I}$
+
+$\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < 
+\sqrt{2 \cdot S(n+1)+\dfrac{1}{4}}-\dfrac{1}{2} =
+\sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}
+\tag{II}$
 
 ### Conclusions and future work
 
