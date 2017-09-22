@@ -208,6 +208,12 @@ $d(m)^{2} + 2d(m)<d(m)^{2} + 2d(m)+1
 \Leftrightarrow 
 0<1$ and I don't want to argue with that.
 
+With that we showed that $d(m) \leq \sqrt(2m) < d(m)+1$ we are ready to use 
+$d(m)=\lfloor\sqrt{2m}\rfloor$ as explizit sampling function for the rank 
+based distribution with m sampled from U\[0,N\].
+
+$\square$
+
 
 ### Conclusions and future work
 
