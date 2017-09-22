@@ -88,7 +88,7 @@ I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
 #### well-defined
 
-**Existence**
+##### Existence
 
 $\forall m \in \mathbb{N} \exists \hat{n}=max
 \begin{Bmatrix} 
@@ -101,7 +101,7 @@ question if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n
 
 As a result $\forall m \in \mathbb{N} \exists \hat{d}(m)$.
  
-**Uniqueness**
+##### Uniqueness
 
 Suppose $\exists \hat{n}, n \in \mathbb{N} \text{ with } \hat{n} \neq n$, but 
 $\exists
