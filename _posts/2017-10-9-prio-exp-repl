@@ -4,7 +4,7 @@ comments: true
 title:  "Prioritized Experience Replay"
 excerpt: "Consider a rank-based prioritized binary heap with sampling in 
 constant time O(1)"
-date:   2017-10-09
+date:   2017-10-9
 mathjax: true
 ---
 
@@ -21,7 +21,7 @@ voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
 clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ## Rank based
-Consider a Memory with size $N$
-Draw index $i$ with probability $p_{i}=\frac{i}{\sum_{j=1}^{N}j}$
+Consider a Memory with size $N$. The experience should by drawn prioritized 
+after the index $i$ with probability $p_{i}=\frac{i}{\sum_{j=1}^{N}j}$.
 
 Hierfür definiere $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
