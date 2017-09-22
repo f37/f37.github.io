@@ -132,8 +132,9 @@ n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}}
 Suppose  $d(m)<\hat{d}(m)$:
 
 This would mean that $\exists \hat{n}$ with $m=S(\hat{n})$ for $\nu \in \[0,
-\hat{n}\]_{\mathbb{N}}$ with $S(\hat{n}) > m$. It would follow that $\nu < 0 \Rightarrow 
-\nu \notin \[0,\hat{n}\]_{\mathbb{N}}$. This is a contradiction against the assumption.
+\hat{n}\]_{\mathbb{N}}$ with $S(\hat{n}) > m $ . It would follow that 
+$\nu < 0 \Rightarrow \nu \notin \[0,\hat{n}\]_{\mathbb{N}}$. 
+This is a contradiction against the assumption.
 
 Suppose  $d(m)>\hat{d}(m)$:
 
