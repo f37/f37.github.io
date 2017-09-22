@@ -1,0 +1,27 @@
+---
+layout: post
+comments: true
+title:  "Prioritized Experience Replay"
+excerpt: "Consider a rank-based prioritized binary heap with sampling in 
+constant time O(1)"
+date:   2017-08-12
+mathjax: true
+---
+
+# Prioritized Experience Replay
+## Introduction
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
+clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
+clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+## Rank based
+Consider a Memory with size $N$
+Draw index $i$ with probability $p_{i}=\frac{i}{\sum_{j=1}^{N}j}$
+
+Hierfür definiere $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
