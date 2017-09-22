@@ -191,6 +191,10 @@ $\tilde{m}=min
 So we can conclude:
 $d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < d(m)+1$. $\square$
 
+As a special we also show that $d(m)=\lfloor\sqrt{2m}\rfloor$:
+
+
+
 ### Conclusions and future work
 
 I claim that this explicit method is applicable for all rank based 
