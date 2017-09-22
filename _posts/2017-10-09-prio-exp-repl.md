@@ -68,13 +68,13 @@ max \Set{n \in \mathbb{N}}{S(n) < m } $ where $m:=rand S(n)$
 
 ### Claim
 Define 
-$\hat{d}(m)_=\{n \in \mathbb{N}| m=S(n)+\nu for \nu \in \[0,n\]\}$!
+$\hat{d}(m)_=\Set{n \in \mathbb{N}}{m=S(n)+\nu for \nu \in \[0,n\]}$!
 
 I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
 ####well-defined
 **Existence**
-$\forall m \in \mathbb{N} \exists \hat{n}=max{n \in \mathbb{N}|{S(n) < m}$
-choose for d(m): ${n=\hat{n}, \nu=m-s(n)}$. This raises the question if 
-$\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n \Rightarrow S(n+1)
+$\forall m \in \mathbb{N} \exists \hat{n}=max\Set{n \in \mathbb{N}}{S(n) < m}$
+choose for $\hat{d(m)}$: ${n=\hat{n}, \nu=m-s(n)}$. This raises the question
+ if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n \Rightarrow S(n+1)
 \leq m $ But this is contradicting with the maximum propertx
