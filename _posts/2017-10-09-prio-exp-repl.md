@@ -107,8 +107,16 @@ As a result $\forall n \in \mathbb{N} \exists \hat{d}(m)$.
 Suppose $\exists \hat{n}, n \in \mathbb{N} \text{ with } \hat{n} \neq n$, but 
 $\exists
 \hat{\nu} \in \[0,\hat{n}\] \text{ and } \nu \in \[0,n\]$ with 
-$S(\hat{n})+\hat{\nu}=m=S(n)+\nu$.
+$S(\hat{n})+\hat{\nu}=S(n)+\nu$.
 Without loss of generality assume that $\hat{n} > n$. This means that 
 $S(\hat{n})-S(n) \geq \hat{n}$ equivalently $\nu - \hat{\nu} \geq \hat{n}$.
 This is a contradiction for $\hat{\nu} \geq 0 \text{ or } \nu \leq n$. 
 
+This results in uniqueness of $\hat{d}$.
+
+We constructed a well defined function 
+
+### Conclusions and future work
+
+I claim that this explicit method is applicable for all rank based 
+priorities that can be represented in an explicit series.
