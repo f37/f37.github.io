@@ -142,7 +142,7 @@ This is a contradiction against the assumption.
 Suppose  $d(m)>\hat{d}(m)$:
 
 This would mean that 
-$\exists \hat{n},n \in \mathbb{N}, $n<\hat{n}$ with $S(\hat{n}) \leq m$ and 
+$\exists \hat{n},n \in \mathbb{N}, n<\hat{n}$ with $S(\hat{n}) \leq m$ and 
 $m=S(n)+\nu$.
 That implies $S(\hat{n})<S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}} 
 \Rightarrow 
@@ -170,7 +170,7 @@ a statement that is independent of $\nu$.
 
 ...
 
-Finally $d(m)=\lfloor\sqrt{2m+\dfrac{1}{1}}-\dfrac{1}{2}\rfloor$
+Finally $d(m)=\lfloor\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}\rfloor$
 
 
 ### Conclusions and future work
