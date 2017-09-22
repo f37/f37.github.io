@@ -160,6 +160,9 @@ This may raise some questions because $\nu$ is depending on m but we don't
 know a explicit formula to determine $\nu$. Thats why we need to establish 
 a statement that is independent of $\nu$.
 
+...
+
+Finally $d(m)=\lfloor\sqrt{2m+\dfrac{1}{1}}-\dfrac{1}{2}\rfloor$
 
 
 ### Conclusions and future work
