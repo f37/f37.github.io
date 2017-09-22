@@ -55,7 +55,7 @@ for m in memory:
 ```
 
 That results in expense of $O(n)$ depending on memory size. Not to mention 
-the cost it needs to calculate the fractions.
+the cost it needs to calculate the fractions for $p_{i}$.
 
 For that approach, for that specific rank based distribution I want to 
 suggest a sampling method with constant time $O(1)$
@@ -63,13 +63,13 @@ suggest a sampling method with constant time $O(1)$
 The Algorithm above formulates the recursive search after 
 $max
 \begin{Bmatrix}
-n \in \mathbb{N} \mid \sum_{i=1}^{N}p_{i} < rand
+n \in \mathbb{N} \mid \sum_{i=1}^{n}p_{i} < rand
 \end{Bmatrix}$. 
 This can be 
 equally converted to the problem:
 $d(m)=max
 \begin{Bmatrix} 
-n \in \mathbb{N} \mid S(n) < rand \cdot S(n)
+n \in \mathbb{N} \mid S(n) < rand \cdot S(N)
 \end{Bmatrix}
 =
 max
@@ -149,7 +149,7 @@ $n^{2}+n-q=0$. So $d(m)=\sqrt{q+\dfrac{1}{4}}-\dfrac{1}{2}=
 \sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2}$
 
 This may raise some questions because $\nu$ is depending on m but we don't 
-know an explicit formula to determine $\nu$. Thats why we need to establish 
+know a explicit formula to determine $\nu$. Thats why we need to establish 
 a statement that is independent of $\nu$.
 
 
