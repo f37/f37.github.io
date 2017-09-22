@@ -118,7 +118,7 @@ We constructed a well defined function. $\square$
 
 #### Equality
 
-I claim that $d(m)=\hat{d}(m) \forall m \in \mathbb{N}$, i.e.
+I claim that $d(m)=\hat{d}(m) \ \forall m \in \mathbb{N}$, i.e.
 $\text{max}
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) \leq m
@@ -154,7 +154,8 @@ This results in the functions being equal. $\square$
 
 #### Formula to calculate d(m) explicitly
 
-We know that $d(m)$ is uniquely determined by $n \in \mathbb{N} that satisfies 
+We know that $d(m)$ is uniquely determined by $n \in \mathbb{N}$ that 
+satisfies 
 $m=S(n) + \nu$ for $\nu \in \[0,n\]_{\mathbb{N}}$.
 
 So we have to solve for $n$.
