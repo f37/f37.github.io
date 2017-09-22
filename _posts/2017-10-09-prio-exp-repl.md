@@ -105,8 +105,8 @@ As a result $\forall m \in \mathbb{N} \exists \hat{d}(m)$.
 
 Suppose $\exists \hat{n}, n \in \mathbb{N} \text{ with } \hat{n} \neq n$, but 
 $\exists
-\hat{\nu} \in \[0,\hat{n}\]_{\mathbb{N}} \text{ and } \nu \in 
-\[0,n\]_{\mathbb{N}}$ with 
+\hat{\nu} \in \[0,\hat{n}\] \text{ and } \nu \in 
+\[0,n\]$ with 
 $S(\hat{n})+\hat{\nu}=S(n)+\nu$.
 Without loss of generality assume that $\hat{n} > n$. This means that 
 $S(\hat{n})-S(n) \geq \hat{n}$ equivalently $\nu - \hat{\nu} \geq \hat{n}$.
