@@ -183,7 +183,7 @@ $\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} <
 \sqrt{2 \cdot S(d(m)+1)+\dfrac{1}{4}}-\dfrac{1}{2} =
 \sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}
 \tag{II}$ for $\tilde{m}$ satisfying 
-$\tilde{m}=min
+$\tilde{m}=min_{\tilde{m}}
 \begin{Bmatrix}
 \hat{d}(\tilde{m})>d(m)
 \end{Bmatrix}$, due to $\tilde{m}=S(d(m)+1)+\tilde{\nu}$.
