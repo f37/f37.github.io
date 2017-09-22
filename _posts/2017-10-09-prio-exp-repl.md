@@ -49,9 +49,8 @@ Common procedure
 cum=0, rand=uniform
 for m in memory:
     cum+=m.p
-    if rand < cum:
-        continue
-    return m-1
+    if rand > cum:
+        return m-1
 ```
 
 That results in expense of $O(n)$ depending on memory size. Not to mention 
@@ -93,7 +92,7 @@ I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
 $\forall m \in \mathbb{N} \exists \hat{n}=max
 \begin{Bmatrix} 
-n \in \mathbb{N} \mid S(n) < m
+n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix} $.
 Choose for $\hat{d}(m)$: $n=\hat{n} \text{ and } \nu=m-S(n)$. This raises the 
 question if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n 
