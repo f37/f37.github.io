@@ -98,8 +98,9 @@ n \in \mathbb{N} \mid S(n) < m
 Choose for $\hat{d}(m)$: $n=\hat{n} \text{ and } \nu=m-S(n)$. This raises the 
 question if $\nu \in \[0,n\]$. Obviously $\nu \geq 0$. Suppose $\nu>n 
 \Rightarrow S(n+1)
-\leq m $, but this is contradicting with the maximum property. So $\forall n
- \in \mathbb{N} \exists \hat{d}(m)$
+\leq m $, but this is contradicting with the maximum property. 
+
+As a result $\forall n \in \mathbb{N} \exists \hat{d}(m)$.
  
 **Uniqueness**
 
@@ -110,3 +111,4 @@ $S(\hat{n})+\hat{\nu}=m=S(n)+\nu$.
 Without loss of generality assume that $\hat{n} > n$. This means that 
 $S(\hat{n})-S(n) \geq \hat{n}$ equivalently $\nu - \hat{\nu} \geq \hat{n}$.
 This is a contradiction for $\hat{\nu} \geq 0 \text{ or } \nu \leq n$. 
+
