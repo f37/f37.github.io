@@ -120,6 +120,12 @@ We constructed a well defined function
 
 I claim that $\hat{d}(m)=d(m) \forall m \in \mathbb{N}$
 
+Suppose  $\hat{d}(m)<d(m)$
+
+This would mean that $\exists \hat{n}$ with $m=S(\hat{n})$ for $\nu \in \[0,
+\hat{n}\]$ with $S(\hat{n}) > m$. It would follow that $\nu < 0 \Rightarrow 
+\nu \notin \[0,\hat{n}\]$
+
 ### Conclusions and future work
 
 I claim that this explicit method is applicable for all rank based 
