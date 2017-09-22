@@ -61,14 +61,16 @@ For that approach, for that specific rank based distribution I want to
 suggest a sampling method with constant time $O(1)$
 
 The Algorithm above formulates the recursive search after 
-$max\{n \in \mathbb{N}|\sum_{i=1}^{N}p_{i} < rand\}$. This can be equally 
+$max \{ n \in \mathbb{N} | \sum_{i=1}^{N}p_{i} < rand \}$. This can be equally 
 converted to the problem:
-$d(m)=max\{n \in \mathbb{N}|S(n) < rand S(n)\}=
-max\{n \in \mathbb{N}|S(n) < m\}$ where $m:=rand S(n)$
+$d(m)=max \{ n \in \mathbb{N}|S(n) < rand S(n) \} =
+max \{ n \in \mathbb{N} | S(n) < m \} $ where $m:=rand S(n)$
 
 ### Claim
 Define 
 $\hat{d}(m)_=\{n \in \mathbb{N}| m=S(n)+\nu for \nu \in \[0,n\]\}$!
+
+I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
 ####well-defined
 **Existence**
