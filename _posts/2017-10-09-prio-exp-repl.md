@@ -175,7 +175,7 @@ I claim that it suffices to calculate
 $d(m)=\lfloor\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}\rfloor$
 even more I suppose $d(m)=\lfloor\sqrt{2m}\rfloor$
 
-Because 
+For that we realize: 
 
 $d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} \tag{I}$
 
