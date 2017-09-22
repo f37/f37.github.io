@@ -66,18 +66,20 @@ n \in \mathbb{N} \mid \sum_{i=1}^{N}p_{i} < rand
 \end{Bmatrix}$. 
 This can be 
 equally converted to the problem:
-$d(m)=max\begin{Bmatrix} n \in \mathbb{N} \mid S(n) < rand S(n)
+$d(m)=max\begin{Bmatrix} 
+n \in \mathbb{N} \mid S(n) < rand S(n)
 \end{Bmatrix}
 =
-max\begin{Bmatrix} n \in \mathbb{N}}{S(n) < m
+max\begin{Bmatrix} 
+n \in \mathbb{N}}{S(n) < m
 \end{Bmatrix}$ 
 where $m:=rand S(n)$
 
 ### Claim
 Define 
-$\hat{d}(m)_=\begin{Bmatrix} n \in \mathbb{N} \mid m=S(n)+\nu for \nu \in \[0,
-n\]
-\end{Bmatrix} $!
+$\hat{d}(m)_=\begin{Bmatrix} 
+n \in \mathbb{N} \mid m=S(n)+\nu for \nu \in \[0,n\]
+\end{Bmatrix} $
 
 I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
