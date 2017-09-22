@@ -63,18 +63,18 @@ suggest a sampling method with constant time $O(1)$
 The Algorithm above formulates the recursive search after 
 $max
 \begin{Bmatrix}
-n \in \mathbb{N} \mid \sum_{i=1}^{n}p_{i} < rand
+n \in \mathbb{N} \mid \sum_{i=1}^{n}p_{i} \leq rand
 \end{Bmatrix}$. 
 This can be 
 equally converted to the problem:
 $d(m)=max
 \begin{Bmatrix} 
-n \in \mathbb{N} \mid S(n) < rand \cdot S(N)
+n \in \mathbb{N} \mid S(n) \leq rand \cdot S(N)
 \end{Bmatrix}
 =
 max
 \begin{Bmatrix} 
-n \in \mathbb{N} \mid S(n) < m
+n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix}$ 
 where $m:=rand \cdot S(n)$
 
