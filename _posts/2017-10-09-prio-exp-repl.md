@@ -90,7 +90,7 @@ I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
 ##### Existence
 
-$\forall m \in \mathbb{N} \exists \hat{n}=\text{max}
+$\forall m \in \mathbb{N} \ \exists \hat{n}=\text{max}
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix} $.
