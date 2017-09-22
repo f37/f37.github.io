@@ -116,6 +116,10 @@ This results in uniqueness of $\hat{d}$.
 
 We constructed a well defined function 
 
+#### Equality
+
+I claim that $\hat{d}(m)=d(m) \forall m \in \mathbb{N}$
+
 ### Conclusions and future work
 
 I claim that this explicit method is applicable for all rank based 
