@@ -136,7 +136,7 @@ is a contradiction against the assumption.
 
 This means results in the functions being equal. \square
 
-#### Formular to calculate d(m) explicitly
+#### Formula to calculate d(m) explicitly
 
 We now that $d(m)$ is uniquely determined by a n that satisfies $m=S(n) + 
 \nu$ for $\nu \in \[0,n\]$.
@@ -145,7 +145,14 @@ So we have to solve for n.
 
 Remember that $S(n)=\dfrac{n^{2}+n}{2}$. Define $q:=2(m-\nu)$ and solve the 
 following quadratic equation:
-$n^{2}+n-q=0$. So $d(m)=\square$
+$n^{2}+n-q=0$. So $d(m)=\sqrt{q+\dfrac{1}{4}}-\dfrac{1}{2}=
+\sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2}$
+
+This may raise some questions because $\nu$ is depending on m but we don't 
+know an explicit formula to determine $\nu$. Thats why we need to establish 
+a statement that is independent of $\nu$.
+
+
 
 ### Conclusions and future work
 
