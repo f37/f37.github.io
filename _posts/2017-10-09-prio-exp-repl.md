@@ -150,7 +150,7 @@ $S(\hat{n}) \leq S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}}
 \nu \geq S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin \[0,n\]$. 
 This is a contradiction against the assumption.
 
-This means results in the functions being equal. $\square$
+This results in the functions being equal. $\square$
 
 #### Formula to calculate d(m) explicitly
 
