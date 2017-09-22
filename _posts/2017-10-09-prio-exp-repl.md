@@ -73,7 +73,9 @@ max\begin{Bmatrix} n \in \mathbb{N}}{S(n) < m
 
 ### Claim
 Define 
-$\hat{d}(m)_=\Set{n \in \mathbb{N}}{m=S(n)+\nu for \nu \in \[0,n\]}$!
+$\hat{d}(m)_=\begin{Bmatrix} n \in \mathbb{N} \mid m=S(n)+\nu for \nu \in \[0,
+n\]
+\end{Bmatrix} $!
 
 I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
