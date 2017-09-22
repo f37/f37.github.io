@@ -180,7 +180,8 @@ For that we realize:
 $d(m)=\sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2} \leq
 \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < 
 \sqrt{2 \cdot S(d(m)+1)+\dfrac{1}{4}}-\dfrac{1}{2} =
-\sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}$ 
+\sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}=
+d(m)+1$ 
 for 
 $\tilde{m}$ 
 satisfying 
