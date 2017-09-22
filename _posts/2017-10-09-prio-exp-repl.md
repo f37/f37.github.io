@@ -113,7 +113,7 @@ This is a contradiction for $\hat{\nu} \geq 0 \text{ or } \nu \leq n$.
 
 This results in uniqueness of $\hat{d}$.
 
-We constructed a well defined function. \square
+We constructed a well defined function. $\square$
 
 #### Equality
 
@@ -133,7 +133,7 @@ That implies $S(\hat{n})<S(n)+\nu \text{ for } \nu \in \[0,n\] \Rightarrow
 \nu>S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin \[0,n\]$. This 
 is a contradiction against the assumption.
 
-This means results in the functions being equal. \square
+This means results in the functions being equal. $\square$
 
 #### Formula to calculate d(m) explicitly
 
