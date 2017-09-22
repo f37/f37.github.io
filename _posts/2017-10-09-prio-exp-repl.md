@@ -108,4 +108,5 @@ $\exists
 \hat{\nu} \in \[0,\hat{n}\] \text{ and } \nu \in \[0,n\]$ with 
 $S(\hat{n})+\hat{\nu}=m=(n+\nu)$.
 Without loss of generality assume that $\hat{n} > n$. This means that 
-$S(\hat{n})-S(n) \geq \hat{n}$
+$S(\hat{n})-S(n) \geq \hat{n}$ equivalently $\nu - \hat{\nu} \geq \hat{n}$.
+This is a contradiction for $\hat{\nu} \geq 0 \text{ or } \nu \leq n$. 
