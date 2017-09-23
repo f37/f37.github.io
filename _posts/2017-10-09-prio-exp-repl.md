@@ -136,7 +136,7 @@ $\exists \hat{n}$
 with 
 $m=S(\hat{n})+\nu$ for $\nu \in \[0,\hat{n}\]$ with $S(\hat{n}) > m$. 
 It would follow that 
-$\nu < 0 \Rightarrow \nu \notin \[0,\hat{n}\]_{\mathbb{N}}$ . 
+$\nu < 0 \Rightarrow \nu \notin \[0,\hat{n}\]_{\mathbb{N}}$ .   
 This is a contradiction against the assumption.
 
 Suppose  $d(m)>\hat{d}(m)$:
@@ -147,7 +147,7 @@ $m=S(n)+\nu$.
 That implies 
 $S(\hat{n}) \leq S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}} 
 \Rightarrow 
-\nu \geq S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin \[0,n\]$. 
+\nu \geq S(\hat{n})-S(n) \geq \hat{n} > n \Rightarrow \nu \notin \[0,n\]$.   
 This is a contradiction against the assumption.
 
 This results in the functions being equal. $\square$
