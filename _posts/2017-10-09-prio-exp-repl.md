@@ -170,6 +170,17 @@ This may raise some questions because $\nu$ is depending on m but we don't
 know a explicit formula to determine $\nu$. Thats why we need to establish 
 a statement that is independent of $\nu$.
 
+##### Excurse
+
+Be aware that $d(S(m))=d(m)$.
+
+$d(S(m))\text{max}
+\begin{Bmatrix} 
+n \in \mathbb{N} \mid S(n) \leq S(m)
+\end{Bmatrix}
+= 
+$
+
 ##### Claim
 
 It suffices to calculate
@@ -185,6 +196,7 @@ $\hat{d}(m)<d(m)+1$:
 $\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < 
 \sqrt{2 \cdot S(d(m)+1)+\dfrac{1}{4}}-\dfrac{1}{2} =
 \sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}=
+d(\tilde{m})=
 d(m)+1$ 
 with $\tilde{m}=S(d(m)+1)+\tilde{\nu}$.
 
