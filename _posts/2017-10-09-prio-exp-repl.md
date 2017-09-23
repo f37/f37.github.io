@@ -186,15 +186,7 @@ $\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} <
 \sqrt{2 \cdot S(d(m)+1)+\dfrac{1}{4}}-\dfrac{1}{2} =
 \sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}=
 d(m)+1$ 
-for 
-$\tilde{m}$ 
-satisfying 
-$\tilde{m}=min_{\tilde{m}}
-\begin{Bmatrix}
-\hat{d}(\tilde{m})>d(m)
-\end{Bmatrix}$, 
-due to 
-$\tilde{m}=S(d(m)+1)+\tilde{\nu}$.
+with $\tilde{m}=S(d(m)+1)+\tilde{\nu}$.
 
 So we can conclude:
 $d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < d(m)+1$. $\square$
