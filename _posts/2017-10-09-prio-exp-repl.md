@@ -56,7 +56,7 @@ for m in memory:
 That results in expense of $O(n)$ depending on memory size. Not to mention 
 the cost it needs to calculate the fractions for $p_{i}$.
 
-For that approach, for that specific rank based distribution I want to 
+For that specific rank based distribution I want to 
 suggest a sampling method with constant time $O(1)$
 
 The Algorithm above formulates the recursive search after 
