@@ -75,7 +75,7 @@ n \in \mathbb{N} \mid S(n) \leq \text{rand} \cdot S(N)
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix}$ 
-where $m:=\text{rand} \cdot S(N)$
+where $m:=\text{rand} \cdot S(N)$ and rand uniform in $\[0,1\]$
 
 ### Claim
 Define 
