@@ -99,7 +99,8 @@ question if $\nu \in \[0,n\]_{\mathbb{N}}$. Obviously $\nu \geq 0$. Suppose $\nu
 \Rightarrow S(n+1)
 \leq m $, but this is contradicting with the maximum property. 
 
-As a result $\forall m \in \mathbb{N} \ \exists \hat{d}(m)$.
+This means that $\forall m \in \mathbb{N} \ \exists \hat{d}(m)$. So 
+$\hat{d}(m)$ exists for every natural number.
  
 ##### Uniqueness
 
