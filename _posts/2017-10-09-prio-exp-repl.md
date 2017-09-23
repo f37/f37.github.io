@@ -171,14 +171,17 @@ a statement that is independent of $\nu$.
 
 ##### Claim
 
-I claim that it suffices to calculate
-$d(m)=\lfloor\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}\rfloor$
-even more I suppose $d(m)=\lfloor\sqrt{2m}\rfloor$
+It suffices to calculate
+$\hat{d}(m) := \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}$. I claim that
+$d(m)=\lfloor\\hat{d}(m)\rfloor$ is true.
 
-For that we realize: 
+$d(m)<=\hat{d}(m)$:  
+Surprisingly $d(m)=\sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2} \leq
+\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}$. So the assumption is true, due to 
+$\nu \geq 0$
 
-$d(m)=\sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2} \leq
-\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < 
+$\hat{d}(m)<d(m)+1$:  
+$\sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < 
 \sqrt{2 \cdot S(d(m)+1)+\dfrac{1}{4}}-\dfrac{1}{2} =
 \sqrt{2(\tilde{m}-\tilde{\nu})+\dfrac{1}{4}}-\dfrac{1}{2}=
 d(m)+1$ 
