@@ -203,14 +203,15 @@ Obviously $d(m) \leq \sqrt{2m}$ (square equation twice to check). Left to
 consider is weather $\sqrt{2m} < d(m)+1$ is also true.
 
 Be aware of the fact $m <= S(d(m)+1) - 1$. With that we get 
-$\sqrt(2m) <= \sqrt{S(d(m)+1) - })$. With that in mind it suffice to show that 
-$\sqrt(S(d(m)+1) - 2)<d(m)+1$.
+$\sqrt{2m} \leq \sqrt{S(d(m)+1) - })$. 
+With that in mind it suffice to show that 
+$\sqrt(S(d(m)+1) - 2) < d(m)+1$.
 
 By squaring the equation we get:
 $2S(d(m)+1) - 2 < d(m)^{2} + 2d(m)+1$
 Reformating
 $2S(d(m)+1) - 2 = 2(S(d(m))+d(m)+1) - 2 = d(m)^{2} + 2d(m)$
-gives new perspective
+(remember: $S(n)=\dfrac{n^{2}+n}{2}$) gives new perspective
 $d(m)^{2} + 2d(m)<d(m)^{2} + 2d(m)+1
 \Leftrightarrow 
 0<1$ and I don't want to argue with that.
