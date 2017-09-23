@@ -174,7 +174,7 @@ a statement that is independent of $\nu$.
 
 It suffices to calculate
 $\hat{d}(m) := \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}$. I claim that
-$d(m)=\lfloor\\hat{d}(m)\rfloor$ is true.
+$d(m)=\lfloor\\hat{d}(m)\rfloor$.
 
 $d(m)<=\hat{d}(m)$:  
 Surprisingly $d(m)=\sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2} \leq
