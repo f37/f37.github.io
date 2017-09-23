@@ -170,17 +170,6 @@ This may raise some questions because $\nu$ is depending on m but we don't
 know a explicit formula to determine $\nu$. Thats why we need to establish 
 a statement that is independent of $\nu$.
 
-##### Excurse
-
-Be aware that $d(S(m))=d(m)$.
-
-$d(S(m))\text{max}
-\begin{Bmatrix} 
-n \in \mathbb{N} \mid S(n) \leq S(m)
-\end{Bmatrix}
-= 
-$
-
 ##### Claim
 
 It suffices to calculate
