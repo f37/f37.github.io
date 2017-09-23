@@ -187,7 +187,7 @@ It suffices to calculate
 $\hat{d}(m) := \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}$. I claim that
 $d(m)=\lfloor\\hat{d}(m)\rfloor$.
 
-$d(m)<=\hat{d}(m)$:  
+$d(m) \leq \hat{d}(m)$:  
 Surprisingly $d(m)=\sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2} \leq
 \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2}$. So the assumption is true, due to 
 $\nu \geq 0$
@@ -207,7 +207,7 @@ As a special you can also show that $d(m)=\lfloor\sqrt{2m}\rfloor$:
 Obviously $d(m) \leq \sqrt{2m}$ (square equation twice to check). Left to 
 consider is weather $\sqrt{2m} < d(m)+1$ is also true.
 
-Be aware of the fact $m <= S(d(m)+1) - 1$. With that we get 
+Be aware of the fact $m \leq S(d(m)+1) - 1$. With that we get 
 $\sqrt{2m} \leq \sqrt{2S(d(m)+1) - 2})$. 
 With that in mind it suffice to show that 
 $\sqrt{2S(d(m)+1) - 2} < d(m)+1$.
