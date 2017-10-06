@@ -63,7 +63,17 @@ $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}$
 If $\alpha=0$ we get the uniform case.
 
 Easy example are here Rank Based and proportional 
-hier und da bla bla und hinter rank based noch was zu proportional schreiben
+hier und da bla bla und hinter rank based noch was zu proportional schreiben.
+
+Expensive costs blib blab blub, sum tree und sortieren in quadratischer oder
+linearer Zeit.
+
+This distribution can be proportional to the TD-error $\delta$ e.g. 
+$p_{i}=\delta + \epsilon$. With $\epsilon > 0$.
+
+Achieving this is very costly and isn't even better then other priority 
+distributions. There are ideas to improve this.
+
 
 ## Rank based
 The experience should be drawn prioritized 
