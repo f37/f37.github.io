@@ -9,17 +9,23 @@ mathjax: true
 ---
 
 # Prioritized Experience Replay
+
+Review and ideas for **Prioritized Experience Replay**, by Google DeepMind
+
 ## Introduction
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+blub blub Reinforcement learning
 
+**Idea**:
+Rate experience and sample depending on underlying priority distribution.  
+**How**:
+Take TD-Error as measure for Uncertainty of Experience. 
+
+# Greedy Priorization
+
+Oracle based, learn always the experience with maximal TD-Error.
+
+- Sort expensive, Binary Heap
 ## Binary Heap
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
@@ -33,9 +39,34 @@ clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 Sorting in log time.
 
+## Disadvantages
+
+Greedy has some issues
+
+- updates only for replayed and inserted elements. This means when an 
+element has small transition on the first run may never be visited
+- sensitive to noise spikes
+- prone to overfitting for slowly shrinking error inital high transitions 
+are replayed more frequently.
+
+To overcome these issues we need to find something in the middle of uniform 
+sampling and greedy sampling.
+
+## Stochastic Prioritization
+
+Probability of being drawn is monotonic with guaranteeing non-zero 
+probabilities.
+Consider a Memory with size $N$. 
+
+$P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}$
+
+If $\alpha=0$ we get the uniform case.
+
+Easy example are here Rank Based and proportional 
+hier und da bla bla und hinter rank based noch was zu proportional schreiben
 
 ## Rank based
-Consider a Memory with size $N$. The experience should be drawn prioritized 
+The experience should be drawn prioritized 
 after the index $i$ with probability $P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
 
 Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
