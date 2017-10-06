@@ -36,7 +36,7 @@ Sorting in log time.
 
 ## Rank based
 Consider a Memory with size $N$. The experience should be drawn prioritized 
-after the index $i$ with probability $p_{i}=\frac{i}{\sum_{j=1}^{N}j}$.
+after the index $i$ with probability $P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
 
 Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
 
