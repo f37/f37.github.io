@@ -14,11 +14,11 @@ Review and ideas for the paper [**Prioritized Experience Replay**](https://arxiv
 
 ## Introduction
 
-One reason of the success in Reinforcement learning was the introduction of experience replay. This smooths the training distribution uniformly over past behavior. Unfortunately this implies transitions get replayed regardless of their significands.
+One reason of the great success in Reinforcement Learning (RL) was the introduction of experience replay. This smooths the training distribution uniformly over past behavior of the RL agent. Unfortunately this implies transitions get replayed regardless of their significance.
 
 This paper attacks this issue by prioritizing Experience and sample due to the underlying distribution. Assuming the TD-error gives a measure for how "uncertainty" a transition is, a first choice for prioritizing would be according to the transitions last TD-error.
 
-To sample prioritized there are different approaches.
+For prioritized experience replay there are different approaches.
 
 # Greedy Priorization
 
