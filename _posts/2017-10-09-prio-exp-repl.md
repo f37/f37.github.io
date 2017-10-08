@@ -94,7 +94,7 @@ For that we want to define a convex cumulative distribution function (CDF) $\Phi
 
 My obvious choice was considering the geometric series, because of the explicit nature of calculating cumulative sums. On top we get another hyperparameter q taking the distribution:
 
-$P(i)=1-\frac{q^{i}}{\sum_{j=1}^{N}q^{j}}$ with $0<<q<1$.
+$P(i)=1-\frac{q^{i}}{\sum_{j=1}^{N}q^{j}}$ with $0\<\<q<1$.
 
 Remember the common procedure of drawing a random variable of a given distribution:
 
