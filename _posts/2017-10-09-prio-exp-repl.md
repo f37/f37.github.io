@@ -96,7 +96,7 @@ My obvious choice was considering the geometric series, because of the explicit 
 
 $P(i)=1-\frac{q^{i}}{\sum_{j=1}^{N}q^{j}}$ with $0\<\<q<1$.
 
-![Blind Cliffwalk](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/geomser.gif)
+![Blind Cliffwalk](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/geomser.gif =250x250)
 
 Remember the common procedure of drawing a random variable of a given distribution:
 
