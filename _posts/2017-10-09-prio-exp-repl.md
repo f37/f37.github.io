@@ -136,3 +136,13 @@ Define $C:=\frac{1}{1-q^{N+1}}$. With that we get:
 $C \cdot (1-q^{n+1}) \leq \text{rand}
 \Leftrightarrow
 1-\frac{\text{rand}}{C} \leq q^{n+1}$
+
+So applying logarithm we reveal $n \in \mathbb{N}$
+
+$\log{1-\frac{\text{rand}}{C}} \leq (n+1) \cdot \log{q}
+\Leftrightarrow
+n \geq \log_{q}{1-\frac{\text{rand}}{C}}-1$
+
+With that we figured out that
+
+$n = \lfloor \log_{q}{1-\frac{\text{rand}}{C}}-1 \rfloor$
