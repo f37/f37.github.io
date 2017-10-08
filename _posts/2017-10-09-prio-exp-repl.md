@@ -76,23 +76,18 @@ This again seems very easy in theory, but brings more problems in practice. The 
 
 ### Rank-based Stochastic Prioritization
 
-Easy example are here Rank Based and proportional hier und da bla bla und hinter rank based noch was zu proportional schreiben.
+The experience should be drawn prioritized after the index $i$ with probability, e.g. $p_{i}=\frac{1}{rank(i)}$ where $rank(i)$ is the rank of transition $i$ sorted according to $\begin{Vmatrix}\delta_{i}\end{Vmatrix}$. This is likely to be more robust compensating outliners.
 
-Expensive costs blib blab blub, sum tree und sortieren in quadratischer oder linearer Zeit.
+To draw a transition from a rank based distribution I constructed a example with complexity $\mathcal{O}(1)$ avoiding calculating the cumulative sum of the priorities.
 
-This distribution can be proportional to the TD-error $\delta$ e.g. $p_{i}=\delta + \epsilon$. With $\epsilon > 0$.
+#### Concrete example
 
-Achieving this is very costly and isn't even better then other priority distributions. There are ideas to improve this.
-
-
-## Rank based
-The experience should be drawn prioritized after the index $i$ with probability $P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
+$P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
 
 Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
 
-Unfortunately it is very expensive to sample from that probability distribution because the consensus relies on incrementally loop through every probability to convert a uniform distribution into the desired.
+For that remember the common procedure of drawing a random variable of this given distribution:
 
-Common procedure
 ```
 cum=0, rand=uniform
 for m in memory:
