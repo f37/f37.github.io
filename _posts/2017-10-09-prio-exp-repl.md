@@ -151,4 +151,7 @@ With that in mind out CDF looks like:
 
 $\Phi(x)=\log_{q}(q^{N+1 + x - x \cdot q^N+1})-1 \rfloor$
 
-Attention ceil instead of floor.
+
+- Attention ceil instead of floor.
+- Check Equations
+- Manual for Heap Class
