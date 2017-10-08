@@ -154,4 +154,6 @@ $\Phi(x)=\log_{q}(q^{N+1 + x - x \cdot q^N+1})-1 \rfloor$
 
 - Attention ceil instead of floor.
 - Check Equations
+- Explain Computation exeeds when percolating
+- Heapify
 - Manual for Heap Class
