@@ -46,15 +46,15 @@ As you can see the maximal value of the heap is always the upper item. Thats why
 
 Please be aware that satisfying the heap property doesn't result in a fully sorted priority queue. When updating the value of a node it suffice to percolate (up or down) to maintain the heap property. That way we can ensure drawing the maximal value in constant time while updating the structure in $\mathcal{O}(\log{n})$.
 
-## Disadvantages
+## Disadvantages of Greedy Priorization
 
 Greedy has some issues
 
-- updates only for replayed and inserted elements. This means when an element has small transition on the first run may never be visited
-- sensitive to noise spikes
-- prone to overfitting for slowly shrinking error inital high transitions are replayed more frequently.
+- only replayed elements are getting updated. This means elements with small transition on the first run may never be visited,
+- it is sensitive to noise spikes
+- and prone to overfitting for slowly shrinking error. High initial transitions are replayed more frequently.
 
-To overcome these issues we need to find something in the middle of uniform sampling and greedy sampling.
+To overcome these issues we need to find something in the middle of uniform and greedy sampling.
 
 ## Stochastic Prioritization
 
