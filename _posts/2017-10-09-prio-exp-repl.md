@@ -70,7 +70,7 @@ At that point we can further differentiate between stochastic prioritization app
 
 ### Proportional Stochastic Prioritization
 
-We will sample experience proportional to its TD-error $\delta_{i}$. With that we satisfy a monotonic prioritization. To get non-zero probabilities we will add a small constant $\epsilon > 0$ to get $p_{i}=\norm{\delta_{i}}+\epsilon$.
+We will sample experience proportional to its TD-error $\delta_{i}$. With that we satisfy a monotonic prioritization. To get non-zero probabilities we will add a small constant $\epsilon > 0$ to get $p_{i}=\begin{Vmatrix}\delta_{i}\end{Vmatrix}+\epsilon$.
 
 This again seems very easy in theory, but brings more problems in practice. The complexity for sampling from such a distribution cannot depend on N. Thats why DeepMind implemented a "Sum-Tree" data structure which save the transition priorities and the sum over all underlying children. Leaving the parent node with the sum over all priorities. This gives an efficient way of calculating cumulative sum of priorities, allowing $\mathcal{O}(\log{n})$ updates and sampling.
 
