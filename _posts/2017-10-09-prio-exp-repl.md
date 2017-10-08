@@ -108,9 +108,9 @@ for m in memory:
 
 That results in expense of $O(N)$ depending on memory size. Not to mention the cost it needs to calculate the fractions for $p_{i}$.
 
-For the specific rank based distribution I suggested earlier i want to introduce a sampling method with constant time $O(1)$.
+For the specific rank based distribution I suggested earlier I want to introduce a sampling method with constant time $O(1)$.
 
-Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$  
+Define $S(n):=\sum_{i=1}^{N}i=\frac{1-q{n+1}}{1-q}$  
 
 The Algorithm above formulates the recursive search after 
 $\text{max}\begin{Bmatrix}n \in \mathbb{N} \mid \sum_{i=1}^{n}p_{i} \leq \text{rand}\end{Bmatrix}$. 
