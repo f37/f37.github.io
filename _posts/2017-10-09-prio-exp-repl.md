@@ -129,6 +129,8 @@ $S(n) \leq m
 \Leftrightarrow 
 \frac{1-q^{n+1}}{1-q} \leq \text{rand}\cdot\frac{1-q^{N+1}}{1-q}
 \Leftrightarrow
-\frac{1-q^{n+1}}{1-q^{N+1}}$
+\frac{1-q^{n+1}}{1-q^{N+1}} \leq \text{rand}$
 
-Define $C:=\frac{1}{1-q^{N+1}}$
+Define $C:=\frac{1}{1-q^{N+1}}$. With that we get:
+
+$C \cdot (1-q^{n+1}) \leq \text{rand}$
