@@ -92,11 +92,11 @@ To draw a transition from a rank based distribution I constructed examples with 
 
 #### Gauß sum formula 
 
-$P(i)=1-\frac{i}{\sum_{j=1}^{N}j}$.
+$P(i)=1-\frac{i}{\sum_{j=1}^{N}j}$. With a cumulative distribution function (CDF) of the shape (for $N=100$)
 
-Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
+![Gauss sum CDF](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/gausscdf.png)
 
-For that remember the common procedure of drawing a random variable of this given distribution:
+Remember the common procedure of drawing a random variable of this given distribution:
 
 ```
 cum=0, rand=uniform
@@ -109,6 +109,8 @@ for m in memory:
 That results in expense of $O(n)$ depending on memory size. Not to mention the cost it needs to calculate the fractions for $p_{i}$.
 
 For that specific rank based distribution I want to suggest a sampling method with constant time $O(1)$.
+
+Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$  
 
 The Algorithm above formulates the recursive search after 
 $\text{max}\begin{Bmatrix}n \in \mathbb{N} \mid \sum_{i=1}^{n}p_{i} \leq \text{rand}\end{Bmatrix}$. 
