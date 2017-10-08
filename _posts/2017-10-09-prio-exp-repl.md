@@ -118,8 +118,7 @@ $\exists
 \hat{\nu} \in \[0,\hat{n}\] \text{ and } \nu \in 
 \[0,n\]$ with 
 $S(\hat{n})+\hat{\nu}=S(n)+\nu$.
-Without loss of generality assume that $\hat{n} > n$. This means that 
-$S(\hat{n})-S(n) \geq \hat{n}$ equivalently $\nu - \hat{\nu} \geq \hat{n}$.
+Without loss of generality assume that $\hat{n} > n$. This means that $S(\hat{n})-S(n) \geq \hat{n}$ equivalently $\nu - \hat{\nu} \geq \hat{n}$.
 This is a contradiction for $\hat{\nu} \geq 0 \text{ or } \nu \leq n$. 
 
 This results in uniqueness of $\hat{d}$.
@@ -164,20 +163,15 @@ This results in the functions being equal. $\square$
 
 #### Formula to calculate d(m) explicitly
 
-We know that $d(m)$ is uniquely determined by $n \in \mathbb{N}$ that 
-satisfies 
-$m=S(n) + \nu$ for $\nu \in \[0,n\]_{\mathbb{N}}$.
+We know that $d(m)$ is uniquely determined by $n \in \mathbb{N}$ that satisfies $m=S(n) + \nu$ for $\nu \in \[0,n\]_{\mathbb{N}}$.
 
 So we have to solve for $n$.
 
-Remember that $S(n)=\dfrac{n^{2}+n}{2}$. Define $q:=2(m-\nu)$ and solve the 
-following quadratic equation:
+Remember that $S(n)=\dfrac{n^{2}+n}{2}$. Define $q:=2(m-\nu)$ and solve the following quadratic equation:
 $n^{2}+n-q=0$. So $d(m)=\sqrt{q+\dfrac{1}{4}}-\dfrac{1}{2}=
 \sqrt{2(m-\nu)+\dfrac{1}{4}}-\dfrac{1}{2}$
 
-This may raise some questions because $\nu$ is depending on m but we don't 
-know a explicit formula to determine $\nu$. Thats why we need to establish 
-a statement that is independent of $\nu$.
+This may raise some questions because $\nu$ is depending on m but we don't know a explicit formula to determine $\nu$. Thats why we need to establish a statement that is independent of $\nu$.
 
 ##### Claim
 
@@ -201,14 +195,11 @@ with $\tilde{m}=S(d(m)+1)+\tilde{\nu}$.
 So we can conclude:
 $d(m) \leq \sqrt{2m+\dfrac{1}{4}}-\dfrac{1}{2} < d(m)+1$. $\square$
 
-As a special you can also show that $d(m)=\lfloor\sqrt{2m}\rfloor$:
-Obviously $d(m) \leq \sqrt{2m}$ (square equation twice to check). Left to 
-consider is weather $\sqrt{2m} < d(m)+1$ is also true.
+As a special you can also show that $d(m)=\lfloor\sqrt{2m}\rfloor$: Obviously $d(m) \leq \sqrt{2m}$ (square equation twice to check). Left to consider is weather $\sqrt{2m} < d(m)+1$ is also true.
 
 Be aware of the fact $m \leq S(d(m)+1) - 1$. With that we get 
 $\sqrt{2m} \leq \sqrt{2S(d(m)+1) - 2})$. 
-With that in mind it suffice to show that 
-$\sqrt{2S(d(m)+1) - 2} < d(m)+1$.
+With that in mind it suffice to show that $\sqrt{2S(d(m)+1) - 2} < d(m)+1$.
 
 By squaring the equation we get:
 $2S(d(m)+1) - 2 < d(m)^{2} + 2d(m)+1$
@@ -219,14 +210,11 @@ $d(m)^{2} + 2d(m)<d(m)^{2} + 2d(m)+1
 \Leftrightarrow 
 0<1$ and I don't want to argue with that.
 
-With that we showed that $d(m) \leq \sqrt{2m} < d(m)+1$ we are ready to use 
-$d(m)=\lfloor\sqrt{2m}\rfloor$ as explizit sampling function for the rank 
-based distribution with m sampled uniformly in $\[0,N\]$.
+With that we showed that $d(m) \leq \sqrt{2m} < d(m)+1$ we are ready to use $d(m)=\lfloor\sqrt{2m}\rfloor$ as explizit sampling function for the rank based distribution with m sampled uniformly in $\[0,N\]$.
 
 $\square$
 
 
 ### Conclusions and future work
 
-I claim that this explicit method is applicable for all rank based 
-priorities that can be represented in an explicit series.
+I claim that this explicit method is applicable for all rank based priorities that can be represented in an explicit series.
