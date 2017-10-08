@@ -52,8 +52,8 @@ The appendix of this post includes a manual for a concrete python inplementation
 
 Greedy Prioritization faces the problems that
 
-- only replayed elements are getting updated. This means elements with small transition on the first run may never be visited,
-- it is sensitive to noise spikes and
+- only replayed elements are getting updated. This means elements with small transition on the first run may never be visited.
+- It is sensitive to noise spikes and
 - prone to overfitting for slowly shrinking error. High initial transitions are replayed more frequently.
 
 To overcome these issues we need to find something in the middle of uniform and greedy sampling.
