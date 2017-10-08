@@ -60,7 +60,7 @@ To overcome these issues we need to find something in the middle of uniform and 
 
 ## Stochastic Prioritization
 
-Stochastic Priorization is trying to solve that problem with a monotonic probability of being drawn with guaranteeing non-zero probabilities. 
+Stochastic Prioritization is trying to solve that problem with a monotonic probability of being drawn with guaranteeing non-zero probabilities. 
 
 For that consider a Memory with size $N$ and replay probability of element $i$ as $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}$
 
@@ -80,7 +80,15 @@ The experience should be drawn prioritized after the index $i$ with probability,
 
 To draw a transition from a rank based distribution I constructed a example with complexity $\mathcal{O}(1)$ avoiding calculating the cumulative sum of the priorities.
 
-#### Concrete example
+### Comparison of Prioritized Experience Replay Methods
+
+DeepMind compared the approaches (uniformly, greedy, proportional, rank-based) in toyproblem called "Blind-Cliffwalk".
+
+![Blind Cliffwalk](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/compare.png)
+
+They achieved similar results for the Atari games. The greedy priorization techniques are rather easy to implement. That is the reason why I concentrate on the rank-based approach, guaranteeing better computation time with no significant loss in effectiveness to the proportional approach.
+
+### Concrete example
 
 $P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
 
