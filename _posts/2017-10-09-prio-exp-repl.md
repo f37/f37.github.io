@@ -62,11 +62,19 @@ To overcome these issues we need to find something in the middle of uniform and 
 
 Stochastic Priorization is trying to solve that problem with a monotonic probability of being drawn with guaranteeing non-zero probabilities. 
 
-For that consider a Memory with size $N$.
-
-$P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}$
+For that consider a Memory with size $N$ and replay probability of element $i$ as $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}$
 
 If $\alpha=0$ we get the uniform case.
+
+At that point we can further differentiate between stochastic prioritization approaches. There is the proportional and the rank-based approach.
+
+### Proportional Stochastic Prioritization
+
+We will sample experience proportional to its TD-error $\delta_{i}$. With that we satisfy a monotonic prioritization. To get non-zero probabilities we will add a small constant $\epsilon > 0$ to get $p_{i}=\norm{\delta_{i}}+\epsilon$.
+
+This again seems very easy in theory, but brings more problems in practice. The complexity for sampling from such a distribution cannot depend on N. Thats why DeepMind implemented a "Sum-Tree" data structure which save the transition priorities and the sum over all underlying children. Leaving the parent node with the sum over all priorities. This gives an efficient way of calculating cumulative sum of priorities, allowing $\mathcal{O}(\log{n})$ updates and sampling.
+
+### Rank-based Stochastic Prioritization
 
 Easy example are here Rank Based and proportional hier und da bla bla und hinter rank based noch was zu proportional schreiben.
 
