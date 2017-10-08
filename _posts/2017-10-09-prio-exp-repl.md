@@ -10,17 +10,15 @@ mathjax: true
 
 # Prioritized Experience Replay
 
-Review and ideas for 
-[**Prioritized Experience Replay**](https://arxiv.org/abs/1511.05952), by Google DeepMind.
+Review and ideas for the paper [**Prioritized Experience Replay**](https://arxiv.org/abs/1511.05952), by Google DeepMind.
 
 ## Introduction
 
-blub blub Reinforcement learning
+One reason of the success in Reinforcement learning was the introduction of experience replay. This smooths the training distribution uniformly over past behavior. Unfortunately this implies transitions get replayed regardless of their significands.
 
-**Idea**:
-Rate experience and sample depending on underlying priority distribution.  
-**How**:
-Take TD-Error as measure for Uncertainty of Experience. 
+This paper attacks this issue by prioritizing Experience and sample due to the underlying distribution. Assuming the TD-error gives a measure for how "uncertainty" a transition is, a first choice for prioritizing would be according to the transitions last TD-error.
+
+To sample prioritized there are different approaches.
 
 # Greedy Priorization
 
