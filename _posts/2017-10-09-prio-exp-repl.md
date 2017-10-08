@@ -86,15 +86,15 @@ DeepMind compared the approaches (uniformly, greedy, proportional, rank-based) i
 
 They achieved similar results for the Atari games. The greedy priorization techniques are rather easy to implement. That is the reason why I concentrate on the rank-based approach, guaranteeing better computation time with no significant loss in effectiveness to the proportional approach.
 
-To draw a transition from a rank based distribution I constructed examples with complexity $\mathcal{O}(1)$ avoiding calculating the cumulative sum of the priorities while sampling.
+To draw a transition from a rank based distribution I constructed an example with sampling complexity $\mathcal{O}(1)$ avoiding calculating the cumulative sum of the priorities while sampling.
 
-### Concrete examples
+### Concrete example - Geometric Series
 
-#### Gauß sum formula 
+For that we want to define a convex cumulative distribution function (CDF) $\Phi$ with $\Phi(0)=1$ and $\Phi(N)=0$.
 
-$P(i)=1-\frac{i}{\sum_{j=1}^{N}j}$. With a cumulative distribution function (CDF) of the shape (for $N=100$)
+My obvious choice was considering the geometric series, because of the explicit nature of calculating cumulative sums. On top we get another hyperparameter q taking the distribution:
 
-![Gauss sum CDF](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/gausscdf.png)
+$P(i)=1-\frac{q^{i}}{\sum_{j=1}^{N}q^{j}}$ with $0<<q<1$.
 
 Remember the common procedure of drawing a random variable of a given distribution:
 
@@ -106,9 +106,9 @@ for m in memory:
         return m
 ```
 
-That results in expense of $O(n)$ depending on memory size. Not to mention the cost it needs to calculate the fractions for $p_{i}$.
+That results in expense of $O(N)$ depending on memory size. Not to mention the cost it needs to calculate the fractions for $p_{i}$.
 
-For that specific rank based distribution I want to suggest a sampling method with constant time $O(1)$.
+For the specific rank based distribution I suggested earlier i want to introduce a sampling method with constant time $O(1)$.
 
 Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$  
 
