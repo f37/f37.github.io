@@ -80,7 +80,7 @@ The experience should be drawn prioritized after the index $i$ with probability,
 
 ### Comparison of Prioritized Experience Replay Methods
 
-DeepMind compared the approaches (uniformly, greedy, proportional, rank-based) in toyproblem called "Blind-Cliffwalk".
+DeepMind compared the approaches (uniformly, greedy, proportional, rank-based) in a toyproblem called "Blind-Cliffwalk".
 
 ![Blind Cliffwalk](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/compare.png)
 
@@ -92,7 +92,7 @@ To draw a transition from a rank based distribution I constructed examples with 
 
 #### Gauß sum formula 
 
-$P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
+$P(i)=\frac{i}{\sum_{j=1}^{N}j}$.
 
 Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
 
