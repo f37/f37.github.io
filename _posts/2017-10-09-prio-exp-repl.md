@@ -16,17 +16,17 @@ Review and ideas for the paper [**Prioritized Experience Replay**](https://arxiv
 
 One reason of the great success in Reinforcement Learning (RL) was the introduction of experience replay. This smooths the training distribution uniformly over past behavior of the RL agent. Unfortunately this implies transitions get replayed regardless of their significance in the frequency of being experienced.
 
-This paper attacks this issue by prioritizing Experience and sample due to the underlying distribution. Assuming the TD-error gives a measure for how "uncertainty" a transition is, a first choice for prioritizing would be according to the transitions last TD-error.
+This paper attacks this issue by prioritizing experience and sample due to a underlying distribution. Assuming the TD-error gives a measure for how "uncertain" a transition is, our first choice for prioritizing would be according to the transitions TD-error.
 
 For prioritized experience replay there are different approaches.
 
-# Greedy Priorization
+# Greedy Prioritization
 
-The oracle based approach always samples the experience with maximal TD-Error. This sounds easy in theory. However in practice this results in expensive sorting and updating of the underlying experience. To achieve this it is plausible to introduce a binary heap structure with sorting complexity of $\mathcal{O}(\log{n})$ and sampling of the maximum value in $\mathcal{O}(1)$. 
+The oracle based approach always samples the experience with maximal TD-Error. This sounds easy in theory. However in practice this results in expensive sorting and updating of the underlying experience. To achieve this it is plausible to introduce a binary heap structure with sorting complexity of $\mathcal{O}(\log{n})$ and sampling of the maximum value with complexity $\mathcal{O}(1)$. 
 
 ## Binary Heap
 
-Lets take a look what a Binary Heap is. A heap makes use of a tree structure that isn't fully sorted but satisfies the heap property such that every node is smaller then its parent
+Lets take a look at the concept of a Binary Heap. A heap makes use of a tree structure that isn't fully sorted but satisfies the heap property such that every node is smaller then its parent
 
 ![Heap Property](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/heap1.png)
 
@@ -48,9 +48,9 @@ Please be aware that satisfying the heap property doesn't result in a fully sort
 
 The appendix of this post includes a manual for a concrete python inplementation of a binary heap, integrated with build-in methods to handle the heap as native as a list.
 
-## Disadvantages of Greedy Priorization
+## Disadvantages of Greedy Prioritization
 
-Greedy has some issues
+Greedy Prioritization faces the problems that
 
 - only replayed elements are getting updated. This means elements with small transition on the first run may never be visited,
 - it is sensitive to noise spikes and
