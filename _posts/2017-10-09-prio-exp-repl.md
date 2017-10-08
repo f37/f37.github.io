@@ -44,7 +44,7 @@ When inserting a node into a sorted heap structure the heap remains sorted after
 
 As you can see the maximal value of the heap is always the upper item. Thats why we only need $\mathcal{O}(1)$ to sample the maximal value.
 
-Please be aware that satisfying the heap property doesn't result in a fully sorted priority queue.
+Please be aware that satisfying the heap property doesn't result in a fully sorted priority queue. When updating the value of a node it suffice to percolate (up or down) to maintain the heap property. That way we can ensure drawing the maximal value in constant time while updating the structure in $\mathcal{O}(\log{n})$.
 
 ## Disadvantages
 
