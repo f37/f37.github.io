@@ -133,4 +133,6 @@ $S(n) \leq m
 
 Define $C:=\frac{1}{1-q^{N+1}}$. With that we get:
 
-$C \cdot (1-q^{n+1}) \leq \text{rand}$
+$C \cdot (1-q^{n+1}) \leq \text{rand}
+\Leftrightarrow
+1-\frac{\text{rand}}{C} \leq q^{n+1}$
