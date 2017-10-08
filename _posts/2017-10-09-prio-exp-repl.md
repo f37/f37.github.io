@@ -146,3 +146,7 @@ n \geq \log_{q}(1-\frac{\text{rand}}{C})-1$
 With that we figured out that
 
 $n = \lfloor \log_{q}(1-\frac{\text{rand}}{C})-1 \rfloor$
+
+With that in mind out CDF looks like:
+
+$\Phi(x)=\log_{q}(1-\frac{1-x}{C})-1 \rfloor$
