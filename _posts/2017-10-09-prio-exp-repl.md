@@ -46,19 +46,23 @@ As you can see the maximal value of the heap is always the upper item. Thats why
 
 Please be aware that satisfying the heap property doesn't result in a fully sorted priority queue. When updating the value of a node it suffice to percolate (up or down) to maintain the heap property. That way we can ensure drawing the maximal value in constant time while updating the structure in $\mathcal{O}(\log{n})$.
 
+The appendix of this post includes a manual for a concrete python inplementation of a binary heap, integrated with build-in methods to handle the heap as native as a list.
+
 ## Disadvantages of Greedy Priorization
 
 Greedy has some issues
 
 - only replayed elements are getting updated. This means elements with small transition on the first run may never be visited,
-- it is sensitive to noise spikes
-- and prone to overfitting for slowly shrinking error. High initial transitions are replayed more frequently.
+- it is sensitive to noise spikes and
+- prone to overfitting for slowly shrinking error. High initial transitions are replayed more frequently.
 
 To overcome these issues we need to find something in the middle of uniform and greedy sampling.
 
 ## Stochastic Prioritization
 
-Probability of being drawn is monotonic with guaranteeing non-zero probabilities. Consider a Memory with size $N$. 
+Stochastic Priorization is trying to solve that problem with a monotonic probability of being drawn with guaranteeing non-zero probabilities. 
+
+For that consider a Memory with size $N$.
 
 $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}$
 
