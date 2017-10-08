@@ -139,7 +139,7 @@ $C \cdot (1-q^{n+1}) \leq \text{rand}
 
 So applying logarithm we reveal $n \in \mathbb{N}$
 
-$\log{1-\frac{\text{rand}}{C}} \leq (n+1) \cdot \log{q}
+$\log(1-\frac{\text{rand}}{C}) \leq (n+1) \cdot \log{q}
 \Leftrightarrow
 n \geq \log_{q}(1-\frac{\text{rand}}{C})-1$
 
