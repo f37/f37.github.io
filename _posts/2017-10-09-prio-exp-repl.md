@@ -92,7 +92,7 @@ To draw a transition from a rank based distribution I constructed examples with 
 
 #### Gauß sum formula 
 
-$P(i)=\frac{i}{\sum_{j=1}^{N}j}$.
+$P(i)=1-\frac{i}{\sum_{j=1}^{N}j}$.
 
 Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
 
