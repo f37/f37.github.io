@@ -44,7 +44,7 @@ When inserting a node into a sorted heap structure the heap remains sorted after
 
 As you can see the maximal value of the heap is always the upper item. Thats why we only need $\mathcal{O}(1)$ to sample the maximal value.
 
-Please be aware that satisfying the heap property doesn't result in a fully sorted priority queue. When updating the value of a node it suffice to percolate (up or down) to maintain the heap property. That way we can ensure drawing the maximal value in constant time while updating the structure in $\mathcal{O}(\log{n})$.
+Please be aware that satisfying the heap property doesn't result in a fully sorted priority queue. When updating the value of a node it suffice to percolate (up or down) the updated node to maintain the heap property. That way we can ensure drawing the maximal value in constant time while updating the structure in $\mathcal{O}(\log{n})$.
 
 The appendix of this post includes a manual for a concrete python inplementation of a binary heap, integrated with build-in methods to handle the heap as native as a list.
 
@@ -62,23 +62,21 @@ To overcome these issues we need to find something in the middle of uniform and 
 
 Stochastic Prioritization is trying to solve that problem with a monotonic probability of being drawn with guaranteeing non-zero probabilities. 
 
-For that consider a Memory with size $N$ and replay probability of element $i$ as $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}$
+For that consider a Memory with size $N$ and replay probability of element $i$ as $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}p_{k}^{\alpha}$
 
 If $\alpha=0$ we get the uniform case.
 
-At that point we can further differentiate between stochastic prioritization approaches. There is the proportional and the rank-based approach.
+At that point we can further differentiate between stochastic prioritization approaches. Namely the proportional and the rank-based approach.
 
 ### Proportional Stochastic Prioritization
 
 We will sample experience proportional to its TD-error $\delta_{i}$. With that we satisfy a monotonic prioritization. To get non-zero probabilities we will add a small constant $\epsilon > 0$ to get $p_{i}=\begin{Vmatrix}\delta_{i}\end{Vmatrix}+\epsilon$.
 
-This again seems very easy in theory, but brings more problems in practice. The complexity for sampling from such a distribution cannot depend on N. Thats why DeepMind implemented a "Sum-Tree" data structure which save the transition priorities and the sum over all underlying children. Leaving the parent node with the sum over all priorities. This gives an efficient way of calculating cumulative sum of priorities, allowing $\mathcal{O}(\log{n})$ updates and sampling.
+This again seems very easy in theory, but brings more problems in practice. The complexity for sampling from such a distribution cannot depend on N. Thats why DeepMind implemented a "Sum-Tree" data structure which save the transition priorities and the sum over all underlying priority of its children. Leaving the parent node with the sum over all priorities. This gives an efficient way of calculating cumulative sums of priorities, allowing $\mathcal{O}(\log{n})$ updates and sampling.
 
 ### Rank-based Stochastic Prioritization
 
 The experience should be drawn prioritized after the index $i$ with probability, e.g. $p_{i}=\frac{1}{rank(i)}$ where $rank(i)$ is the rank of transition $i$ sorted according to $\begin{Vmatrix}\delta_{i}\end{Vmatrix}$. This is likely to be more robust compensating outliners.
-
-To draw a transition from a rank based distribution I constructed a example with complexity $\mathcal{O}(1)$ avoiding calculating the cumulative sum of the priorities.
 
 ### Comparison of Prioritized Experience Replay Methods
 
@@ -88,7 +86,11 @@ DeepMind compared the approaches (uniformly, greedy, proportional, rank-based) i
 
 They achieved similar results for the Atari games. The greedy priorization techniques are rather easy to implement. That is the reason why I concentrate on the rank-based approach, guaranteeing better computation time with no significant loss in effectiveness to the proportional approach.
 
-### Concrete example
+To draw a transition from a rank based distribution I constructed examples with complexity $\mathcal{O}(1)$ avoiding calculating the cumulative sum of the priorities while sampling
+
+### Concrete examples
+
+#### Gauß sum formula 
 
 $P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
 
@@ -241,6 +243,10 @@ $d(m)^{2} + 2d(m)<d(m)^{2} + 2d(m)+1
 With that we showed that $d(m) \leq \sqrt{2m} < d(m)+1$ we are ready to use $d(m)=\lfloor\sqrt{2m}\rfloor$ as explizit sampling function for the rank based distribution with m sampled uniformly in $\[0,N\]$.
 
 $\square$
+
+#### Geometric series
+
+lulalala
 
 
 ### Conclusions and future work
