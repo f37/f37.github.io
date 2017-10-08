@@ -26,7 +26,25 @@ The oracle based approach always samples the experience with maximal TD-Error. T
 
 ## Binary Heap
 
-Lets take a look what a Binary Heap is.
+Lets take a look what a Binary Heap is. A heap makes use of a tree structure that isn't fully sorted but satisfies the heap property such that every node is smaller then its parent
+
+![Heap Property](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/heap1.png)
+
+When inserting an item it gets inserted into the last position. 
+
+![Percolate Up 1](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/heap2.png) 
+
+Then incrementally the heap will satisfy the heap property by percolating the item up as long as the heap property is not satisfied.
+
+![Percolate Up 2](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/heap3.png) 
+
+When inserting a node into a sorted heap structure the heap remains sorted after percolating up the inserted node.
+
+![Percolate Up 3](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/heap4.png) 
+
+As you can see the maximal value of the heap is always the upper item. Thats why we only need $\mathcal{O}(1)$ to sample the maximal value.
+
+Please be aware that satisfying the heap property doesn't result in a fully sorted priority queue.
 
 ## Disadvantages
 
