@@ -103,7 +103,7 @@ cum=0, rand=uniform
 for m in memory:
     cum+=m.p
     if rand > cum:
-        return m-1
+        return m
 ```
 
 That results in expense of $O(n)$ depending on memory size. Not to mention the cost it needs to calculate the fractions for $p_{i}$.
