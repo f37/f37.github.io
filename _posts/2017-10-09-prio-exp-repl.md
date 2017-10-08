@@ -10,7 +10,8 @@ mathjax: true
 
 # Prioritized Experience Replay
 
-Review and ideas for **Prioritized Experience Replay**, by Google DeepMind
+Review and ideas for 
+[**Prioritized Experience Replay**](https://arxiv.org/abs/1511.05952), by Google DeepMind.
 
 ## Introduction
 
@@ -28,14 +29,7 @@ Oracle based, learn always the experience with maximal TD-Error.
 - Sort expensive, Binary Heap
 ## Binary Heap
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 Sorting in log time.
 
@@ -43,47 +37,35 @@ Sorting in log time.
 
 Greedy has some issues
 
-- updates only for replayed and inserted elements. This means when an 
-element has small transition on the first run may never be visited
+- updates only for replayed and inserted elements. This means when an element has small transition on the first run may never be visited
 - sensitive to noise spikes
-- prone to overfitting for slowly shrinking error inital high transitions 
-are replayed more frequently.
+- prone to overfitting for slowly shrinking error inital high transitions are replayed more frequently.
 
-To overcome these issues we need to find something in the middle of uniform 
-sampling and greedy sampling.
+To overcome these issues we need to find something in the middle of uniform sampling and greedy sampling.
 
 ## Stochastic Prioritization
 
-Probability of being drawn is monotonic with guaranteeing non-zero 
-probabilities.
-Consider a Memory with size $N$. 
+Probability of being drawn is monotonic with guaranteeing non-zero probabilities. Consider a Memory with size $N$. 
 
 $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}$
 
 If $\alpha=0$ we get the uniform case.
 
-Easy example are here Rank Based and proportional 
-hier und da bla bla und hinter rank based noch was zu proportional schreiben.
+Easy example are here Rank Based and proportional hier und da bla bla und hinter rank based noch was zu proportional schreiben.
 
-Expensive costs blib blab blub, sum tree und sortieren in quadratischer oder
-linearer Zeit.
+Expensive costs blib blab blub, sum tree und sortieren in quadratischer oder linearer Zeit.
 
-This distribution can be proportional to the TD-error $\delta$ e.g. 
-$p_{i}=\delta + \epsilon$. With $\epsilon > 0$.
+This distribution can be proportional to the TD-error $\delta$ e.g. $p_{i}=\delta + \epsilon$. With $\epsilon > 0$.
 
-Achieving this is very costly and isn't even better then other priority 
-distributions. There are ideas to improve this.
+Achieving this is very costly and isn't even better then other priority distributions. There are ideas to improve this.
 
 
 ## Rank based
-The experience should be drawn prioritized 
-after the index $i$ with probability $P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
+The experience should be drawn prioritized after the index $i$ with probability $P(i)=\frac{p_{i}}{\sum_{j=1}^{N}p_{j}}$.
 
 Define $S(n):=\sum_{i=1}^{N}i=\frac{n^{2}+n}{2}$
 
-Unfortunately it is very expensive to sample from that probability 
-distribution because the consensus relies on incrementally loop through 
-every probability to convert a uniform distribution into the desired.
+Unfortunately it is very expensive to sample from that probability distribution because the consensus relies on incrementally loop through every probability to convert a uniform distribution into the desired.
 
 Common procedure
 ```
@@ -94,36 +76,22 @@ for m in memory:
         return m-1
 ```
 
-That results in expense of $O(n)$ depending on memory size. Not to mention 
-the cost it needs to calculate the fractions for $p_{i}$.
+That results in expense of $O(n)$ depending on memory size. Not to mention the cost it needs to calculate the fractions for $p_{i}$.
 
-For that specific rank based distribution I want to 
-suggest a sampling method with constant time $O(1)$.
+For that specific rank based distribution I want to suggest a sampling method with constant time $O(1)$.
 
 The Algorithm above formulates the recursive search after 
-$\text{max}
-\begin{Bmatrix}
-n \in \mathbb{N} \mid \sum_{i=1}^{n}p_{i} \leq \text{rand}
-\end{Bmatrix}$. 
-This can be 
-equally converted to the problem:
-$d(m)=\text{max}
-\begin{Bmatrix} 
-n \in \mathbb{N} \mid S(n) \leq \text{rand} \cdot S(N)
-\end{Bmatrix}
+$\text{max}\begin{Bmatrix}n \in \mathbb{N} \mid \sum_{i=1}^{n}p_{i} \leq \text{rand}\end{Bmatrix}$. 
+This can be equally converted to the problem: 
+$d(m)=\text{max}\begin{Bmatrix} n \in \mathbb{N} \mid S(n) \leq \text{rand} \cdot S(N)\end{Bmatrix}
 =
-\text{max}
-\begin{Bmatrix} 
-n \in \mathbb{N} \mid S(n) \leq m
-\end{Bmatrix}$ 
-where $m:=\text{rand} \cdot S(N)$ and $\text{rand}$ uniform in $\[0,1\]$
+\text{max}\begin{Bmatrix} n \in \mathbb{N} \mid S(n) \leq m \end{Bmatrix}$ 
+where
+$m:=\text{rand} \cdot S(N)$ and $\text{rand}$ uniform in $\[0,1\]$
 
 ### Claim
 Define 
-$\hat{d}(m):=
-\begin{Bmatrix} 
-n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}}
-\end{Bmatrix} $
+$\hat{d}(m):=\begin{Bmatrix} n \in \mathbb{N} \mid m=S(n)+\nu \text{ for } \nu \in \[0,n\]_{\mathbb{N}} \end{Bmatrix} $
 
 I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
@@ -131,7 +99,7 @@ I claim that $\hat{d}(m)$ is well defined $\forall m \in \mathbb{N}$
 
 ##### Existence
 
-$\forall m \in \mathbb{N} \ \exists \hat{n}=\text{max}
+$\forall m \in \mathbb{N} \ \exists \hat{n}=\text{max} 
 \begin{Bmatrix} 
 n \in \mathbb{N} \mid S(n) \leq m
 \end{Bmatrix} $.
