@@ -149,4 +149,6 @@ $n = \lfloor \log_{q}(1-\frac{\text{rand}}{C})-1 \rfloor$
 
 With that in mind out CDF looks like:
 
-$\Phi(x)=\log_{q}(1-\frac{1-x}{C})-1 \rfloor$
+$\Phi(x)=\log_{q}(q^{N+1 + x - x \cdot q^N+1})-1 \rfloor$
+
+Attention ceil instead of floor.
