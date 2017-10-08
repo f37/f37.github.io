@@ -86,7 +86,7 @@ DeepMind compared the approaches (uniformly, greedy, proportional, rank-based) i
 
 They achieved similar results for the Atari games. The greedy priorization techniques are rather easy to implement. That is the reason why I concentrate on the rank-based approach, guaranteeing better computation time with no significant loss in effectiveness to the proportional approach.
 
-To draw a transition from a rank based distribution I constructed examples with complexity $\mathcal{O}(1)$ avoiding calculating the cumulative sum of the priorities while sampling
+To draw a transition from a rank based distribution I constructed examples with complexity $\mathcal{O}(1)$ avoiding calculating the cumulative sum of the priorities while sampling.
 
 ### Concrete examples
 
@@ -96,7 +96,7 @@ $P(i)=1-\frac{i}{\sum_{j=1}^{N}j}$. With a cumulative distribution function (CDF
 
 ![Gauss sum CDF](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/gausscdf.png)
 
-Remember the common procedure of drawing a random variable of this given distribution:
+Remember the common procedure of drawing a random variable of a given distribution:
 
 ```
 cum=0, rand=uniform
