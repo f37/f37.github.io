@@ -112,7 +112,7 @@ That results in expense of $\mathcal{O}(N)$ depending on memory size. Not to men
 
 For the specific rank based distribution I suggested earlier I want to introduce a sampling method with constant time $\mathcal{O}(1)$.
 
-Define $S(n):=\sum_{i=1}^{N}q^i=\frac{1-q^{n+1}}{1-q}$  
+Define $S(n):=\sum_{i=1}^{n}q^i=\frac{1-q^{n+1}}{1-q}$  
 
 The Algorithm above formulates the recursive search after 
 $\text{max}\begin{Bmatrix}n \in \mathbb{N} \mid \sum_{i=1}^{n}P(i) \leq \text{rand}\end{Bmatrix}$. 
