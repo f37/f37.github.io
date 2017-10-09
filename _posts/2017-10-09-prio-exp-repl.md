@@ -20,7 +20,7 @@ This paper attacks this issue by prioritizing experience and sample due to a und
 
 For prioritized experience replay there are different approaches.
 
-# Greedy Prioritization
+## Greedy Prioritization
 
 The oracle based approach always samples the experience with maximal TD-Error. This sounds easy in theory. However in practice this results in expensive sorting and updating of the underlying experience. To achieve this it is plausible to introduce a binary heap structure with sorting complexity of $\mathcal{O}(\log{n})$ and sampling of the maximum value with complexity $\mathcal{O}(1)$. 
 
@@ -62,7 +62,7 @@ To overcome these issues we need to find something in the middle of uniform and 
 
 Stochastic Prioritization is trying to solve that problem with a monotonic probability of being drawn with guaranteeing non-zero probabilities. 
 
-For that consider a Memory with size $N$ and replay probability of element $i$ as $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}p_{k}^{\alpha}$
+For that consider a Memory with size $N$ and replay probability of element $i$ as $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N p_{k}^{\alpha}}$
 
 If $\alpha=0$ we get the uniform case.
 
@@ -141,7 +141,9 @@ So applying logarithm we reveal $n \in \mathbb{N}$
 
 $\log(1-\frac{\text{rand}}{C}) \leq (n+1) \cdot \log{q}
 \Leftrightarrow
-n \geq \log_{q}(1-\frac{\text{rand}}{C})-1$
+n \leq \log_{q}(1-\frac{\text{rand}}{C})-1$
+
+logqkleinernull
 
 With that we figured out that
 
