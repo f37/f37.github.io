@@ -193,7 +193,68 @@ functions for a easy exchange from list to heap. Our heap currently holds
 indices as content. However the content can be any abstract object that can 
 be evaluated.
 
+I will print out the following after each command.
 
-- Attention ceil instead of floor.
-- Check Equations
-- Manual for Heap Class
+```python
+print(h, h.getvalue())
+```
+
+Let's dive into basic usage
+
+```python
+h = BinaryHeap()
+h.append(0)
+h.append(1)
+h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
+```
+| h | h.getvalue() |
+| -----| ---- |
+|heap([])| []|
+|heap([0])| [0]|
+|heap([1, 0]) |[1, 0]|
+|heap([8, 10, 5, 7, 3, 12, 6, 0, 4, 1, 9, 2, 11, 13])| [9, 8, 5, 6, 7, 5, 4, 0, 3, 1, 7, 1, 2, 3]|
+
+![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/instantheap.png)
+
+Apply heap without instant percolation
+
+```python
+h = BinaryHeap(instant=False)
+h.append(0)
+h.append(1)
+h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
+h.sort()
+```
+| h | h.getvalue() |
+| -----| ---- |
+|heap([]) |[]|
+|heap([0]) |[0]|
+|heap([0, 1])| [0, 1]|
+|heap([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])| [0, 1, 1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]|
+|heap([8, 10, 5, 3, 9, 12, 6, 7, 1, 0, 4, 11, 2, 13]) |[9, 8, 5, 7, 7, 5, 4, 6, 1, 0, 3, 2, 1, 3]|
+
+![Sorted Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/sortedheap.png)
+
+Be aware that the heap is not uniquely determined by it satisfying the heap 
+property with two different approaches.
+
+Finally lets look at the sampling with geometric series and increasing $q$
+
+```python
+h
+h.sample(batch=10, q=0.1)
+h.sample(batch=10, q=0.3)
+h.sample(batch=10, q=0.7)
+h.sample(batch=10, q=0.99999999)
+```
+Output represents indices that have been sampled.
+```
+heap([8, 10, 5, 3, 9, 12, 6, 7, 1, 0, 4, 11, 2, 13])
+q=0.1 : [8, 10, 10, 10, 8, 10, 8, 8, 8, 8]
+q=0.3 : [10, 5, 8, 10, 8, 3, 10, 10, 10, 10]
+q=0.7 : [6, 9, 3, 12, 3, 5, 5, 3, 9, 3]
+q=1 : [3, 9, 3, 6, 3, 9, 3, 5, 6, 2]
+```
+
+As you can see a q near zero is a greedy sampling and for a q near 1 we 
+sample in uniform fashion.
