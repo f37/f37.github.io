@@ -143,7 +143,7 @@ $\log(1-\frac{\text{rand}}{C}) \leq (n+1) \cdot \log{q}
 \Leftrightarrow
 n \leq \log_{q}(1-\frac{\text{rand}}{C})-1$
 
-logqkleinernull
+Notice that $\log(q)<0$ for $q \in \[0,1)$.
 
 With that we figured out that
 
