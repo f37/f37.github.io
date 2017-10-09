@@ -108,9 +108,9 @@ for m in memory:
         return m
 ```
 
-That results in expense of $O(N)$ depending on memory size. Not to mention the cost it needs to calculate the fractions for $p_{i}$.
+That results in expense of $\mathcal{O}(N)$ depending on memory size. Not to mention the cost it needs to calculate the fractions for $p_{i}$.
 
-For the specific rank based distribution I suggested earlier I want to introduce a sampling method with constant time $O(1)$.
+For the specific rank based distribution I suggested earlier I want to introduce a sampling method with constant time $\mathcal{O}(1)$.
 
 Define $S(n):=\sum_{i=1}^{N}q^i=\frac{1-q^{n+1}}{1-q}$  
 
@@ -147,13 +147,53 @@ With that we figured out that
 
 $n = \lfloor \log_{q}(1-\frac{\text{rand}}{C})-1 \rfloor$
 
-With that in mind out CDF looks like:
+With that in mind the CDF looks like:
 
-$\Phi(x)=\log_{q}(q^{N+1} + x \cdot (1 - q^N+1) )-1 \rfloor$
+$\Phi(x)=\lceil \log_{q}(q^{N+1} + x \cdot (1 - q^{N+1}) )-1 \rceil$
+
+### Practical issues
+
+Unfortunately maintaining the heap property exceeds computation time of 
+learning that's why the heap is sorted infrequently. DeepMind suggests 
+sorting after 1 million iterations. This makes sense for huge models and 
+learning time. It is also possible to adapt this frequency due to the 
+applied problem. For our implementation of the binary heap has an efficient 
+way of sorting (heapify) an possibly unsorted tree with worst case 
+complexity of $\mathcal{O}(N \log(N))$.
+
+#### Heapify
+
+I mentioned in the beginning, that percolating in a sorted heap maintains heap property. However our considered heap is possibly unsorted. 
+
+Lets proceed with induction.
+
+A node with no children is sorted. Percolating down that key maintains the 
+current order. That is our induction basis.
+
+Our induction step is percolating down a sorted subtree maintains heap 
+property.
+
+That is why we heapify the subtree to percolate down afterwards. Please have
+ a look at the code. It is independent on the heap size and amount of 
+ children for each node. 
+
+```
+def heapify(key):
+    children = keys of the children
+    for every child in children:
+        if child exists
+            heapify(child)
+    percolate down key
+```
+
+## Appendix: Manual Binary Heap
+
+We wanted to have a Binary Heap most similar to a list. Many build-in 
+functions for a easy exchange from list to heap. Our heap currently holds 
+indices as content. However the content can be any abstract object that can 
+be evaluated.
 
 
 - Attention ceil instead of floor.
 - Check Equations
-- Explain Computation exeeds when percolating
-- Heapify
 - Manual for Heap Class
