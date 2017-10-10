@@ -8,7 +8,7 @@ date:   2017-10-09
 mathjax: true
 ---
 
-Review and ideas for the paper [**Prioritized Experience Replay**](https://arxiv.org/abs/1511.05952), by Google DeepMind.
+Ideas on the paper [**Prioritized Experience Replay**](https://arxiv.org/abs/1511.05952), by Google DeepMind.
 
 ## Introduction
 
