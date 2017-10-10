@@ -212,32 +212,23 @@ h = BinaryHeap(instant=True)
 # h: 		    heap([]) 
 # h.getvalue(): []
 
-h.append(0)
-# img1
+h.append(0) # img1
 
-h.append(1)
-# img2
+h.append(1) # img2
 
-h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
-# img3
+h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3] # img3
 
-len(h)
-# 14
+len(h) # 14
 
-h[3] = 11
-# img4
+h[3] = 11 # img4
 
-h[3]
-# 10
+h[3] # 10
 
-h[3:7]
-# [10, 3, 12, 6]
+h[3:7] # [10, 3, 12, 6]
 
-del h[3]
-# img5
+del h[3] # img5
 
-del h[3:7]
-#img6
+del h[3:7] #img6
 ```
 
 ![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/instantheaptest.png)
@@ -248,41 +239,30 @@ del h[3:7]
 ################
 
 h = BinaryHeap(instant=False)
-# h: 		 heap([]) 
-# h.getvalue():  []
+# h: 		    heap([]) 
+# h.getvalue(): []
 
-h.append(0)
-# img1
+h.append(0) # img1
 
-h.append(1)
-# # img2
+h.append(1) # img2
 
-h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
-# img3
+h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3] # img3
 
-h.sort()
-# img4
+h.sort() # img4
 
-print(len(h))
-# 14
+len(h) # 14
 
-h[3] = 11
-# img5
+h[3] = 11 # img5
 
-h[3]
-# 3
+h[3] # 3
 
-h[3:7]
-# [3, 9, 12, 6]
+h[3:7] # [3, 9, 12, 6]
 
-del h[3]
-# img6
+del h[3] # img6
 
-del h[3:7]
-# img7
+del h[3:7] # img7
 
-h.sort()
-# img8
+h.sort() # img8
 ```
 
 ![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/heapifytest.png)
@@ -296,18 +276,13 @@ h
 # h: 			 heap([8, 10, 5, 7, 9, 12, 6, 3, 1]) 
 # h.getvalue():  [9, 8, 5, 1, 7, 5, 4, 0, 1]
 
+h.sample(batch=10, q=0.1) # idx [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
 
-h.sample(batch=10, q=0.1)
-# idx [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+h.sample(batch=10, q=0.3) # [8, 10, 8, 10, 10, 8, 8, 8, 10, 8]
 
-h.sample(batch=10, q=0.3)
-# [8, 10, 8, 10, 10, 8, 8, 8, 10, 8]
+h.sample(batch=10, q=0.7) # [5, 5, 9, 8, 7, 5, 7, 12, 8, 8]
 
-h.sample(batch=10, q=0.7)
-# [5, 5, 9, 8, 7, 5, 7, 12, 8, 8]
-
-h.sample(batch=10, q=0.999999)
-# [8, 12, 9, 9, 7, 7, 9, 10, 10, 5]
+h.sample(batch=10, q=0.999999) # [8, 12, 9, 9, 7, 7, 9, 10, 10, 5]
 ```
 
 ![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/sampleheap.png)
