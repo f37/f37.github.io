@@ -8,8 +8,6 @@ date:   2017-10-09
 mathjax: true
 ---
 
-# Prioritized Experience Replay
-
 Review and ideas for the paper [**Prioritized Experience Replay**](https://arxiv.org/abs/1511.05952), by Google DeepMind.
 
 ## Introduction
@@ -20,7 +18,7 @@ This paper attacks this issue by prioritizing experience and sample due to a und
 
 For prioritized experience replay there are different approaches.
 
-# Greedy Prioritization
+## Greedy Prioritization
 
 The oracle based approach always samples the experience with maximal TD-Error. This sounds easy in theory. However in practice this results in expensive sorting and updating of the underlying experience. To achieve this it is plausible to introduce a binary heap structure with sorting complexity of $\mathcal{O}(\log{n})$ and sampling of the maximum value with complexity $\mathcal{O}(1)$. 
 
