@@ -90,7 +90,8 @@ To draw a transition from a rank based distribution I constructed an example wit
 
 For that we want to define a convex cumulative distribution function (CDF) $\Phi$ with $\Phi(0)=1$ and $\Phi(N)=0$.
 
-My obvious choice was considering the geometric series, because of the explicit nature of calculating cumulative sums. On top we get another hyperparameter q taking the distribution:
+My obvious choice was considering the geometric series, because of the explicit nature of calculating cumulative sums. On top we get another hyperparameter q for the 
+distribution:
 
 $P(i)=1-\frac{q^{i}}{\sum_{j=1}^{N}q^{j}}$ with $0\<\<q<1$.
 
