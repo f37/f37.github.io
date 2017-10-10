@@ -201,8 +201,9 @@ print(h, h.getvalue())
 
 Let's dive into basic usage
 
-- instant version of the binary heap. img* refers to the respective subimage
+Instant version of the binary heap. img* refers to the respective subimage
  below the code examples
+
 ```python
 ################
 # Test instant #
