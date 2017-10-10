@@ -60,7 +60,7 @@ To overcome these issues we need to find something in the middle of uniform and 
 
 Stochastic Prioritization is trying to solve that problem with a monotonic probability of being drawn with guaranteeing non-zero probabilities. 
 
-For that consider a Memory with size $N$ and replay probability of element $i$ as $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N}p_{k}^{\alpha}$
+For that consider a Memory with size $N$ and replay probability of element $i$ as $P(i)=\dfrac{p_{i}^{\alpha}}{\sum_{k=0}^N p_{k}^{\alpha}}$
 
 If $\alpha=0$ we get the uniform case.
 
@@ -110,7 +110,7 @@ That results in expense of $\mathcal{O}(N)$ depending on memory size. Not to men
 
 For the specific rank based distribution I suggested earlier I want to introduce a sampling method with constant time $\mathcal{O}(1)$.
 
-Define $S(n):=\sum_{i=1}^{N}q^i=\frac{1-q^{n+1}}{1-q}$  
+Define $S(n):=\sum_{i=1}^{n}q^i=\frac{1-q^{n+1}}{1-q}$  
 
 The Algorithm above formulates the recursive search after 
 $\text{max}\begin{Bmatrix}n \in \mathbb{N} \mid \sum_{i=1}^{n}P(i) \leq \text{rand}\end{Bmatrix}$. 
@@ -139,7 +139,9 @@ So applying logarithm we reveal $n \in \mathbb{N}$
 
 $\log(1-\frac{\text{rand}}{C}) \leq (n+1) \cdot \log{q}
 \Leftrightarrow
-n \geq \log_{q}(1-\frac{\text{rand}}{C})-1$
+n \leq \log_{q}(1-\frac{\text{rand}}{C})-1$
+
+Notice that $\log(q)<0$ for $q \in \[0,1)$.
 
 With that we figured out that
 
@@ -147,7 +149,7 @@ $n = \lfloor \log_{q}(1-\frac{\text{rand}}{C})-1 \rfloor$
 
 With that in mind the CDF looks like:
 
-$\Phi(x)=\lceil \log_{q}(q^{N+1} + x \cdot (1 - q^{N+1}) )-1 \rceil$
+$\Phi(x)=\lfloor \log_{q}(q^{N+1} + x \cdot (1 - q^{N+1}) )-1 \rfloor$
 
 ### Practical issues
 
@@ -205,12 +207,15 @@ h.append(0)
 h.append(1)
 h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
 ```
-| h | h.getvalue() |
-| -----| ---- |
-|heap([])| []|
-|heap([0])| [0]|
-|heap([1, 0]) |[1, 0]|
-|heap([8, 10, 5, 7, 3, 12, 6, 0, 4, 1, 9, 2, 11, 13])| [9, 8, 5, 6, 7, 5, 4, 0, 3, 1, 7, 1, 2, 3]|
+
+
+| h                                                    | h.getvalue()                               |
+|------------------------------------------------------|--------------------------------------------|
+| heap([])                                             | []                                         |
+| heap([0])                                            | [0]                                        |
+| heap([1, 0])                                         | [1, 0]                                     |
+| heap([8, 10, 5, 7, 3, 12, 6, 0, 4, 1, 9, 2, 11, 13]) | [9, 8, 5, 6, 7, 5, 4, 0, 3, 1, 7, 1, 2, 3] |
+
 
 ![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/instantheap.png)
 
@@ -223,6 +228,8 @@ h.append(1)
 h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
 h.sort()
 ```
+
+
 | h | h.getvalue() |
 | -----| ---- |
 |heap([]) |[]|
@@ -230,6 +237,7 @@ h.sort()
 |heap([0, 1])| [0, 1]|
 |heap([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])| [0, 1, 1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]|
 |heap([8, 10, 5, 3, 9, 12, 6, 7, 1, 0, 4, 11, 2, 13]) |[9, 8, 5, 7, 7, 5, 4, 6, 1, 0, 3, 2, 1, 3]|
+
 
 ![Sorted Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/sortedheap.png)
 
