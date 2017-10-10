@@ -12,9 +12,9 @@ Ideas on the paper [**Prioritized Experience Replay**](https://arxiv.org/abs/151
 
 ## Introduction
 
-One reason of the great success in Reinforcement Learning (RL) was the introduction of experience replay. This smooths the training distribution uniformly over past behavior of the RL agent. Unfortunately this implies transitions get replayed regardless of their significance in the frequency of being experienced.
+One reason of the great success in Reinforcement Learning (RL) was the introduction of experience replay. This smooths the training distribution uniformly over past behavior of the RL agent. Unfortunately this implies transitions get replayed in the frequency of being experienced regardless of their significance.
 
-This paper attacks this issue by prioritizing experience and sample due to a underlying distribution. Assuming the TD-error gives a measure for how "uncertain" a transition is, our first choice for prioritizing would be according to the transitions TD-error.
+This paper attacks this issue by prioritizing experience and sample due to an underlying distribution. Assuming the TD-error gives a measure for how "uncertain" a transition is, a first choice would be prioritizing according to the transitions TD-error.
 
 For prioritized experience replay there are different approaches.
 
@@ -201,66 +201,116 @@ print(h, h.getvalue())
 
 Let's dive into basic usage
 
+- instant version of the binary heap. img* refers to the respective subimage
+ below the code examples
 ```python
-h = BinaryHeap()
+################
+# Test instant #
+################
+
+h = BinaryHeap(instant=True)
+# h: 		    heap([]) 
+# h.getvalue(): []
+
 h.append(0)
+# img1
+
 h.append(1)
+# img2
+
 h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
+# img3
+
+len(h)
+# 14
+
+h[3] = 11
+# img4
+
+h[3]
+# 10
+
+h[3:7]
+# [10, 3, 12, 6]
+
+del h[3]
+# img5
+
+del h[3:7]
+#img6
 ```
 
-
-| h                                                    | h.getvalue()                               |
-|------------------------------------------------------|--------------------------------------------|
-| heap([])                                             | []                                         |
-| heap([0])                                            | [0]                                        |
-| heap([1, 0])                                         | [1, 0]                                     |
-| heap([8, 10, 5, 7, 3, 12, 6, 0, 4, 1, 9, 2, 11, 13]) | [9, 8, 5, 6, 7, 5, 4, 0, 3, 1, 7, 1, 2, 3] |
-
-
-![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/instantheap.png)
-
-Apply heap without instant percolation
+![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/instantheaptest.png)
 
 ```python
+################
+# Test heapify #
+################
+
 h = BinaryHeap(instant=False)
+# h: 		 heap([]) 
+# h.getvalue():  []
+
 h.append(0)
+# img1
+
 h.append(1)
+# # img2
+
 h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
+# img3
+
 h.sort()
+# img4
+
+print(len(h))
+# 14
+
+h[3] = 11
+# img5
+
+h[3]
+# 3
+
+h[3:7]
+# [3, 9, 12, 6]
+
+del h[3]
+# img6
+
+del h[3:7]
+# img7
+
+h.sort()
+# img8
 ```
 
-
-| h | h.getvalue() |
-| -----| ---- |
-|heap([]) |[]|
-|heap([0]) |[0]|
-|heap([0, 1])| [0, 1]|
-|heap([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])| [0, 1, 1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]|
-|heap([8, 10, 5, 3, 9, 12, 6, 7, 1, 0, 4, 11, 2, 13]) |[9, 8, 5, 7, 7, 5, 4, 6, 1, 0, 3, 2, 1, 3]|
-
-
-![Sorted Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/sortedheap.png)
-
-Be aware that the heap is not uniquely determined by it satisfying the heap 
-property with two different approaches.
-
-Finally lets look at the sampling with geometric series and increasing $q$
+![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/heapifytest.png)
 
 ```python
+#################
+# Test sampling #
+#################
+
 h
+# h: 			 heap([8, 10, 5, 7, 9, 12, 6, 3, 1]) 
+# h.getvalue():  [9, 8, 5, 1, 7, 5, 4, 0, 1]
+
+
 h.sample(batch=10, q=0.1)
+# idx [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+
 h.sample(batch=10, q=0.3)
+# [8, 10, 8, 10, 10, 8, 8, 8, 10, 8]
+
 h.sample(batch=10, q=0.7)
-h.sample(batch=10, q=0.99999999)
+# [5, 5, 9, 8, 7, 5, 7, 12, 8, 8]
+
+h.sample(batch=10, q=0.999999)
+# [8, 12, 9, 9, 7, 7, 9, 10, 10, 5]
 ```
-Output represents indices that have been sampled.
-```
-heap([8, 10, 5, 3, 9, 12, 6, 7, 1, 0, 4, 11, 2, 13])
-q=0.1 : [8, 10, 10, 10, 8, 10, 8, 8, 8, 8]
-q=0.3 : [10, 5, 8, 10, 8, 3, 10, 10, 10, 10]
-q=0.7 : [6, 9, 3, 12, 3, 5, 5, 3, 9, 3]
-q=1 : [3, 9, 3, 6, 3, 9, 3, 5, 6, 2]
-```
+
+![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/sampleheap.png)
 
 As you can see a q near zero is a greedy sampling and for a q near 1 we 
 sample in uniform fashion.
