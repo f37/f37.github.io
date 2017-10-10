@@ -209,12 +209,15 @@ h.append(0)
 h.append(1)
 h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
 ```
+
+
 | h                                                    | h.getvalue()                               |
 |------------------------------------------------------|--------------------------------------------|
 | heap([])                                             | []                                         |
 | heap([0])                                            | [0]                                        |
 | heap([1, 0])                                         | [1, 0]                                     |
 | heap([8, 10, 5, 7, 3, 12, 6, 0, 4, 1, 9, 2, 11, 13]) | [9, 8, 5, 6, 7, 5, 4, 0, 3, 1, 7, 1, 2, 3] |
+
 
 ![Instant Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/instantheap.png)
 
@@ -227,6 +230,8 @@ h.append(1)
 h + [1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]
 h.sort()
 ```
+
+
 | h | h.getvalue() |
 | -----| ---- |
 |heap([]) |[]|
@@ -234,6 +239,7 @@ h.sort()
 |heap([0, 1])| [0, 1]|
 |heap([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])| [0, 1, 1, 7, 3, 5, 4, 6, 9, 7, 8, 2, 5, 3]|
 |heap([8, 10, 5, 3, 9, 12, 6, 7, 1, 0, 4, 11, 2, 13]) |[9, 8, 5, 7, 7, 5, 4, 6, 1, 0, 3, 2, 1, 3]|
+
 
 ![Sorted Heap](https://raw.githubusercontent.com/neurocats/neurocats.github.io/master/assets/prioexprepl/sortedheap.png)
 
