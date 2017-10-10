@@ -151,7 +151,7 @@ $n = \lfloor \log_{q}(1-\frac{\text{rand}}{C})-1 \rfloor$
 
 With that in mind the CDF looks like:
 
-$\Phi(x)=\lfloor \log_{q}(q^{N+1} + x \cdot (1 - q^{N+1}) )-1 \rf$
+$\Phi(x)=\lfloor \log_{q}(q^{N+1} + x \cdot (1 - q^{N+1}) )-1 \rfloor$
 
 ### Practical issues
 
