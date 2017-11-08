@@ -11843,9 +11843,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Daten">Daten<a class="anchor-link" href="#Daten">&#182;</a></h3><p>Im Moment habe ich das Modell auf Toydaten, Tonsignalen (kontinuierlich) und MIDI (discret) trainiert. In der Inferenz wird der Output autoregressiv als Input verwendet. Der Algorithmus ist nicht auf nicht beschränkt auf den Input. Jeder Sequentielle Datensatz (diskret oder kontinuierlich) verwendet werden, e.g. Sensor/Motor Signale. 
+<h3 id="Daten">Daten<a class="anchor-link" href="#Daten">&#182;</a></h3><p>Im Moment habe ich das Modell auf Toydaten, Tonsignalen (kontinuierlich) und MIDI (discret) trainiert. In der Inferenz wird der Output autoregressiv als Input verwendet. Der Algorithmus ist nicht beschränkt auf den Inhalt des Inputs. Jeder Sequentielle Datensatz (diskret oder kontinuierlich), jeder messbare zeitliche Datensatz kann verwendet werden, e.g. Sensor/Motor Signale. 
 Das Modell approximiert die zugrundeliegende (bedingte) Dichtefunktion der Daten.</p>
-<p>Was dies bedeutet möchte ich im Folgenden Schildern:</p>
+<p>Was dies bedeutet möchte ich im Folgenden schildern:</p>
 
 </div>
 </div>
@@ -11973,7 +11973,7 @@ Das Modell approximiert die zugrundeliegende (bedingte) Dichtefunktion der Daten
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Hip-Hop-(komplexes-Signal)">Hip-Hop (komplexes Signal)<a class="anchor-link" href="#Hip-Hop-(komplexes-Signal)">&#182;</a></h4><p>Analog lässt sich das Modell auch für komplizierte Tonsignale verwenden, konzentriert sich aber nur auf die Essenz des Signals:
+<h4 id="Hip-Hop-(komplexes-Signal)">Hip-Hop (komplexes Signal)<a class="anchor-link" href="#Hip-Hop-(komplexes-Signal)">&#182;</a></h4><p>Analog lässt sich das Modell auch für komplizierte Tonsignale anwenden. Hierbei filtert das MDN anscheinend die Essenz des Signals heraus:
 <img src="./rap2.png" alt="Hip-Hop"></p>
 
 </div>
@@ -12081,7 +12081,7 @@ Das Modell approximiert die zugrundeliegende (bedingte) Dichtefunktion der Daten
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="MIDI-(experimentell)">MIDI (experimentell)<a class="anchor-link" href="#MIDI-(experimentell)">&#182;</a></h4><p>Im Folgenden wollte ich noch diskrete Sequenzen predicten (weniger Rechenaufwand mit größerem Resultat). Erste Wahl war dabei MIDI, neues Datenformat ist in Arbeit, mit dem auch besser die Tonlänge angesprochen werden kann. Hier in den folgenden Audios teilweise schwer die Harmonie wahrzunehmen, wenn alle Töne lieblos in der gleichen länge abgearbeitet werden ohne Pause. Jedoch gehe ich von einem proof of concept aus.</p>
+<h4 id="MIDI-(experimentell)">MIDI (experimentell)<a class="anchor-link" href="#MIDI-(experimentell)">&#182;</a></h4><p>Im Folgenden wollte ich noch diskrete Sequenzen predicten (weniger Rechenaufwand mit größerem Resultat). Erste Wahl war dabei MIDI. Ich werde jedoch auf ein Datenformat umschwenken, mit dem eleganter die Tonlänge manipuliert werden kann. In den folgenden Audios ist es teilweise schwer die Harmonie wahrzunehmen, wenn alle Töne lieblos in der gleichen tonlänge abgearbeitet werden, ohne Pausen. Jedoch interpretiere ich die Resultate als ein proof-of-concept und Grundlage für weitere Experimente.</p>
 
 </div>
 </div>
@@ -12209,7 +12209,7 @@ Das Modell approximiert die zugrundeliegende (bedingte) Dichtefunktion der Daten
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Zum Abschluss würde ich die verschiedenen Architekturen miteinander crossvalidieren. Wie im Abstract erwähnt ist das MDN ein Modul, was auf den Outputunits eines Neuronalen Netzes gebaut wird. Also kann man sich in der Wahl des Netzes frei entscheiden, und muss schauen welche Architekturen bzw. Hyperparameter am Besten zum Problem passen.</p>
+<p>Zum Abschluss würde ich die verschiedenen Architekturen miteinander crossvalidieren. Wie im Abstract erwähnt ist das MDN ein Modul, welches die Outputunits eines Neuronalen Netzes erweitern kann. Die Wahl des Netzes ist frei. Die Crossvalidierung der Architekturen bzw. Hyperparameter entscheiden über den Aufbau des Computation Graphs.</p>
 
 </div>
 </div>
