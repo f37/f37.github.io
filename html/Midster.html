@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Midster module &mdash; Data Orchestration Toolbox</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/ncsqr.ico"/>
+    <link rel="top" title="Data Orchestration Toolbox" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Data Orchestration Toolbox</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-Midster">
+<span id="midster-module"></span><h1>Midster module<a class="headerlink" href="#module-Midster" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Midster.Midster">
+<em class="property">class </em><code class="descclassname">Midster.</code><code class="descname">Midster</code><span class="sig-paren">(</span><em>filename</em>, <em>minimidi=128</em><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Takes MIDI filename an Input and generates fresh representation e.g.:</p>
+<ul class="simple">
+<li>pianoroll</li>
+<li>timeroll</li>
+<li>CSV</li>
+<li>MIDI</li>
+</ul>
+<p>This class embedds a MIDI file into a Tensor with dimension <strong>pitch</strong> and <strong>duration</strong> of a tone as sequence.</p>
+<p>Every midster is unique. There is no compatible training with different input. The unique embedding allows no
+compatibility in my state of praxis.</p>
+<p>details explained below.</p>
+<dl class="attribute">
+<dt id="Midster.Midster.COLUMNS">
+<code class="descname">COLUMNS</code><em class="property"> = ['track', 'time', 'event', 'channel', 'pitch', 'velocity']</em><a class="headerlink" href="#Midster.Midster.COLUMNS" title="Permalink to this definition">¶</a></dt>
+<dd><p>After converting MIDI to CSV we obtain  the columns above.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster._clear_events">
+<code class="descname">_clear_events</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster._clear_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all events that are not &#8220;note_on/off&#8221;</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster._colsort">
+<code class="descname">_colsort</code><span class="sig-paren">(</span><em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster._colsort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort the columns of a dataframe with standard column names in
+standart form</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>df</strong> &#8211; pd.dataframe</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">standard sorted pd.dataframe</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster._midi_head_foot">
+<code class="descname">_midi_head_foot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster._midi_head_foot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get standard head and foot for midi compatibility</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">pd.dataframe with midi compatibility</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster._read_csv">
+<code class="descname">_read_csv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster._read_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read CSV file corresponding to filename and folder structure</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">pandas dataframe with all information from csv</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster.get_timeroll">
+<code class="descname">get_timeroll</code><span class="sig-paren">(</span><em>data=None</em>, <em>id_code=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster.get_timeroll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Push Timeroll into pianoroll</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> &#8211; data encoding defined in <a class="reference internal" href="#Midster.Midster.get_unique" title="Midster.Midster.get_unique"><code class="xref py py-func docutils literal"><span class="pre">get_unique</span></code></a></li>
+<li><strong>id_code</strong> &#8211; reference encoding defined in <a class="reference internal" href="#Midster.Midster.get_unique" title="Midster.Midster.get_unique"><code class="xref py py-func docutils literal"><span class="pre">get_unique</span></code></a></li>
+<li><strong>border</strong> &#8211; gives capability of scaling data down with efficient throw away politics</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster.get_unique">
+<code class="descname">get_unique</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster.get_unique" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert pianoroll into unique representation of every combination of scores provided by the music piece.</p>
+<a class="reference internal image-reference" href="_images/unique_encoding.png"><img alt="...image missing..." class="align-center" src="_images/unique_encoding.png" style="height: 500px;" /></a>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">unique length same as here, in the timeroll encoding.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>border</strong> &#8211; gives capability of scaling data down with efficient throw away politics</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
+<li><strong>data</strong>: np array representing unique vectors of the pianoroll timesteps</li>
+<li><strong>elem</strong>: encoding into indices for the data provided as reference</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster.plot">
+<code class="descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot Midster as timeroll representation.</p>
+<a class="reference internal image-reference" href="_images/plot_pianoroll.png"><img alt="...image missing..." class="align-center" src="_images/plot_pianoroll.png" style="height: 500px;" /></a>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster.push_timeroll">
+<code class="descname">push_timeroll</code><span class="sig-paren">(</span><em>timeroll</em>, <em>elem</em>, <em>_elem</em><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster.push_timeroll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Push new timeroll inside Midster and update pianoroll acordingly.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>timeroll</strong> &#8211; timeroll to be pushed inside respecting <a class="reference internal" href="#Midster.Midster.get_unique" title="Midster.Midster.get_unique"><code class="xref py py-func docutils literal"><span class="pre">get_unique</span></code></a> encoding</li>
+<li><strong>elem</strong> &#8211; <a class="reference internal" href="#Midster.Midster.get_unique" title="Midster.Midster.get_unique"><code class="xref py py-func docutils literal"><span class="pre">get_unique</span></code></a> encoding</li>
+<li><strong>_elem</strong> &#8211; <a class="reference internal" href="#Midster.Midster.get_unique" title="Midster.Midster.get_unique"><code class="xref py py-func docutils literal"><span class="pre">get_unique</span></code></a> encoding</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster.update">
+<code class="descname">update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update CSV and pianoroll representation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Midster.Midster.update_pianoroll">
+<code class="descname">update_pianoroll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Midster.Midster.update_pianoroll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update/Create piano roll from information provided by Midster.</p>
+<a class="reference internal image-reference" href="_images/pianoroll.jpg"><img alt="...image missing..." class="align-center" src="_images/pianoroll.jpg" style="height: 300px;" /></a>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/hu.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Data Orchestration Toolbox</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, Florens Greßner.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>

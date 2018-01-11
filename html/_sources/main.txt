@@ -1,0 +1,12 @@
+main module
+===========
+
+.. todo: rename >> midster
+
+midi converter und stuff
+
+----------------
+
+.. autoclass:: main.Midster
+    :members:
+    :show-inheritance:

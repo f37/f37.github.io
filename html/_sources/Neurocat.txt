@@ -1,0 +1,11 @@
+Neurocat module
+===============
+
+A modest software toolbox for creating and training Neural Networks in tensorflow and for handling of data input.
+
+---------
+
+.. automodule:: Neurocat
+    :members:
+    :undoc-members:
+    :show-inheritance:

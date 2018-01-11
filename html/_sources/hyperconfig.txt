@@ -1,0 +1,7 @@
+hyperconfig module
+==================
+
+.. automodule:: hyperconfig
+    :members:
+    :undoc-members:
+    :show-inheritance:

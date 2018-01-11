@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Neurocat module &mdash; Data Orchestration Toolbox</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/ncsqr.ico"/>
+    <link rel="top" title="Data Orchestration Toolbox" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Data Orchestration Toolbox</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="neurocat-module">
+<h1>Neurocat module<a class="headerlink" href="#neurocat-module" title="Permalink to this headline">¶</a></h1>
+<p>A modest software toolbox for creating and training Neural Networks in tensorflow and for handling of data input.</p>
+<hr class="docutils" />
+<span class="target" id="module-Neurocat"></span><dl class="class">
+<dt id="Neurocat.Loading">
+<em class="property">class </em><code class="descclassname">Neurocat.</code><code class="descname">Loading</code><span class="sig-paren">(</span><em>nepoch</em>, <em>label=''</em><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.Loading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Visualisation of loading process in as graphic interface for the terminal. Gives information of the state of the
+process and linearly approximates remaining time for calculation.</p>
+<p><strong>Example:</strong></p>
+<blockquote>
+<div><div class="highlight-text" id="this-py"><div class="highlight"><pre>train the network
+#################
+Loading 25000 Epochs
+Approx. time remaining: 0.27 minutes
+</pre></div>
+</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>nepoch</strong> &#8211; Total number of calculations stages</li>
+<li><strong>label</strong> &#8211; name of calculation process</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="Neurocat.Loading.in_progress">
+<code class="descname">in_progress</code><span class="sig-paren">(</span><em>counter</em><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.Loading.in_progress" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check calculation state.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>counter</strong> &#8211; progress of the calculation in relation to global variable <em>nepoch</em></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">truth value counter &lt; nepoch</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Neurocat.Loading.loading">
+<code class="descname">loading</code><span class="sig-paren">(</span><em>counter</em><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.Loading.loading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Give object information of its state. In the initialisation the
+total amount of processes is given.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>counter</strong> &#8211; state of calculation process.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Neurocat.Loading.range">
+<code class="descname">range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.Loading.range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterable of calculation for e.g. FOR loop etc.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Neurocat.Loading.treshold">
+<code class="descname">treshold</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.Loading.treshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total number of calculation stages</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Neurocat.gen_layer">
+<code class="descclassname">Neurocat.</code><code class="descname">gen_layer</code><span class="sig-paren">(</span><em>name</em>, <em>input</em>, <em>shape</em>, <em>dev_w=0.5</em>, <em>dev_b=0.5</em>, <em>activation=&lt;function sigmoid&gt;</em>, <em>res=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.gen_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate tensorflow layer.</p>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">picture from tensorboard</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> &#8211; name for graph visualization</li>
+<li><strong>input</strong> &#8211; input of the layer</li>
+<li><strong>shape</strong> &#8211; Size of input and output vector</li>
+<li><strong>dev_w</strong> &#8211; std deviation of initializing of the weights</li>
+<li><strong>dev_b</strong> &#8211; std deviation of initializing of the bias</li>
+<li><strong>activation</strong> &#8211; tensorflow activation function. None for no activation</li>
+<li><strong>res</strong> &#8211; residual term from past layers</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">weights, bias and node of the output for computation graph</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Neurocat.gen_myst_layer">
+<code class="descclassname">Neurocat.</code><code class="descname">gen_myst_layer</code><span class="sig-paren">(</span><em>input</em>, <em>shape</em>, <em>std_dev=0.5</em><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.gen_myst_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create hierarchical (mystery) layer that filters the outcome of the
+output of the previous layer</p>
+<div class="admonition-todo admonition" id="index-1">
+<p class="first admonition-title">Todo</p>
+<ul class="last simple">
+<li>picture from tensorboard</li>
+<li>validate functionality</li>
+</ul>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> &#8211; input to the layer that has to be filtere</li>
+<li><strong>shape</strong> &#8211; </li>
+<li><strong>std_dev</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Output node for calculation graph and filter</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Neurocat.generate_ensemble">
+<code class="descclassname">Neurocat.</code><code class="descname">generate_ensemble</code><span class="sig-paren">(</span><em>π</em>, <em>μ</em>, <em>σ</em>, <em>amount=1</em><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.generate_ensemble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate ensemble from gaussian mixtures.</p>
+<a class="reference internal image-reference" href="_images/inference.png"><img alt="...image missing..." class="align-center" src="_images/inference.png" style="height: 300px;" /></a>
+<div class="admonition-todo admonition" id="index-2">
+<p class="first admonition-title">Todo</p>
+<ul class="last simple">
+<li>math to explain what happens</li>
+<li>greek letters</li>
+</ul>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>π</strong> &#8211; weight of the mixtures</li>
+<li><strong>μ</strong> &#8211; mean of the mixtures</li>
+<li><strong>σ</strong> &#8211; deviation of the mixtures</li>
+<li><strong>amount</strong> &#8211; amount of random variables</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Random variable from mixture model</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="Neurocat.layerloop">
+<code class="descclassname">Neurocat.</code><code class="descname">layerloop</code><span class="sig-paren">(</span><em>name</em>, <em>input</em>, <em>shapes</em>, <em>std_dev=0.5</em>, <em>activation=&lt;function sigmoid&gt;</em>, <em>res=None</em><span class="sig-paren">)</span><a class="headerlink" href="#Neurocat.layerloop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create multiple layers that are connected to each other</p>
+<div class="admonition-todo admonition" id="index-3">
+<p class="first admonition-title">Todo</p>
+<p class="last">picture from tensorboard</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> &#8211; name for graph visualization</li>
+<li><strong>input</strong> &#8211; input of the first layer</li>
+<li><strong>shapes</strong> &#8211; input and output shape of all layers</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">node of the output for computation graph</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/hu.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Data Orchestration Toolbox</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, Florens Greßner.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>

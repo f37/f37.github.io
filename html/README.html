@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Data Orchestration Toolbox (DOT) &mdash; Data Orchestration Toolbox</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="_static/ncsqr.ico"/>
+    <link rel="top" title="Data Orchestration Toolbox" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Data Orchestration Toolbox</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="data-orchestration-toolbox-dot">
+<h1>Data Orchestration Toolbox (<strong>DOT</strong>)<a class="headerlink" href="#data-orchestration-toolbox-dot" title="Permalink to this headline">¶</a></h1>
+<p>This is a toolbox for orchestrating data, with a special focus on sequences. A possible Model to build from this
+toolbox is a Mixture Density Network (MDN). Described in the corresponding paper by Christopher M. Bishop, 1994.
+Together with embeddings provided in this library sequence modelling is possible, as well as data preparation for
+prediction tasks.</p>
+<p>This software toolbox lies upon the theoretical/mathematical background from <strong>Mixture Density Networks</strong> by
+Christopher M. Bishop, 1994. The MDN will be used to predict future states of sequential data.</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Given a sequence of data. The model approximates the underlying density for following states. Prior to the observation
+of a fixed amount of previous time steps this generative model is capable of autoregressively generate a sequence.
+The toolbox tries to be invariant of the dimensionality or modality of the data. For convenience the toolbox asserts
+the first coordinate of a tensor to be <em>time</em> or <em>order</em> of the sequence.</p>
+<p>To accomplish that we will need a function approximator, the bayesian framework and tools to handle raw sequence data.</p>
+</div>
+<div class="section" id="machine-learning">
+<h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h2>
+<p>For the described problem we need a software toolbox capable of preparing raw data in Machine Learning processable form.
+When data is preprocessed we need a universal approximator in order to get a bayesian representation of the data. In
+this case we took a Neural Network.</p>
+<p>That will be found in: <a class="reference external" href="Neurocat.html">Neurocat</a></p>
+<p>This python module consists of</p>
+<ul class="simple">
+<li>a <strong>loading</strong> class, that approximates the remaining computation time. It is necessary
+for the invariance of the data shape. A high dimensional data stream or a big frequency it will be good to know in practice
+if your computation unit needs an Hour or a week.</li>
+<li>methods for elegantly build and visualise Neural Network Layers in <strong>tensorflow</strong>. Graph pictures will be provided.</li>
+</ul>
+</div>
+<div class="section" id="bayesian-framework">
+<h2>Bayesian Framework<a class="headerlink" href="#bayesian-framework" title="Permalink to this headline">¶</a></h2>
+<p>To describe the bayesian framework and for embedding the data in time I will introduce</p>
+<p>That will be found in: <a class="reference external" href="SeqMDN.html">SeqMDN</a></p>
+<p>This python module consists of</p>
+<a class="reference internal image-reference" href="_images/mdn_short.png"><img alt="...image missing..." class="align-center" src="_images/mdn_short.png" style="height: 300px;" /></a>
+</div>
+<div class="section" id="experiments">
+<h2>Experiments<a class="headerlink" href="#experiments" title="Permalink to this headline">¶</a></h2>
+<p>To demonstrate the power of the Toolbox, I try to use as basic examples as possible to demonstrate the dimensions of
+possibilities the toolbox can do.</p>
+<div class="section" id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>tensorflow</li>
+<li>numpy</li>
+<li>matplotlib (optional if you don&#8217;t want to see plots)</li>
+<li>timidity</li>
+<li>midi2csv as well as csv2midi for multimedia interaction</li>
+</ul>
+</div>
+<div class="section" id="run">
+<h3>Run<a class="headerlink" href="#run" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-todo admonition" id="index-0">
+<p class="first admonition-title">Todo</p>
+<p class="last">description of terminal input</p>
+</div>
+</div>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first"><strong>Signals</strong></p>
+</li>
+<li><p class="first"><strong>Probabilities</strong></p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>MIDI</strong></dt>
+<dd><p class="first last">blib blab blub</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="appendix">
+<h2>Appendix<a class="headerlink" href="#appendix" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="embeddings">
+<h3>Embeddings<a class="headerlink" href="#embeddings" title="Permalink to this headline">¶</a></h3>
+<p>A huge contribution of this Frame work are a small collection of awesome embeddings, that need to get in larger focus.</p>
+<div class="admonition-todo admonition" id="index-1">
+<p class="first admonition-title">Todo</p>
+<p class="last">Midster und nembedding zusammenführen in eine Klasse, unique embedding hier rein, neu schreiben.</p>
+</div>
+<ul>
+<li><p class="first">a method for a <strong>time embedding</strong>. A highlight in this documentation. Because time embedding is just a subpart of this
+method it&#8217;s a dimension invariant processor that can slide through tensors in sub tensors and define the amount of steps
+and size of the subtensor (smaller then the tensor observed). One other application would be to stride through an
+image for getting its kernels for a CNN Network.</p>
+</li>
+<li><p class="first">general purpose emebdding</p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>music</strong> <em>music embedding</em> For future work and special case of Raw data I wrote a class capable of transforming a</dt>
+<dd><p class="first">Music Instrument Digital Interface (<strong>MIDI</strong>) file in a 2D matrix, describing a sequence of pitches as well as its length. Defined as
+<strong>timeroll</strong> in</p>
+<p>That will be found in: <a class="reference external" href="Embeddings.html">Embeddings</a></p>
+<a class="reference internal image-reference" href="_images/pianoroll.jpg"><img alt="...image missing... :align: center" src="_images/pianoroll.jpg" style="height: 300px;" /></a>
+<div class="admonition-todo last admonition" id="index-2">
+<p class="first admonition-title">Todo</p>
+<p class="last">image of embedding the music to matrix</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>general</strong> purpose</dt>
+<dd><a class="first last reference internal image-reference" href="_images/nembedding.png"><img alt="...image missing... :align: center" src="_images/nembedding.png" style="height: 300px;" /></a>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>unique embedding</dt>
+<dd><div class="admonition-todo first last admonition" id="index-3">
+<p class="first admonition-title">Todo</p>
+<p class="last">geile visualisierung</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><p class="first"><strong>preprocessing</strong>. With predefined decode and encode operations.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/hu.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Data Orchestration Toolbox (<strong>DOT</strong>)</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#machine-learning">Machine Learning</a></li>
+<li><a class="reference internal" href="#bayesian-framework">Bayesian Framework</a></li>
+<li><a class="reference internal" href="#experiments">Experiments</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#run">Run</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#appendix">Appendix</a><ul>
+<li><a class="reference internal" href="#embeddings">Embeddings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Data Orchestration Toolbox</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2018, Florens Greßner.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>

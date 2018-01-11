@@ -1,0 +1,18 @@
+SeqMDN module
+=============
+
+This software toolbox took the theoretical background from **Mixture Density Networks** by Christopher M. Bishop, 1994.
+Given a sequence of data. The model approximates the underlying density of the provided sequence given the observation
+of a fixed amount of previous timesteps. The model is invariant of the dimensionality or modality of the data. Given
+the first coordinate represents the 'time' or 'order' of the sequence. A Mixture Density Network has universal
+approximation capabilities, thus we are also independent of correlation of the different dimensions. When the
+density function :math:`p(t|x)`, prior to past events is approximated, the model is capable of drawing
+autoregressive random variables from the density function and thus generating a sequence with a similar features as the
+provided sequence we fed data from.
+
+-------------
+
+.. automodule:: SeqMDN
+    :members:
+    :private-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+Embeddings module
+=================
+
+.. automodule:: Embeddings
+    :members:
+    :show-inheritance:
+    :private-members:
