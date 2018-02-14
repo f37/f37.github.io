@@ -76,20 +76,20 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
 - **learning**: acquiring new knowledge by interacting with the environment, gaining experience
 - **Machine Learning**: make computers learn from data
 - distinguish between **supervised** $$(X \times Y$$ and **unsupervised** $$X$$ learning
-- **Learning Algorithm** (supervised): $$({X \times Y})^M \mapsto \hat{f}_n$$
+- **Learning Algorithm** (supervised): $$ ({X \times Y})^M \mapsto \hat{f}_n $$
     - $$\hat{f}_n$$ is a summary of the training data $$({X \times Y})^n$$ (approximation of $$f$$)
     - Loss:
-        - measure of performance: $$L:({Y \times \hat{Y}})^N \rightarrow \mathbb{R}$$
+        - measure of performance: $$ L:({Y \times \hat{Y}})^N \rightarrow \mathbb{R} $$
             - Indicator
             - L1
             - L2
-        - quality: $$\mathbb{E}[L(y, \hat{f}_n)]$$ (careful P ist unknown $$\rightarrow$$ empirical loss)
+        - quality: $$ \mathbb{E}[L(y, \hat{f}_n)] $$ (careful P ist unknown $$\rightarrow$$ empirical loss)
         - distinguish between expected loss $$L(f)$$ and empirical loss $$\hat{L}(f)$$
     - minimize empircal loss
 - **predict**: compute labels $$(\hat{Y})^M$$ for unseen data $$(\hat{X})^M$$
 - **inference**: unsicher ob Jähnichen das verstanden hat
 - **P**:
-    - Wir kennen NICHT die Verteilung **P** der Daten, we only **observe** data $$\lbrace (x_1 , y_1 ),(x_2 ,y_2 ),\dots \rbrace$$ samples from **P**
+    - Wir kennen NICHT die Verteilung **P** der Daten, we only **observe** data $$ \lbrace (x_1 , y_1 ),(x_2 ,y_2 ),\dots \rbrace $$ samples from **P**
     - we make assumptions on the population of all (x, y). 
     - **We only observe a sample!!!**
     
