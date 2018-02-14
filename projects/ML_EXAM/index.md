@@ -1,9 +1,11 @@
-layout: post
+---
+layout: defaults
 title: "Test math"
 author: Haixing Hu
 category: misc
 tags: [test]
 use_math: true
+---
 
 # Machine Learning Basics, by Patrick Jähnichen
 Humboldt Universität zu Berlin.
