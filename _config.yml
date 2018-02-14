@@ -1,3 +1,4 @@
 theme: jekyll-theme-hacker
+markdown: kramdown
 title: florens.io
 description: Wo bin ich eigentlich hin?
