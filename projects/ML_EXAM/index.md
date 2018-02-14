@@ -1,141 +1,13 @@
+# Machine Learning Basics, by Patrick Jähnichen
+Humboldt Universität zu Berlin.
 
-
-```python
-from tika import parser
-from wordcloud import WordCloud
-from matplotlib import pyplot as plt
-import re
-import numpy as np
-
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
-```
-
-
-```python
-bad_words = [
-    'org', 'www', 'jan','oct','9th','user','priori', 'am','wikipedia','90','roaming','5th','samuel','py','yn','co',
-    'y6','y1','px','dsup','ll','92401635','7th','minβ','10th','ve','errs','eu','id','hat','login','publish','she',
-    'blood','yes','stuff','me','cons','h0','mv','754','cont','erm','liu','con','ha','greninger','van','lightfoot',
-    'tamborero', 'is', 'the', 'of','wisonsin','mironenko','soon','soleimani','lopez','garnett','aben','richardson',
-    'wessels','rodriguez','moran','740','knijnenburg','rse','gonçalves','mitropoulos','deng','haber','marius','kloft', 
-    'rn','bx','qp','rd','gj','fi','ax','f0','xt','slides','qps','2004','hf','mh','yo','qt','limn','oi','c0','supx',
-    'wk','maxw','md','xx','itmk','576','w1','wj','mn','sn','m0','eq','const','zj','kl','zi','dz','min','2003','airoldi',
-    'ab','xnyn','kn','gmms','pk','de','rik','zn','yi','or','not','as','at','one', 'x1','be','but','kloft','non','do',
-    'for','eq','be','18','from','xi','by','and','if', 'xi','kl','19','it','will', 'are', 'on', 'we','when', 'log',
-    'that', 'each', 'let', '57', 'exp', 'now', 'how','νi','νx','νti','νj','ti', 'argmin','ν1', 'limi','kn','κn',
-    '00','OO','mc','si','cant','cdf', 'thin','si','been','vice','limit','sup','law',
-    'ars','arsnova','part','room','pair','ross','pro','vis','iorio', 'july','pros','half','copy','91','logit','ctrl',
-    'hθ','xiks','θ3x1x2','yis','yiθ','nk','x2i','big','μs','1x','δ2id','δ2','θpx','θ3','1φ','1λ','μj','μ2','θ2x2i','μd','δ2θ',
-    'hf0','f1', 'deal', '1ps','mx','αifi','θf','θx2', 'βjgj','gm','g1','ops', 'λt','cx','ops','fn','xglobal','g1','i1f',
-    'αi', 'xj', 'n2','ξi', 'anyn', 'αnyn','h1','rna','ξn','minx','iξi','αiyi','hi','n2','α1','αi', 'to', 'have','this',
-    'some', 'xij','tth','τth','contd','xp','xtrainθ', 'xvalθ', 'val','μ2','μj','μd','xtrain','rr','ill','xtrain','helps',
-    'width','slater', 'xfeas','edu', 'lemma', '1ps', 'lps','1p','lp','web','semi','h1','r2','sites', 'αn','αiyixi','sign',
-    'maxα','tss','αjyjx','α1y1','αiyix', 'four','ξ1','come', 'modelsm0','x3','come','loose','minw','aim','blue','were',
-    'my', 'john', 'dθ','mind','kind', 'θom', 'eθ','beta', 'whole', 'in', 'can', 'all',
-    'μ2','μs','posed','μd','iterate','set','μs', 'heard','uw','circle','shaped','tries','modelm0','adding','augmentmk',
-    'intersect','remove', 'force', 'θmap', 'ok','fully','fθ', 'front','formerly', 'digits', 'lecturer','names','sheet',
-    'front','optical','vote','friday', 'gold', 'an', 'all', 'μd', 'μj','who', 'there', 'with', 'dunsup', 'mitigate',
-    'itself', 'feeling', 'μs', 'μj', 'μ2', 'μd', 'Μs', 'Μj','Μ2','Μd','μks','θpm','θm1','dy','2πσ2','xte', '2η2', '4η2', 
-    'say', 'βκ', 'βk', 'dirk', 'real', 'l2', '12', 'xσ', 'σ0', 'β1','β0', 'mult', 'claim', 'gmm', 'dags','σ2x', 'star', 
-    'gp', 'σzi', 'τtd', 'foods', 'aistats', 'was', 'versa', 'vice', 'len', 'ty', 'goes', 'sizes', 'avoid', 'langevon', 
-    'proxy', 'others', 'beal', 'tt', 'en'
-]    
-    
-def get_content(x):   
-    cont=[]
-    for _x in x:
-        parsedPDF = parser.from_file(_x)
-        _cont = parsedPDF['content']
-        _cont = re.split('\W+', _cont)
-        cont += _cont
-    
-    return cont
-
-def summary(d, maxi=100):  
-    d = {k: v for k, v in d.items() if k not in bad_words}
-
-    im=WordCloud(width=1200, height=1200, colormap='Blues', max_words=maxi).generate_from_frequencies(d)
-    plt.figure( figsize=(15,15) )
-    plt.imshow(im)
-    plt.axis('off')
-```
-
-
-```python
-def _embedding(X):
-    """transforms bundle of text into frequency of words"""
-    # initialize countvectorizer object
-    count_vect = CountVectorizer()
-    # count words
-    X_train_counts = count_vect.fit_transform(X)
-
-    # convert to frequencies, respecting different length of text
-    tf_transformer = TfidfTransformer(use_idf=False).fit(X_train_counts)
-
-    return tf_transformer.transform(X_train_counts), count_vect, tf_transformer
-
-
-def P_cond(S, X, top=100):
-    """Take a state from the set(Y) and represent most frequent words."""
-
-    prior = np.mean(S, axis=0)
-    obs = np.mean(X, axis=0)
-
-    prob = prior/obs
-
-    priorities = prob.argsort(axis=1)[:,-top:][:,::-1]
-
-    words = np.array(counter.get_feature_names())
-
-    # print(words[priorities])
-    top_w = words[priorities.ravel()]
-    top_p = prior[:,priorities.ravel()].ravel()
-
-    d = {}
-    for i, k in enumerate(top_w[0]):
-        d[k] = top_p[0, i]
-
-    return d
-
-def _transformer(x):
-    counts = counter.transform(x)
-    # convert to frequencies, respecting different length of text
-    return text_freq.transform(counts)
-```
-
-
-```python
-pdfs = ['lecture%02d.pdf' % (i+1) for i in range(13)]
-embedding, counter, text_freq = _embedding(get_content(pdfs))
-```
-
-
-```python
-conti=[_transformer(get_content(pdfs[i:i+1])) for i in range(13)]
-```
-
-# Machine Learning Basics
-Pattrick Jähnichen
-
-
-```python
-p = P_cond(_transformer(get_content(pdfs)),np.ones((1,1)))
-summary(p, 500)
-```
+Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Wordcluster for conditional quantities.
 
 
 ![png](output_6_0.png)
 
 
 ## Lecture 01 - Introduction
-
-
-```python
-p = P_cond(conti[0], embedding)
-summary(p)
-```
-
 
 ![png](output_8_0.png)
 
@@ -172,12 +44,6 @@ summary(p)
 [Hastie, Tibshirani, Friedman: The Elements of Statistical Learning (chapter 1)](./literature/The_Elements_of_Statistical_Learning)
 
 ## Lecture 02 - Math revision & statistical learning theory
-
-
-```python
-p = P_cond(conti[1], embedding)
-summary(p, 500)
-```
 
 
 ![png](output_11_0.png)
@@ -231,14 +97,6 @@ summary(p, 500)
 
 ## Lecture 03 - Linear Models
 
-
-```python
-p = P_cond(conti[2], embedding)
-
-summary(p, 500)
-```
-
-
 ![png](output_14_0.png)
 
 
@@ -260,96 +118,40 @@ summary(p, 500)
 
 ## Lecture 4 - Beyond linearity, logistic regression and maximum likelihood
 
-
-```python
-p = P_cond(conti[3], embedding)
-summary(p, 500)
-```
-
-
 ![png](output_17_0.png)
 
 
 ## Lecture 05 - Overfitting, Regularization and Cross-Validation
-
-
-```python
-p = P_cond(conti[4], embedding)
-summary(p, 500)
-```
-
 
 ![png](output_19_0.png)
 
 
 ## Lecture 06 - Optimization
 
-
-```python
-p = P_cond(conti[5], embedding)
-summary(p, 500)
-```
-
-
 ![png](output_21_0.png)
 
 
 ## Lecture 07 - Support Vector Machines
-
-
-```python
-p = P_cond(conti[6], embedding)
-summary(p, 500)
-```
-
 
 ![png](output_23_0.png)
 
 
 ## Lecture 08 - Dimensionality Reduction
 
-
-```python
-p = P_cond(conti[7], embedding)
-summary(p, 500)
-```
-
-
 ![png](output_25_0.png)
 
 
 ## Lecture 09 - Bayesian Machine Learning
-
-
-```python
-p = P_cond(conti[8], embedding)
-summary(p, 500)
-```
-
 
 ![png](output_27_0.png)
 
 
 ## Lecture 10 - Probabilistic Graphical Models & Mixture Models
 
-
-```python
-p = P_cond(conti[9], embedding)
-summary(p, 500)
-```
-
-
 ![png](output_29_0.png)
 
 
 ## Lecture 11 - Expectation Maximization & Models of Mixed Membership
-
-
-```python
-p = P_cond(conti[10], embedding)
-summary(p, 500)
-```
-
 
 ![png](output_31_0.png)
 
@@ -357,24 +159,10 @@ summary(p, 500)
 ## Lecture 12 - Monte Carlo Methods for Bayesian Inference
 guest lecture: Imgmar Schuster
 
-
-```python
-p = P_cond(conti[11], embedding)
-summary(p, 500)
-```
-
-
 ![png](output_33_0.png)
 
 
 ## Lecture 13 - Variational Inference
-
-
-```python
-p = P_cond(conti[12], embedding)
-summary(p, 500)
-```
-
 
 ![png](output_35_0.png)
 
