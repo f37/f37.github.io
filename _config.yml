@@ -1,17 +1,1 @@
-# Site settings
-title: Greßner blog
-email: 
-description: "Artificial Intelligence."
-baseurl: ""
-url: "http://neurocats.github.io"
-github_username:  neurocats
-
-# Build settings
-markdown: kramdown
-permalink: pretty
-
-highlighter: rouge
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+theme: jekyll-theme-hacker
