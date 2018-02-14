@@ -75,31 +75,31 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
 - assume there is a relationship $$Y=f(X)$$
 - **learning**: acquiring new knowledge by interacting with the environment, gaining experience
 - **Machine Learning**: make computers learn from data
-- distinguish between **supervised** $(X \times Y$ and **unsupervised** $X$ learning
-- **Learning Algorithm** (supervised): $({X \times Y})^M \mapsto \hat{f}_n$
-    - $\hat{f}_n$ is a summary of the training data $({X \times Y})^n$ (approximation of $f$)
+- distinguish between **supervised** $$(X \times Y$$ and **unsupervised** $$X$$ learning
+- **Learning Algorithm** (supervised): $$({X \times Y})^M \mapsto \hat{f}_n$$
+    - $$\hat{f}_n$$ is a summary of the training data $$({X \times Y})^n$$ (approximation of $$f$$)
     - Loss:
-        - measure of performance: $L:({Y \times \hat{Y}})^N \rightarrow \mathbb{R}$
+        - measure of performance: $$L:({Y \times \hat{Y}})^N \rightarrow \mathbb{R}$$
             - Indicator
             - L1
             - L2
-        - quality: $\mathbb{E}[L(y, \hat{f}_n)]$ (careful P ist unknown $\rightarrow$ empirical loss)
-        - distinguish between expected loss $L(f)$ and empirical loss $\hat{L}(f)$
+        - quality: $$\mathbb{E}[L(y, \hat{f}_n)]$$ (careful P ist unknown $$\rightarrow$$ empirical loss)
+        - distinguish between expected loss $$L(f)$$ and empirical loss $$\hat{L}(f)$$
     - minimize empircal loss
-- **predict**: compute labels $(\hat{Y})^M$ for unseen data $(\hat{X})^M$
+- **predict**: compute labels $$(\hat{Y})^M$$ for unseen data $$(\hat{X})^M$$
 - **inference**: unsicher ob Jähnichen das verstanden hat
 - **P**:
-    - Wir kennen NICHT die Verteilung **P** der Daten, we only **observe** data $\lbrace (x_1 , y_1 ),(x_2 ,y_2 ),\dots \rbrace$ samples from **P**
+    - Wir kennen NICHT die Verteilung **P** der Daten, we only **observe** data $$\lbrace (x_1 , y_1 ),(x_2 ,y_2 ),\dots \rbrace$$ samples from **P**
     - we make assumptions on the population of all (x, y). 
     - **We only observe a sample!!!**
     
 ### What is random?
-- $\hat{L}(f)$ is random 
-    - *keine ahnung was der Künstler uns hiermit sagen will, aber vermute, dass er meint, dass wir niemals L erhalten, sondern Empirischen Erwartungswert bestimmen auf Beobachtung der Zufallsvariable $L$ *
-- $\hat{f}_n$ is a random quantity
+- $$\hat{L}(f)$$ is random 
+    - *keine ahnung was der Künstler uns hiermit sagen will, aber vermute, dass er meint, dass wir niemals L erhalten, sondern Empirischen Erwartungswert bestimmen auf Beobachtung der Zufallsvariable $$L$$ *
+- $$\hat{f}_n$$ is a random quantity
     - a random function, output of our learning procedure
-- $L(\hat{f}_n)$ is random
-- for given $f$ $L(f)$ is not random
+- $$L(\hat{f}_n)$$ is random
+- for given $$f$$ $$L(f)$$ is not random
 
 ## Lecture 03 - Linear Models
 
@@ -107,16 +107,16 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
 
 
 ### Bayesian Framework
-- smallest expected loss is achived by the **Bayes optimal function**: $f^* = \text{arg}\min_{f} L(f)$
-- the lowest value for the expected loss is called the **Bayes error**: $L(f^*) = \inf_{f} L(f)$
+- smallest expected loss is achived by the **Bayes optimal function**: $$f^* = \text{arg}\min_{f} L(f)$$
+- the lowest value for the expected loss is called the **Bayes error**: $$L(f^*) = \inf_{f} L(f)$$
     - this can be larger then zero, may count as measure of complexity of the problem
-- **We cannot calculate any of the above quantities, since $P$ is unknown**
+- **We cannot calculate any of the above quantities, since $$P$$ is unknown**
 
 ### Consistency
-- can we garuantee that $L(\hat{f}_n)-L(f^*)$ is small for large enough sample size $n$?
-- an algorithm that ensures $\underset{n \to \infty}{\lim}L(\hat{f}_n) = L(f^*)$ almost surely, is called **consistent**
+- can we garuantee that $$L(\hat{f}_n)-L(f^*)$$ is small for large enough sample size $$n$$?
+- an algorithm that ensures $$\underset{n \to \infty}{\lim}L(\hat{f}_n) = L(f^*)$$ almost surely, is called **consistent**
     - easy for finite or countable sets
-    - not too hard if $X$ is infinite and the underlying relationship between $X$ and $Y$ is continous
+    - not too hard if $$X$$ is infinite and the underlying relationship between $$X$$ and $$Y$$ is continous
     
 ### No free lunch!
 - We use prior information to match procedures to problems!
