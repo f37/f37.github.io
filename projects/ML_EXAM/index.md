@@ -1,5 +1,5 @@
 ---
-layout: defaults
+layout: default
 title: "Test math"
 author: Haixing Hu
 category: misc
