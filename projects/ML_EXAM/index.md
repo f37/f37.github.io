@@ -95,7 +95,7 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
     
 ### What is random?
 - $$\hat{L}(f)$$ is random 
-    - *keine ahnung was der Künstler uns hiermit sagen will, aber vermute, dass er meint, dass wir niemals L erhalten, sondern Empirischen Erwartungswert bestimmen auf Beobachtung der Zufallsvariable $$L$$ *
+    - *keine ahnung was der Künstler uns hiermit sagen will, aber vermute, dass er meint, dass wir niemals L erhalten, sondern Empirischen Erwartungswert bestimmen auf Beobachtung der Zufallsvariable $$L^*$$
 - $$\hat{f}_n$$ is a random quantity
     - a random function, output of our learning procedure
 - $$L(\hat{f}_n)$$ is random
