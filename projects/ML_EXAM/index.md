@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Test math"
 author: Haixing Hu
 category: misc
