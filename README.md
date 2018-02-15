@@ -8,5 +8,5 @@ This blog makes it easier to share projects with the environment outside my self
 
 ## Content
 
-- [180212-Positive,Negative?](./PosNeg)
 - [180214-Lecture Clustering](./ML_EXAM)
+- [180212-Positive,Negative?](./PosNeg)
