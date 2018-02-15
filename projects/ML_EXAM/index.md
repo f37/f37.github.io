@@ -151,7 +151,11 @@ We have always a bit of prior domainknowledge. There are two ways of encorporati
 *all models are wrong, but some are useful.*
 
 - discriminative approach: assume $$f*$$ is linear
-- strict assumption
+    - *really??? but also assume $$Y = \theta_0 + \theta_1 X$$
+- strict assumption, simple models
+- Allows prediction for new data $$x$$
+- Accuracy: can be modeled as a linear model with a normal distributed error term
+
 
 ### Homework
 - Reading elements of statistical learning chapter 3.1, 3.2.
