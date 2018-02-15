@@ -24,6 +24,8 @@ Tetris
   <p>Your browser does not support the audio element.</p>
 </audio>
 
+
+If your browser doesn't support the audio, here a wav for download
 - [starwars](./nc_starwars_001.wav)
 - [tetris](./nc_tetris001.wav)
 
