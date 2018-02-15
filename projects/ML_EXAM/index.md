@@ -107,21 +107,21 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
 
 
 ### Gold Standard
-- smallest expected loss is achived by the **Bayes optimal function**: $f^* = \text{arg}\min_{f} L(f)$
-- the lowest value for the expected loss is called the **Bayes error**: $L(f^*) = \inf_{f} L(f)$
+- smallest expected loss is achived by the **Bayes optimal function**: $$f^* = \text{arg}\min_{f} L(f)$$
+- the lowest value for the expected loss is called the **Bayes error**: $$L(f^*) = \inf_{f} L(f)$$
     - this can be larger then zero, may count as measure of complexity of the problem
-- **We cannot calculate any of the above quantities, since $P$ is unknown**
+- **We cannot calculate any of the above quantities, since $$P$$ is unknown**
 
 ### Consistency
-- can we garuantee that $L(\hat{f}_n)-L(f^*)$ is small for large enough sample size $n$?
-- an algorithm that ensures $\underset{n \to \infty}{\lim}L(\hat{f}_n) = L(f^*)$ almost surely, is called **consistent**
+- can we garuantee that $$L(\hat{f}_n)-L(f^*)$$ is small for large enough sample size $$n$$?
+- an algorithm that ensures $$\underset{n \to \infty}{\lim}L(\hat{f}_n) = L(f^*)$$ almost surely, is called **consistent**
     - easy for finite or countable sets
-    - not too hard if $X$ is infinite and the underlying relationship between $X$ and $Y$ is continous
+    - not too hard if $$X$$ is infinite and the underlying relationship between $$X$$ and $$Y$$ is continous
     
 ### No free lunch!
 - Every System only works on the prior it strives to satisfy.
-- This means on average (for every P) no solution will perform better then a random guess, because for any algorithm $\hat{f}_n$, any n and $\epsilon>0$ there exists a distribution $P$ such that $L(f^*)=0$ and $\mathbb{E}L(\hat{f}_n) \geq \frac{1}{2}-\epsilon$
-- furthermore for any algorithm $\hat{f}_n$ and any sequence $a_n$ that converges to $0$, there exists a ditribution $P$ such that $L(f^*)=0$ and for all $n$, $\mathbb{E}L\hat{f}_n \geq a_n$. So our Algorithm will converge as slow as possible.
+- This means on average (for every P) no solution will perform better then a random guess, because for any algorithm $$\hat{f}_n$$, any n and $$\epsilon>0$$ there exists a distribution $$P$$ such that $$L(f^*)=0$$ and $$\mathbb{E}L(\hat{f}_n) \geq \frac{1}{2}-\epsilon$$
+- furthermore for any algorithm $$\hat{f}_n$$ and any sequence $$a_n$$ that converges to $$0$$, there exists a ditribution $$P$$ such that $$L(f^*)=0$$ and for all $$n$$, $$\mathbb{E}L\hat{f}_n \geq a_n$$. So our Algorithm will converge as slow as possible.
 - *ist aber auch ne behinderte Annahme. Man kann doch sehr wohl einen Algorithmus formulieren, der alle P in einem gewissem subspace realer Probleme optimiert und überall außerhalb beliebig schlecht performt.*
 
 ### Discriminative, Generative
@@ -132,16 +132,16 @@ We have always a bit of prior domainknowledge. There are two ways of encorporati
 
 #### generative
 - directely
-- assume $P$ is not arbitrary (model approach, statistical modeling, generative approach)
-- **Pro**: can estimate model/parameters of $P$ (inference)
+- assume $$P$$ is not arbitrary (model approach, statistical modeling, generative approach)
+- **Pro**: can estimate model/parameters of $$P$$ (inference)
 - **Con**: not sure what the analysis says if the assumption is violated
 
 #### discriminative
 - indirectely
-- redefine the goal. Perform as well as a reference set $\mathcal{F}$ of predictors. $$L(\hat{f}_n) - \min_{f \in \mathcal{F}}L(f)$$
-- $\mathcal{F}$ encaplsulates the **inductive basis**
-- **Pro**: no direct assumptions on $P$, rather put prior knowledge into what predictors could perform well 
-- **Con**: cannot realy interpret $\hat{f}_n$
+- redefine the goal. Perform as well as a reference set $$\mathcal{F}$$ of predictors. $$L(\hat{f}_n) - \min_{f \in \mathcal{F}}L(f)$$
+- $$\mathcal{F}$$ encaplsulates the **inductive basis**
+- **Pro**: no direct assumptions on $$P$$, rather put prior knowledge into what predictors could perform well 
+- **Con**: cannot realy interpret $$\hat{f}_n$$
 
 
 **Sample Complexity?**
@@ -150,7 +150,7 @@ We have always a bit of prior domainknowledge. There are two ways of encorporati
 ### Linear Regression
 *all models are wrong, but some are useful.*
 
-- discriminative approach: assume $f*$ is linear
+- discriminative approach: assume $$f*$$ is linear
 - strict assumption
 
 ### Homework
