@@ -8,6 +8,8 @@ This blog makes it easier to share projects with the environment outside my self
 
 
 ## [Projects](./projects)
+*All Algorithms are build on the neurocat toolbox. Copyright accordingly.*
+
 
 - [180214 - Lecture Clustering](./projects/ML_EXAM)
 - [180212 - Positive,Negative?](./projects/PosNeg)
