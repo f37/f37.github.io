@@ -14,4 +14,5 @@ mathjax: true
 | 180210 | [RLTradingv0.75](./RLTradingKickoff)                                 |
 | 180108 | [Im2Col](./im2col)                                                   |
 | 171211 | [Music Generation](./musicgen)                                       |
+| 171106 | [k-Nearest Neighbor](./kNN)                                          |
 | 170918 | [SnaKI](./SnaKI)                                                     |

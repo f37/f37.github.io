@@ -19,4 +19,5 @@ This blog makes it easier to share projects with the environment outside my self
 | 180210 | [RLTradingv0.75](./projects/RLTradingKickoff)                        |
 | 180108 | [Im2Col](./projects/im2col)                                          |
 | 171211 | [Music Generation](./projects/musicgen)                              |
+| 171106 | [k-Nearest Neighbor](./projects/kNN)                                 |
 | 170918 | [SnaKI](./projects/SnaKI)                                            |
