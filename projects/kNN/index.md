@@ -1,4 +1,8 @@
-
+---
+title: projects
+author: Florens Greßner, Felix Assion
+mathjax: true
+---
 
 # Nearest Neighbors Classification
 
