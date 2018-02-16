@@ -6,7 +6,7 @@ mathjax: true
 
 ## Predictive maintainance
 
-A system that nows before it crushs.
+A system that knows when its about to crushs. Our prototype reached a 4 minutes prediction horizont.
 
 ![predmain](./sketch.jpg)
 
