@@ -1,12 +1,13 @@
 ---
 title: projects
-author: Florens Greßner
+author: Florens Greßner, Oswald Berthold
 mathjax: true
 ---
 
 ## Predictive maintainance
+team Osflow
 
-A system that knows when its about to crushs. Our prototype reached a 4 minutes prediction horizont.
+A system that knows when its about to crashs. Our prototype reached a 4 minutes prediction horizont.
 
 ![predmain](./sketch.jpg)
 
