@@ -4,7 +4,7 @@ This blog makes it easier to share projects with the environment outside my self
  
 
 > Florens Greßner - neurocat
-![neurocat](./media/ncw.png)
+![neurocat](./assets/nc.png)
 
 
 ## [Projects](./projects)
