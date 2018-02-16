@@ -1,10 +1,14 @@
+---
+title: k-Means
+author: Florens Greßner, Felix Assion
+mathjax: true
+---
 
-# Excercise Sheet 7
 
-## Task 2 - Implementing K-Means
+## Implementing K-Means
+ML Jähnichen HUB
 
 ### prerequisites
-
 
 ```python
 import numpy as np

@@ -1,7 +1,11 @@
+---
+title: projects
+author: Florens Greßner, Felix Assion
+mathjax: true
+---
 
-# Excercise Sheet 4
-
-## Task 4
+## Task
+ML Jähnichen HUB
 
 >Download the Spambase data set. Your task is to classify emails into spam or not-spam
 (sometimes called ham) emails. There are of course sophisticated methods to do this, but

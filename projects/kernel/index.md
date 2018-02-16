@@ -1,7 +1,11 @@
+---
+title: projects
+author: Florens Greßner, Felix Assion
+mathjax: true
+---
 
-# Excercise Sheet 5
-
-## Task 2
+## Task
+ML Jähnichen HUB
 
 >Compare different ridge regression algorithms. In general, the ridge regression cost function is given by
 $$J(\theta)=(Y-\Phi(X)\theta)^{T}(Y-\Phi(X)\theta)+\delta\theta^{T}\theta$$

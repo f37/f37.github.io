@@ -1,6 +1,11 @@
+---
+title: projects
+author: Florens Greßner, Felix Assion
+mathjax: true
+---
 
-## Exercise sheet 2
-### Task 2:
+## Task
+ML Jähnichen HUB
 
 >Download the Census Income data set 1. Your task is to classify data points into predicted
 income lower than or larger than $50K/yr.
