@@ -24,6 +24,6 @@ This blog makes it easier to share projects with the environment outside my self
 | 171128 | [Predictive Maintainance](./projects/predmain)                                   |
 | 171126 | [Ridge MLE](./projects/ridgeMLE)                                     |
 | 171119 | [MLE](./projects/MLE)                                                |
-| 171114 | [Humboldt Innovation](./projects/MLE)                                                |
+| 171114 | [Humboldt Innovation](./projects/hui)                                                |
 | 171106 | [k-Nearest Neighbor](./projects/kNN)                                 |
 | 170918 | [SnaKI](./projects/SnaKI)                                            |
