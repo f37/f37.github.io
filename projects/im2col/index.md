@@ -6,6 +6,8 @@ mathjax: true
 
 ## Im2Col
 
+![im2col](./math.jpg)
+
 Creates for 2D the following output.
 
 - sliding through time ND first good approach for explaining can be [tappings](/home/float/Pictures/tmp/Neues Dokument 2018-01-10.jpg) by Oswald Berthold.
