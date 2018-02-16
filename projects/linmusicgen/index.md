@@ -6,9 +6,12 @@ mathjax: true
 
 ## Simpler Music Generator
 
-Input: Midi. Classification. Output autoregressive model predicting its environment.
+- **Input**: Musical Instrument Digital Interface (MIDI)
+- **Processing**: Classification Blackbox. 
+- **Output**: autoregressive model predicting its environment.
 
-This is a progress from [version 1](../musicgen). Pls compare the songs with each other. The model is simpler, more accurate, but less creative. Practically no training time. When past horizont big enough a music peace can exactly be copied into the model. When making horizont smaller, some infinite patterns emerge.
+This is a new approach for my music generator [version 1](../musicgen). This model is much simpler, more accurate, but less creative. Practically no training time (compared to version 1). 
+When past horizont big enough a music peace can be completely imitated by the model. When making horizont smaller, some infinite patterns emerge. I searched for hyperparameters that result a harmonic sound loop.
 
 ### Pachelbel Canon
 
