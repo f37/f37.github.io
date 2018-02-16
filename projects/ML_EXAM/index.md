@@ -107,7 +107,7 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
 
 
 ### Gold Standard
-- smallest expected loss is achived by the **Bayes optimal function**: $$f^* = \text{arg}\min_{f} L(f)$$
+- smallest expected loss is achived by the **Bayes optimal function**: $ f^* = \text{arg}\min_{f} L(f) $
 - the lowest value for the expected loss is called the **Bayes error**: $$L(f^*) = \inf_{f} L(f)$$
     - this can be larger then zero, may count as measure of complexity of the problem
 - **We cannot calculate any of the above quantities, since $$P$$ is unknown**
