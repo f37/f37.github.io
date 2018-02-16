@@ -16,6 +16,8 @@ mathjax: true
     </embed>
 </object>
 
+![poster](neurocat_poster-1.png)
+
 #
 Vielen Dank, dass sie der neurocat heute ein offenes Ohr schenken.
 Junges Startup, jeder feiert Adlershof drüben im OWZ.
