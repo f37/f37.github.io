@@ -45,7 +45,3 @@ unfortunally without pictures, too late for now
 </audio>
 
 
-If your browser doesn't support the audio, here a wav for download
-- [starwars](./nc_starwars_001.wav)
-- [tetris](./nc_tetris001.wav)
-
