@@ -4,8 +4,9 @@ author: Florens Greßner
 mathjax: true
 ---
 
-## Content
+## Projects
 
+- [180215 - Linear Music Generation](./linmusicgen)
 - [180214 - Lecture Clustering](./ML_EXAM)
 - [180212 - Positive,Negative?](./PosNeg)
 - [180210 - RLTradingv0.75](./RLTradingKickoff)
