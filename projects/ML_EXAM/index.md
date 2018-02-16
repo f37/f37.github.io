@@ -27,7 +27,7 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
     - **Recomondation**: Amazon
     - **Cluster**: Identify Earthquake danger zones
 - The computer program that finds f (or g) is synonymously also called **learning machine** or **learning algorithm**
-    - we want $$ E[p(f(x) \neq y)] $$ as small as possible
+    - we want $$E[p(f(x) \neq y)]$$ as small as possible
    
 ### Course Program
 
@@ -75,9 +75,9 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
 - assume there is a relationship $$Y=f(X)$$
 - **learning**: acquiring new knowledge by interacting with the environment, gaining experience
 - **Machine Learning**: make computers learn from data
-- distinguish between **supervised** $$(X \times Y$$ and **unsupervised** $$X$$ learning
-- **Learning Algorithm** (supervised): $$ ({X \times Y})^M \mapsto \hat{f}_n $$
-    - $$\hat{f}_n$$ is a summary of the training data $$({X \times Y})^n$$ (approximation of $$f$$)
+- distinguish between **supervised** $$ (X \times Y $$ and **unsupervised** $$X$$ learning
+- **Learning Algorithm** (supervised): $ ({X \times Y})^M \mapsto \hat{f}_n $
+    - $$\hat{f}_n$$ is a summary of the training data $({X \times Y})^n$ (approximation of $$f$$)
     - Loss:
         - measure of performance: $$ L:({Y \times \hat{Y}})^N \rightarrow \mathbb{R} $$
             - Indicator
