@@ -6,7 +6,8 @@ mathjax: true
 
 # Nearest Neighbors Classification
 
-## Task 3: Practical
+## Task
+ML Jähnichen HU Berlin
 
 >Implement the k-nearest neighbor learning algorithm in a programming language of your
 choice (preferably Python or Julia and in a notebook). Test the algorithm:
