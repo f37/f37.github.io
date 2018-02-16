@@ -21,7 +21,7 @@ Was a longer project, getting the Google DeepMind Atari action into the snake ga
   <source src="./VID-20180215-WA0002.mp4" type="video/mp4">
 </video>
 
-##Policy Gradient (linear) 
+## Policy Gradient (linear) 
 gives most promising result, but fails stupid and hard
 
 <video width="720" height="340" controls>
