@@ -89,7 +89,7 @@ Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Word
 - **predict**: compute labels $$(\hat{Y})^M$$ for unseen data $$(\hat{X})^M$$
 - **inference**: unsicher ob Jähnichen das verstanden hat
 - **P**:
-    - Wir kennen NICHT die Verteilung **P** der Daten, we only **observe** data $$ \lbrace (x_1 , y_1 ),(x_2 ,y_2 ),\dots \rbrace $$ samples from **P**
+    - Wir kennen NICHT die Verteilung $P$ der Daten, we only **observe** data $$ \lbrace (x_1 , y_1 ),(x_2 ,y_2 ),\dots \rbrace $$ samples from **P**
     - we make assumptions on the population of all (x, y). 
     - **We only observe a sample!!!**
     
