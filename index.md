@@ -11,7 +11,11 @@ title: florens.io
    </tr>
    <tr>
      <td align="center">
-     This blog makes it easier to share projects with the environment outside my self. This blog doesn't present details nor explanations for what I am doing. This results are intended to be explained in person
+      <ul>
+       <li>This blog makes it easier to share projects with the environment outside my self.</li>
+       <li>This blog doesn't present details nor explanations for what I am doing.</li>
+       <li>Results are intended to be presented in person.</li>
+     </ul> 
      </td>
    </tr>
 </table>
