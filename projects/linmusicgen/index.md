@@ -19,6 +19,14 @@ When past horizont big enough a music peace can be completely imitated by the mo
 
 ![pachelbel](./pachelbel_canon_01.png)
 
+#### Original
+<audio controls="controls">
+  <source type="audio/wav" src="./pachelbel_canon.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+</audio>
+
+
+#### Generated
 <audio controls="controls">
   <source type="audio/wav" src="./nc_pachelbel_canon02.wav"></source>
   <p>Your browser does not support the audio element.</p>
@@ -28,6 +36,16 @@ When past horizont big enough a music peace can be completely imitated by the mo
 
 ![tetris](./tetris01.png)
 
+
+
+#### Original
+<audio controls="controls">
+  <source type="audio/wav" src="./tetris.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+</audio>
+
+
+#### Generated
 <audio controls="controls">
   <source type="audio/wav" src="./nc_tetris.wav"></source>
   <p>Your browser does not support the audio element.</p>
@@ -37,6 +55,14 @@ unfortunally without pictures, too late for now
 
 ### Star Wars Theme
 
+#### Original
+<audio controls="controls">
+  <source type="audio/wav" src="./starwars.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+</audio>
+
+
+#### Generated
 <audio controls="controls">
   <source type="audio/wav" src="./nc_starwars.wav"></source>
   <p>Your browser does not support the audio element.</p>
@@ -44,6 +70,14 @@ unfortunally without pictures, too late for now
 
 ### Elise
 
+#### Original
+<audio controls="controls">
+  <source type="audio/wav" src="./elise.wav"></source>
+  <p>Your browser does not support the audio element.</p>
+</audio>
+
+
+#### Generated
 <audio controls="controls">
   <source type="audio/wav" src="./nc_elise.wav"></source>
   <p>Your browser does not support the audio element.</p>

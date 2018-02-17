@@ -27,15 +27,13 @@ With that I solved toyproblems, like generating Sinus
 ![sdrum](./old_thesis/sdrum.png)
 ![drum](./old_thesis/drums.png)
 
-original:
-
+#### original
 <audio controls="controls">
 <source type="audio/wav" src="./old_thesis/drums.wav"></source>
 <p>Your browser does not support the audio element.</p>
 </audio>
 
-generated:
-
+#### generated
 <audio controls="controls">
   <source type="audio/wav" src="./old_thesis/gen_drums.wav"></source>
   <p>Your browser does not support the audio element.</p>
@@ -45,15 +43,13 @@ generated:
 
 ![drum](./old_thesis/rap2.png)
 
-original:
-
+#### original
 <audio controls="controls">
 <source type="audio/wav" src="./old_thesis/rap.wav"></source>
 <p>Your browser does not support the audio element.</p>
 </audio>
 
-generated:
-
+#### generated
 <audio controls="controls">
   <source type="audio/wav" src="./old_thesis/rap_gen.wav"></source>
   <p>Your browser does not support the audio element.</p>
@@ -70,6 +66,13 @@ Input: Midi. Density function approximation. Output autoregressive model predict
 
 My favorite (from 1.5min+). So much different from the original.
 
+#### original
+<audio controls="controls">
+<source type="audio/wav" src="http://florens.io/projects/linmusicgen/starwars.wav"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+
+#### generated
 <audio controls="controls">
   <source type="audio/wav" src="./nc_starwars_001.wav"></source>
   <p>Your browser does not support the audio element.</p>
@@ -79,6 +82,13 @@ My favorite (from 1.5min+). So much different from the original.
 
 Simple music basics for the agent to learn with interesting result. Maybe one has to give the agent music patterns and no music pieces...
 
+#### original
+<audio controls="controls">
+<source type="audio/wav" src="./scale_a_major.wav" ></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+
+#### generated
 <audio controls="controls">
   <source type="audio/wav" src="./nc_scale_a_major.wav"></source>
   <p>Your browser does not support the audio element.</p>
@@ -88,6 +98,13 @@ Simple music basics for the agent to learn with interesting result. Maybe one ha
 
 Very exciting, it is archived as the first working descision process.
 
+#### original
+<audio controls="controls">
+<source type="audio/wav" src="http://florens.io/projects/linmusicgen/tetris.wav"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+
+#### generated
 <audio controls="controls">
   <source type="audio/wav" src="./nc_tetris001.wav"></source>
   <p>Your browser does not support the audio element.</p>
