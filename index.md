@@ -21,11 +21,10 @@ title: florens.io
 
 ![neurocat](./assets/nc.png)
 
-*All Algorithms are build on the neurocat toolbox. Copyright accordingly.*
-
-
+|*All Algorithms are build on the neurocat toolbox. Copyright accordingly.*                                                  |
+|----------------------------------------------------------------------------------------------------------------------------|
 | representation                                               | time   | project                                            |
-|--------------------------------------------------------------|--------|----------------------------------------------------|
+|:------------------------------------------------------------:|--------|----------------------------------------------------|
 | <img src="projects/linmusicgen/index.png" width="100"/>      | 180215 | [Linear Music Generation](./projects/linmusicgen)  |
 | <img src="projects/ML_EXAM/index.png" width="100"/>          | 180214 | [Lecture Clustering](./projects/ML_EXAM)           |
 | <img src="projects/PosNeg/index.png" width="100"/>           | 180212 | [Positive,Negative?](./projects/PosNeg)            |
