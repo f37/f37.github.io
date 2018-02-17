@@ -1,5 +1,7 @@
 ---
-title: ML Exam
+title: Machine Learning Exam
+description: Machine Learning exam notes. Pattrick Jähnichen
+image: http://florens.io/projects/ML_EXAM/index.png
 author: Florens Greßner
 mathjax: true
 ---

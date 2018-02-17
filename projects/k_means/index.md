@@ -1,5 +1,7 @@
 ---
-title: k-Means
+title: k means
+description: Machine Learning excercise
+image: http://florens.io/projects/k_means/index.png
 author: Florens Greßner, Felix Assion
 mathjax: true
 ---

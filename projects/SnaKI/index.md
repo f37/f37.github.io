@@ -1,5 +1,7 @@
 ---
-title: ML Exam
+title: SnaKI
+description: beating snake with reinforcement learning
+image: http://florens.io/projects/SnaKI/index.png
 author: Florens Greßner
 mathjax: true
 ---

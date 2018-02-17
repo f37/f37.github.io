@@ -1,5 +1,7 @@
 ---
-title: projects
+title: Predictive Maintainance
+description: Predict Nodes of complex systems to know failing before failing.
+image: http://florens.io/projects/predmain/index.jpg
 author: Florens Greßner, Oswald Berthold
 mathjax: true
 ---

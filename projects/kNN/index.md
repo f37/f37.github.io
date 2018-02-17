@@ -1,5 +1,7 @@
 ---
-title: projects
+title: k Nearest Neighbor
+description: Machine Learning excercise
+image: http://florens.io/projects/kNN/index.png
 author: Florens Greßner, Felix Assion
 mathjax: true
 ---

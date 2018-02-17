@@ -1,5 +1,7 @@
 ---
-title: PosNeg
+title: Positiv | Negativ ???
+description: Design classifier to distinguish good and bad
+image: http://florens.io/projects/PosNeg/index.png
 author: Florens Greßner
 mathjax: true
 ---

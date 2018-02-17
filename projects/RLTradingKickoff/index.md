@@ -1,5 +1,7 @@
 ---
-title: ML Exam
+title: RL Trading
+description: Beat the market, beat the system
+image: http://florens.io/projects/RLTradingKickoff/index.png
 author: Florens Greßner
 mathjax: true
 ---

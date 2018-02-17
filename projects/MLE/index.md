@@ -1,5 +1,7 @@
 ---
-title: projects
+title: MLE
+description: Machine Learning excercise
+image: http://florens.io/projects/MLE/index.png
 author: Florens Greßner, Felix Assion
 mathjax: true
 ---

@@ -1,5 +1,7 @@
 ---
-title: projects
+title: Kernel Regression
+description: Machine Learning excercise
+image: http://florens.io/projects/kernel/index.png
 author: Florens Greßner, Felix Assion
 mathjax: true
 ---

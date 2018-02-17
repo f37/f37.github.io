@@ -1,5 +1,7 @@
 ---
-title: projects
+title: Linear music generation
+description: Simpler Model for music generation
+image: http://florens.io/projects/linmusicgen/index.png
 author: Florens Greßner
 mathjax: true
 ---

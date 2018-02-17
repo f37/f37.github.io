@@ -1,7 +1,9 @@
 ---
-title: projects
+title: Im2Col
+description: Best algorithm in the century.
 author: Florens Greßner
 mathjax: true
+image: http://florens.io/projects/im2col/index.png
 ---
 
 ## Im2Col
