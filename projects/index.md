@@ -16,7 +16,6 @@ mathjax: true
 | 180108 | [Im2Col](./im2col)                                                   |
 | 171211 | [Music Generation](./musicgen)                                       |
 | 171205 | [Ridge Kernels](./kernel)                                            |
-| 171126 | [Ridge MLE](./ridgeMLE)                                              |
 | 171119 | [MLE](./MLE)                                                         |
 | 171106 | [k-Nearest Neighbor](./kNN)                                          |
 | 170918 | [SnaKI](./SnaKI)                                                     |
