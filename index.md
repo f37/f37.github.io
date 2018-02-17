@@ -7,10 +7,10 @@ title: florens.io
 
 <table >
    <tr>
-     <td><img src="assets/image4.png"/> </td>
+     <td align="center"><img src="assets/image4.png"/> </td>
    </tr>
    <tr>
-     <td>
+     <td align="center">
      This blog makes it easier to share projects with the environment outside my self. This blog doesn't present details nor explanations for what I am doing. This results are intended to be explained in person
      </td>
    </tr>
