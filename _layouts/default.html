@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
 
-        {% if page.title %}
-          {% assign page-title = page.title | escape %}
-        {% else %}
-          {% assign page-title = site.title | escape %}
-        {% endif %}
+  {% if page.title %}
+    {% assign page-title = page.title | escape %}
+  {% else %}
+    {% assign page-title = site.title | escape %}
+  {% endif %}
     
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
