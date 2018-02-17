@@ -4,7 +4,17 @@ title: florens.io
 
 ## model free
 
-This blog makes it easier to share projects with the environment outside my self. This blog doesn't present details nor explanations for what I am doing. 
+
+<table >
+   <tr>
+     <td><img src="assets/image4.png"/> </td>
+   </tr>
+   <tr>
+     <td>
+     This blog makes it easier to share projects with the environment outside my self. This blog doesn't present details nor explanations for what I am doing. This results are intended to be explained in person
+     </td>
+   </tr>
+</table>
 
 
 ## Projects
