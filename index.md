@@ -21,8 +21,7 @@ title: florens.io
 
 ![neurocat](./assets/nc.png)
 *All Algorithms are build on the neurocat toolbox. Copyright accordingly.*                 
-                                 
-|----------------------------------------------------------------------------------------------------------------------------|
+
 | representation                                               | time   | project                                            |
 |:------------------------------------------------------------:|--------|----------------------------------------------------|
 | <img src="projects/linmusicgen/index.png" width="100"/>      | 180215 | [Linear Music Generation](./projects/linmusicgen)  |
