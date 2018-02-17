@@ -20,8 +20,8 @@ title: florens.io
 ## Projects
 
 ![neurocat](./assets/nc.png)
-
-|*All Algorithms are build on the neurocat toolbox. Copyright accordingly.*                                                  |
+*All Algorithms are build on the neurocat toolbox. Copyright accordingly.*                 
+                                 
 |----------------------------------------------------------------------------------------------------------------------------|
 | representation                                               | time   | project                                            |
 |:------------------------------------------------------------:|--------|----------------------------------------------------|
