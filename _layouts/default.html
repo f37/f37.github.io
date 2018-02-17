@@ -2,8 +2,12 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-
-{% seo %}
+    
+    {% if page.title %}
+      {% assign page-title = page.title | escape %}
+    {% else %}
+      {% assign page-title = site.title | escape %}
+  {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
 
