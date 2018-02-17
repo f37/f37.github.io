@@ -25,7 +25,6 @@ This blog makes it easier to share projects with the environment outside my self
 | <img src="projects/musicgen/index.png" width="100"/>         | 171211 | [Music Generation](./projects/musicgen)            |
 | <img src="projects/kernel/index.png" width="100"/>           | 171205 | [Ridge Kernels](./projects/kernel)                 |
 | <img src="projects/predmain/index.jpg" width="100"/>         | 171128 | [Predictive Maintainance](./projects/predmain)     |
-| <img src="projects/MLE/index.png" width="100"/>              | 171119 | [MLE](./projects/MLE)                              |
 | <img src="projects/hui/index.png" width="100"/>              | 171114 | [Humboldt Innovation](./projects/hui)              |
 | <img src="projects/kNN/index.png" width="100"/>              | 171106 | [k-Nearest Neighbor](./projects/kNN)               |
 | <img src="projects/SnaKI/index.png" width="100"/>            | 170918 | [SnaKI](./projects/SnaKI)                          |
