@@ -36,3 +36,4 @@ title: florens.io
 | <img src="projects/hui/index.png" width="100"/>              | 171114 | [Humboldt Innovation](./projects/hui)              |
 | <img src="projects/kNN/index.png" width="100"/>              | 171106 | [k-Nearest Neighbor](./projects/kNN)               |
 | <img src="projects/SnaKI/index.png" width="100"/>            | 170918 | [SnaKI](./projects/SnaKI)                          |
+| <img src="/assets/nc.png" height="100"/>                     | YYMMDD | *Build on neurocat toolbox.<br>Copyright accordingly.* |
