@@ -8,7 +8,9 @@ This blog makes it easier to share projects with the environment outside my self
 
 
 ## [Projects](./projects)
-![neurocat](./projects//index.png)
+
+![neurocat](./assets/nc.png)
+
 *All Algorithms are build on the neurocat toolbox. Copyright accordingly.*
 
 
