@@ -1,7 +1,9 @@
 ---
-title: projects
+title: Humboldt Innovation
 author: Florens Greßner
+image: http://florens.io/projects/hui/index.png
 mathjax: true
+description: Neurocat meets Humboldt Innovation. Networking & Presentation.
 ---
 
 ## Humboldt Innovation
