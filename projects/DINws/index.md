@@ -14,7 +14,7 @@ We are proud to initiate the first standardisation committee worldwide attacking
 
 ## Presentation
 
-<object data="./mpulsvortrag.pdf" type="application/pdf">
+<object data="./mpulsvortrag.pdf" type="application/pdf"  width="700px" height="1000px">
     <embed src="./mpulsvortrag.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="http://florens.io/projects/DINws/mpulsvortrag.pdf">Download PDF</a>.</p>
     </embed>
