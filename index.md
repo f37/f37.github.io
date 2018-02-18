@@ -41,5 +41,5 @@ title: florens.io
 | <img src="projects/SnaKI/index.png" width="100"/>            | [170918 SnaKI](./projects/SnaKI)                          |
 | <img src="projects/tf/mlp/index.png" width="100"/>           | [170814 Tensorflow MLP](./projects/SnaKI)                 |
 | <img src="projects/tf/board/index.png" width="100"/>         | [170812 Tensorboard](./projects/tf/board)                 |
-| <img src="projects/tf/index.png" width="100"/>               | [170811 Tensorflow basics](./projects/tf)                 |
+| <img src="projects/tf/tensorflow.png" width="100"/>          | [170811 Tensorflow basics](./projects/tf)                 |
 | <img src="/assets/ncsqr.png" height="100"/>                  | *Build on neurocat toolbox.<br>Copyright accordingly.*    |
