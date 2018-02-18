@@ -93,4 +93,4 @@ title: florens.io
   <img src="projects/tf/tensorflow.png" width="350"/></a> 
 
 <img src="/assets/nc.png" height="350"/>     
-*Build on neurocat toolbox.<br>Copyright accordingly.*
+*Build on neurocat toolbox. Copyright accordingly.*
