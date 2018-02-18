@@ -79,6 +79,6 @@ mathjax: true
 
 <hr>
 
-<img src="/assets/nc.png" height="350"/>     
+<img src="/assets/nc.png"/>     
 
 *Build on neurocat toolbox. Copyright accordingly.*
