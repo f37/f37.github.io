@@ -9,6 +9,7 @@ mathjax: true
 # SnaKI
 
 Was a longer project, getting the Google DeepMind Atari action into the snake game.
+More Videos follow...
 
 ## DQN
 Performs perfect on its environment, but needs very long for training calculation.
