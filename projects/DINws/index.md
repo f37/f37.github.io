@@ -8,7 +8,7 @@ description: Neurocat meets DIN. Impulse presentation front of Artificial Intell
 
 # DIN Workshop
 
-We are proud to initiate the first standardisation committee worldwide attacking the risks of Artificial Intelligence. On the 23th october 2017 we hold a Impulse presentation on the topic and exchanged ideas with a group of experts in Artificial Intelligence.
+We are proud to initiate the first standardisation committee worldwide attacking the risks of Artificial Intelligence. On the 23th october 2017 we hold a Impulse presentation to worm up the topic. Afterwords we exchanged our ideas with a group of experts in Artificial Intelligence.
 
 ![Experts](exp.png)
 
@@ -16,6 +16,6 @@ We are proud to initiate the first standardisation committee worldwide attacking
 
 <object data="./nc.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="./nc.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+        This browser does not support PDFs. Please download the PDF to view it: <a href="http://florens.io/projects/DINws/mpulsvortrag.pdf">Download PDF</a>.</p>
     </embed>
 </object>
