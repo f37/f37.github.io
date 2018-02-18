@@ -1,6 +1,6 @@
 ---
 title:  "Introduction to Tensorflow - 01 Basics"
-description: "While giving an overview of Python, NumPy and TensorFlow I want to create a basic understanding of TensorFlows graph representation for the reader."
+description: "Python, NumPy and TensorFlow. Basic understanding of TensorFlows graph representation."
 image: http://florens.io/projects/tf/tensorflow.png
 author: Florens Greßner
 date:   2017-08-11

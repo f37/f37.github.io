@@ -1,6 +1,6 @@
 ---
 title:  "Introduction to Tensorflow - 03 Neural Network"
-excerpt: "While showing how to build to a simple neural network with TensorFlow I want to give the reader a playful handling of namescopes and show how to make sense of your weight evolution with histograms."
+excerpt: "Building simple neural network in TensorFlow. Playful handling of namescopes. Histogram weight evolution."
 image: http://florens.io/projects/tf/mlp/index.png
 author: Florens Greßner
 date:   2017-08-14

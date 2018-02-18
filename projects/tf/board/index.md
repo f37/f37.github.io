@@ -1,6 +1,6 @@
 ---
 title:  "Introduction to Tensorflow - 02 Tensorboard"
-description: "While showing how to evaluate derivatives from a TensorFlow computation graph I want to give the reader the basic tool for visualizing a model."
+description: "Evaluate derivatives from a TensorFlow computation graph. Visualize models."
 image: http://florens.io/projects/tf/board/index.png
 author: Florens Greßner
 date:   2017-08-12
