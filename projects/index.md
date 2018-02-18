@@ -8,19 +8,77 @@ mathjax: true
 
 ## Projects               
 
-| representation                                        |  project                                               |
-|:-----------------------------------------------------:|--------------------------------------------------------|
-| <img src="./linmusicgen/index.png" width="100"/>      | [180215 Linear Music Generation](./linmusicgen)        |
-| <img src="./ML_EXAM/index.png" width="100"/>          | [180214 Lecture Clustering](./ML_EXAM)                 |
-| <img src="./PosNeg/index.png" width="100"/>           | [180212 Positive,Negative?](./PosNeg)                  |
-| <img src="./RLTradingKickoff/index.png" width="100"/> | [180210 RLTradingv0.75](./RLTradingKickoff)            |
-| <img src="./k_means/index.png" width="100"/>          | [180120 k-Means](./k_means)                            |
-| <img src="./im2col/index.png" width="100"/>           | [180108 Im2Col](./im2col)                              |
-| <img src="./musicgen/index.png" width="100"/>         | [171211 Music Generation](./musicgen)                  |
-| <img src="./kernel/index.png" width="100"/>           | [171205 Ridge Kernels](./kernel)                       |
-| <img src="./predmain/index.jpg" width="100"/>         | [171128 Predictive Maintainance](./predmain)           |
-| <img src="./hui/index.png" width="100"/>              | [171114 Humboldt Innovation](./hui)                    |
-| <img src="./kNN/index.png" width="100"/>              | [171106 k-Nearest Neighbor](./kNN)                     |
-| <img src="./DINws/exp.png" width="100"/>              | [171023 AI Safety Kickoff DIN Institute](./DINws)      |
-| <img src="./SnaKI/index.png" width="100"/>            | [170918 SnaKI](./SnaKI)                                |
-| <img src="/assets/ncsqr.png" height="100"/>           | *Build on neurocat toolbox.<br>Copyright accordingly.* |
+
+### 180215 Linear Music Generation
+ <a href="./linmusicgen">
+  <img src="./linmusicgen/index.png" width="350"/></a>
+
+### 180214 Lecture Clustering
+ <a href="./ML_EXAM">
+  <img src="./ML_EXAM/index.png" width="350"/></a>
+
+### 180212 Positive,Negative?
+ <a href="./PosNeg">
+  <img src="./PosNeg/index.png" width="350"/></a>
+
+### 180210 RLTradingv0.75
+ <a href="./RLTradingKickoff">
+  <img src="./RLTradingKickoff/index.png" width="350"/></a>
+
+### 180120 k-Means
+ <a href="./k_means">
+  <img src="./k_means/index.png" width="350"/></a> 
+
+### 180108 Im2Col
+ <a href="./im2col">
+  <img src="./im2col/index.png" width="350"/></a> 
+
+### 171211 Music Generation         
+ <a href="./musicgen">
+  <img src="./musicgen/index.png" width="350"/></a>
+
+### 171205 Ridge Kernels               
+ <a href="./kernel">
+  <img src="./kernel/index.png" width="350"/></a> 
+
+### 171128 Predictive Maintainance
+ <a href="./predmain">
+  <img src="./predmain/index.jpg" width="350"/></a>         
+
+### 171114 Humboldt Innovation 
+ <a href="./hui">
+  <img src="./hui/index.png" width="350"/></a>  
+
+### 171106 k-Nearest Neighbor
+ <a href="./kNN">
+  <img src="./kNN/index.png" width="350"/></a>              
+
+### 171023 AI Safety Kickoff DIN Institute
+ <a href="./DINws">
+  <img src="./DINws/exp.png" width="350"/></a>   
+
+### 171009 Prioritized Experience Replay
+ <a href="./priorexprepl">
+  <img src="./priorexprepl/index.png" width="350"/></a> 
+
+### 170918 SnaKI      
+ <a href="./SnaKI">
+  <img src="./SnaKI/index.png" width="350"/></a>  
+
+### 170814 Tensorflow MLP        
+ <a href="./tf/mlp">
+  <img src="./tf/mlp/index.png" width="350"/></a>
+
+### 170812 Tensorboard
+ <a href="./tf/board">
+  <img src="./tf/board/index.png" width="350"/></a> 
+
+### 170811 Tensorflow basics        
+ <a href="./tf">
+  <img src="./tf/tensorflow.png" width="350"/></a> 
+
+<hr>
+
+<img src="/assets/nc.png" height="350"/>     
+
+*Build on neurocat toolbox. Copyright accordingly.*
