@@ -92,6 +92,5 @@ title: florens.io
  <a href="default.asp">
   <img src="projects/tf/tensorflow.png" width="350"/></a> 
 
-## neurocat
-*Build on neurocat toolbox.<br>Copyright accordingly.*
 <img src="/assets/nc.png" height="350"/>     
+*Build on neurocat toolbox.<br>Copyright accordingly.*
