@@ -1,8 +1,5 @@
 ---
-layout: page
 title: About
+description:computer native, mathematician, neurocat member. Contact: **fg@neurocat.ai**.
 permalink: /about/
 ---
-Florens Greßner: computer native, mathematician, neurocat member.
-
-Contact: **fg@neurocat.ai**

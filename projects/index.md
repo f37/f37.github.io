@@ -8,8 +8,8 @@ mathjax: true
 
 ## Projects               
 
-| representation                                               | time   | project                                   |
-|:------------------------------------------------------------:|--------|-------------------------------------------|
+| representation                                        | time   | project                                   |
+|:-----------------------------------------------------:|--------|-------------------------------------------|
 | <img src="./linmusicgen/index.png" width="100"/>      | 180215 | [Linear Music Generation](./linmusicgen)  |
 | <img src="./ML_EXAM/index.png" width="100"/>          | 180214 | [Lecture Clustering](./ML_EXAM)           |
 | <img src="./PosNeg/index.png" width="100"/>           | 180212 | [Positive,Negative?](./PosNeg)            |
