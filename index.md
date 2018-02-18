@@ -94,4 +94,4 @@ title: florens.io
 
 ## neurocat
 *Build on neurocat toolbox.<br>Copyright accordingly.*
-<img src="/assets/ncsqr.png" height="350"/>     
+<img src="/assets/nc.png" height="350"/>     
