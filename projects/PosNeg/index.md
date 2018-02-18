@@ -18,7 +18,7 @@ Even simpler statistical models give a beautiful projection of the generative fu
 
 A very nice example are positive words extracted from a labeled twitter post database on becks (german beer).
 
-![becks positive](./becks_pos.png)
+![becks positive](./beckspos.png)
 
 You can also see, that on the negative samples, I filtered too much usernames, unfortunally. Prototype can be too weak or I discovered a hidden group of people hating becks.
 
