@@ -1,6 +1,6 @@
 ---
 title:  "Prioritized Experience Replay"
-description: "Consider a rank-based prioritized binary heap with sampling in constant time O(1)"
+description: "...using a rank-based prioritized binary heap with sampling in constant time O(1)"
 image: http://florens.io/projects/proirexprepl/index.png
 author: Florens Greßner
 date:   2017-10-09
