@@ -5,7 +5,7 @@ title: florens.io
 ## model free
 
 
-<table >
+<table align="center">
    <tr>
      <td align="center"><img src="assets/image4.png"/> </td>
    </tr>
