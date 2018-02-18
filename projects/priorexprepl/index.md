@@ -6,6 +6,7 @@ author: Florens Greßner
 date:   2017-10-09
 mathjax: true
 ---
+*more neurocat Workshops can be found in the official [blog](http://neurocats.github.io)*
 
 # Prioritized Experience Replay
 

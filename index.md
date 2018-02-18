@@ -39,4 +39,7 @@ title: florens.io
 | <img src="projects/DINws/exp.png" width="100"/>              | [171023 AI Safety Kickoff DIN Institute](./projects/DINws)|
 | <img src="projects/priorexprepl/index.png" width="100"/>     | [171009 Prioritized Experience Replay](./projects/priorexprepl)|
 | <img src="projects/SnaKI/index.png" width="100"/>            | [170918 SnaKI](./projects/SnaKI)                          |
+| <img src="projects/tf/mlp/index.png" width="100"/>           | [170814 Tensorflow MLP](./projects/SnaKI)                 |
+| <img src="projects/tf/board/index.png" width="100"/>         | [170812 Tensorboard](./projects/tf/board)                 |
+| <img src="projects/tf/index.png" width="100"/>               | [170811 Tensorflow basics](./projects/tf)                 |
 | <img src="/assets/ncsqr.png" height="100"/>                  | *Build on neurocat toolbox.<br>Copyright accordingly.*    |
