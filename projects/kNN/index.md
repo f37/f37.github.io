@@ -1,6 +1,6 @@
 ---
 title: k Nearest Neighbor
-description: Machine Learning excercise
+description: Implementation of k-Nearest Neighbor algorithm in python
 image: http://florens.io/projects/kNN/index.png
 author: Florens Greßner, Felix Assion
 mathjax: true

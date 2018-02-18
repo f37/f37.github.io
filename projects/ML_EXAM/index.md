@@ -1,6 +1,6 @@
 ---
 title: Machine Learning Exam
-description: Machine Learning exam notes. Pattrick Jähnichen
+description: Machine Learning Exam notes. Pattrick Jähnichen
 image: http://florens.io/projects/ML_EXAM/index.png
 author: Florens Greßner
 mathjax: true
@@ -9,11 +9,13 @@ mathjax: true
 # Machine Learning Basics, by Patrick Jähnichen
 Humboldt Universität zu Berlin.
 
-Um in fahrt zu kommen, dacht ich mein neurocat knowledge direkt anzuwenden. Wordcluster for conditional quantities.
+- **Input**: PDF of all lectures
+- **Processing**: Bayesian Networks
+- **Output**: Wordcluster for conditional quantities.
 
 
 ![png](output_6_0.png)
-
+The above image only shows dependence on occurence i.e. $P(word)$. In the following the word cluster give a projection from the density function of $P(word | lecture=i)$. Summaries below shouldn't bother to much as an summary of the lecture.
 
 ## Lecture 01 - Introduction
 

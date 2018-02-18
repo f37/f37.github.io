@@ -1,6 +1,6 @@
 ---
 title: Linear music generation
-description: Simpler Model for music generation
+description: Simple Model for music generation
 image: http://florens.io/projects/linmusicgen/index.png
 author: Florens Greßner
 mathjax: true
@@ -19,6 +19,8 @@ When past horizont big enough a music peace can be completely imitated by the mo
 
 ![pachelbel](./pachelbel_canon_01.png)
 
+Like you can see in the music patterns, the agent found a harmonic loop.
+
 #### Original
 <audio controls="controls">
   <source type="audio/wav" src="./pachelbel_canon.wav"></source>
@@ -36,7 +38,7 @@ When past horizont big enough a music peace can be completely imitated by the mo
 
 ![tetris](./tetris01.png)
 
-
+I find very interesting that the algorithm created new music patterns. Those can be heard in the difference of the following.
 
 #### Original
 <audio controls="controls">
@@ -55,6 +57,8 @@ unfortunally without pictures, too late for now
 
 ### Star Wars Theme
 
+A little bit bumpy, some unharmonic sequences.
+
 #### Original
 <audio controls="controls">
   <source type="audio/wav" src="./starwars.wav"></source>
@@ -69,6 +73,8 @@ unfortunally without pictures, too late for now
 </audio>
 
 ### Elise
+
+Found a obious loop for Für Elise by Beethoven.
 
 #### Original
 <audio controls="controls">

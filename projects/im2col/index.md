@@ -1,12 +1,14 @@
 ---
 title: Im2Col
-description: Best algorithm in the century.
+description: Change the view on data.
 author: Florens Greßner
 mathjax: true
 image: http://florens.io/projects/im2col/index.png
 ---
 
-## Im2Col
+## Discrete Data Hyper Cuboids
+
+Explainations follow....
 
 ![im2col](./math.jpg)
 

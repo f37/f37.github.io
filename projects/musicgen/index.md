@@ -1,6 +1,6 @@
 ---
 title: Music Generation
-description: Generating Music via MDN
+description: Generating Music via Mixture Density Network (MDN)
 image: http://florens.io/projects/musicgen/index.png
 author: Florens Greßner
 mathjax: true
@@ -8,21 +8,28 @@ mathjax: true
 
 # Music Generator
 
+- **Data**: 
+    1. *.mp3*, analysing soundwaves
+    2. *.mid*, analysing scores
+- **Processing**: Mixture Density Network (MDN), Density function approximation
+- **Output**: autoregressive music predictor
+
 ## WAV soundwaves
 
-I build a Mixture Density Model from Christopher Bishop into a Tensorflow computation graph.
+To process soundwaves in a standard mp3 file you will have to worry about 44k datapoints per second. Even by reducing quality that is very muchas muchachas for learning time. 
 
-### Computation Graph
-
+For that I took a Neural Network with bayesian interpretation of the output units.
 ![MDN](./old_thesis/cgraph.png)
 
 ### Sinus
 
-With that I solved toyproblems, like generating Sinus
+The model can solve toyproblems, like generating Sinus.
 
 ![sinus](./old_thesis/toy1.png)
 
 ### drum
+
+The model can solve toyproblems, like imitate a drum.
 
 ![sdrum](./old_thesis/sdrum.png)
 ![drum](./old_thesis/drums.png)
@@ -41,6 +48,8 @@ With that I solved toyproblems, like generating Sinus
 
 ### rap
 
+The model can solve toyproblems, like extracting the baseline of a music piece.
+
 ![drum](./old_thesis/rap2.png)
 
 #### original
@@ -55,11 +64,9 @@ With that I solved toyproblems, like generating Sinus
   <p>Your browser does not support the audio element.</p>
 </audio>
 
-## MIDI
+## Musical Instrument Digital Interface (MIDI)
 
-Less complex, more efficient results
-
-Input: Midi. Density function approximation. Output autoregressive model predicting its environment.
+Patterns are always hierarchical. Thinking about the environment, I don't want to predict in a complexity of a soundwave. Lets go MIDI.
 
 
 ### Starwars

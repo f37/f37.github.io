@@ -1,13 +1,11 @@
 ---
-title: k means
-description: Machine Learning excercise
+title: k-Means
+description: Implementation of k-Means
 image: http://florens.io/projects/k_means/index.png
 author: Florens Greßner, Felix Assion
 mathjax: true
 ---
-
-
-## Implementing K-Means
+# Implementing K-Means
 ML Jähnichen HUB
 
 ### prerequisites

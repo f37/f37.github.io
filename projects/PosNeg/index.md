@@ -1,6 +1,6 @@
 ---
 title: Positiv | Negativ ???
-description: Design classifier to distinguish good and bad
+description: Classifier for distinguishing good and bad.
 image: http://florens.io/projects/PosNeg/index.png
 author: Florens Greßner
 mathjax: true

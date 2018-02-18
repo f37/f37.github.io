@@ -1,6 +1,6 @@
 ---
 title: SnaKI
-description: beating snake with reinforcement learning
+description: Beating 90's "Snake" with Reinforcement Learning
 image: http://florens.io/projects/SnaKI/index.png
 author: Florens Greßner
 mathjax: true
@@ -10,8 +10,8 @@ mathjax: true
 
 Was a longer project, getting the Google DeepMind Atari action into the snake game.
 
-##DQN
-- performs perfect on its environment, but needs very long for training calculation.
+## DQN
+Performs perfect on its environment, but needs very long for training calculation.
 
 <video width="720" height="340" controls>
   <source src="./VID-20180215-WA0000.mp4" type="video/mp4">

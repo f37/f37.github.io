@@ -1,6 +1,6 @@
 ---
 title: Kernel Regression
-description: Machine Learning excercise
+description: Comparison of different ridge regression algorithms.
 image: http://florens.io/projects/kernel/index.png
 author: Florens Greßner, Felix Assion
 mathjax: true
