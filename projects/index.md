@@ -8,18 +8,18 @@ mathjax: true
 
 ## Projects               
 
-| representation                                        | time   | project                                   |
-|:-----------------------------------------------------:|--------|-------------------------------------------|
-| <img src="./linmusicgen/index.png" width="100"/>      | 180215 | [Linear Music Generation](./linmusicgen)  |
-| <img src="./ML_EXAM/index.png" width="100"/>          | 180214 | [Lecture Clustering](./ML_EXAM)           |
-| <img src="./PosNeg/index.png" width="100"/>           | 180212 | [Positive,Negative?](./PosNeg)            |
-| <img src="./RLTradingKickoff/index.png" width="100"/> | 180210 | [RLTradingv0.75](./RLTradingKickoff)      |
-| <img src="./k_means/index.png" width="100"/>          | 180120 | [k-Means](./k_means)                      |
-| <img src="./im2col/index.png" width="100"/>           | 180108 | [Im2Col](./im2col)                        |
-| <img src="./musicgen/index.png" width="100"/>         | 171211 | [Music Generation](./musicgen)            |
-| <img src="./kernel/index.png" width="100"/>           | 171205 | [Ridge Kernels](./kernel)                 |
-| <img src="./predmain/index.jpg" width="100"/>         | 171128 | [Predictive Maintainance](./predmain)     |
-| <img src="./hui/index.png" width="100"/>              | 171114 | [Humboldt Innovation](./hui)              |
-| <img src="./kNN/index.png" width="100"/>              | 171106 | [k-Nearest Neighbor](./kNN)               |
-| <img src="./SnaKI/index.png" width="100"/>            | 170918 | [SnaKI](./SnaKI)                          |
-| <img src="/assets/ncsqr.png" height="100"/>           | YYMMDD | *Build on neurocat toolbox.<br>Copyright accordingly.* |
+| representation                                        |  project                                               |
+|:-----------------------------------------------------:|--------------------------------------------------------|
+| <img src="./linmusicgen/index.png" width="100"/>      | [180215 Linear Music Generation](./linmusicgen)        |
+| <img src="./ML_EXAM/index.png" width="100"/>          | [180214 Lecture Clustering](./ML_EXAM)                 |
+| <img src="./PosNeg/index.png" width="100"/>           | [180212 Positive,Negative?](./PosNeg)                  |
+| <img src="./RLTradingKickoff/index.png" width="100"/> | [180210 RLTradingv0.75](./RLTradingKickoff)            |
+| <img src="./k_means/index.png" width="100"/>          | [180120 k-Means](./k_means)                            |
+| <img src="./im2col/index.png" width="100"/>           | [180108 Im2Col](./im2col)                              |
+| <img src="./musicgen/index.png" width="100"/>         | [171211 Music Generation](./musicgen)                  |
+| <img src="./kernel/index.png" width="100"/>           | [171205 Ridge Kernels](./kernel)                       |
+| <img src="./predmain/index.jpg" width="100"/>         | [171128 Predictive Maintainance](./predmain)           |
+| <img src="./hui/index.png" width="100"/>              | [171114 Humboldt Innovation](./hui)                    |
+| <img src="./kNN/index.png" width="100"/>              | [171106 k-Nearest Neighbor](./kNN)                     |
+| <img src="./SnaKI/index.png" width="100"/>            | [170918 SnaKI](./SnaKI)                                |
+| <img src="/assets/ncsqr.png" height="100"/>           | *Build on neurocat toolbox.<br>Copyright accordingly.* |
