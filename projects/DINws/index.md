@@ -3,7 +3,7 @@ title: DIN Workshop
 author: Florens Greßner
 image: http://florens.io/projects/hui/exp.png
 mathjax: true
-description: Neurocat meets DIN. Impulse presentation in front Experts in Artificial Intelligence to discuss risk in AI technologies.
+description: Neurocat meets DIN. Impulse presentation front of Artificial Intelligence Experts to discuss risks in AI technologies.
 ---
 
 # DIN Workshop
