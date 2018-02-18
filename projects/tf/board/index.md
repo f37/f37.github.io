@@ -82,7 +82,7 @@ with tf.name_scope("xPow2Plus1"):
     # add both up to create x^2 + 1
     xPow2Plus1 = tf.add(xPow2, tfOne, name="xPow2Plus1")
 ```
-![derx21](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/der_x21.png)
+![derx21](./der_x21.png)
 
 Ignore the summary node for now. This creates a group of nodes looking like 
 that in TensorBoard. The names match the name parameter in each node 
@@ -120,14 +120,14 @@ with tf.name_scope("2x"):
 As we see TensorFlow has a build in gradient computation. Taking the node to
 be differentiated and the node to be used for differentiation as input it 
 returns the node for the desired gradient
-![der1](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/der_1.png)
+![der1](./der_1.png)
 
 In the end we have to go through our summary routine again. We have now created a 
 graph that has a feedable node `x` and two nodes `x^2+1` and `2x` which we 
 want to know the resulting outcome of. That's why we created summary nodes.
 
 In more detail:
-![der1](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/der_2.png)
+![der1](./der_2.png)
 
 `x^2+1` was reviewed above and `2x` makes some woodo magic with `x^2+1`. It 
 seems to make sense.
@@ -184,7 +184,7 @@ integer is needed.
 Take a look at the graphs. Seems like everything turned out fine: 
 Our nodes seem to represent $x ^{2} + 1$ and $2x$.
 
-![f](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/der_f.png) ![dx](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/der_dx.png)
+![f](./der_f.png) ![dx](./der_dx.png)
 
 You can also start your TensorBoard deamon with...
 ```shell

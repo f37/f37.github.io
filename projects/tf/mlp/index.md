@@ -103,7 +103,7 @@ with tf.name_scope("Output"):
 A look at the namescopes lets us assume that we build a graph like 
 that:
 
-![f](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/mlp/mlp1.png)
+![f](./mlp1.png)
 
 The list `layer` represents the number of units in each layer of the network.
 - 1 input,
@@ -116,13 +116,13 @@ represents the **rectified linear unit** activation function.
 Note: We also could have taken sigmoid (`tf.nn.sigmoid`) or any other 
 activation function that pops into your mind. 
 
-![f](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/mlp/mlp_layer.png)
+![f](./mlp_layer.png)
 
 Each layer contains a summary operation (for 
 histograms) and the output layer has no activation function for convenience.
 Everything else is the same for every layer.
 
-![f](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/mlp/mlp_output.png)
+![f](./mlp_output.png)
 
 The interested reader also may notice that the vertices of the graph contain
 information about the dimension of the operations. Please ignore the nodes 
@@ -130,7 +130,7 @@ information about the dimension of the operations. Please ignore the nodes
 First we have to make sure that TensorFlow understood what we wanted to do in the 
 loop.
 
-![hidden](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/mlp/mlp_hidden.png)
+![hidden](./mlp_hidden.png)
 
 This looks just perfect. Let's proceed with creating a loss for the little 
 network.
@@ -162,7 +162,7 @@ hyperparameters on your own. There is no theory behind it. Just experience.
 Always remember that an AI engineer is like a slot machine addict!  
 Let's see what we have build:
 
-![hidden](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/mlp/mlp_loss.png)
+![hidden](./mlp_loss.png)
 
 Looks nice, it compares the output with the label and calculates the 
 Euclidean distance. It also calculates a mean for two reasons. First, we want
@@ -234,11 +234,11 @@ between -1 and 1. For that we are executing the training operation
 `train_op` by providing it with labeled data. In the end we are doing 
 summaries that we can view here:
 
-![f](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/mlp/mlp_loss_tb.png)
+![f](./mlp_loss_tb.png)
 
 We also created histograms to measure the weights:
 
-![f](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/mlp/mlp_hist.png)
+![f](./mlp_hist.png)
 
 These can be very helpful for debugging your model. There is no theory 
 behind it. However, if you see that all your weights are zero, maybe you made
@@ -277,7 +277,7 @@ this time. The validation set contains 1000 equidistant labeled sinus values.
 Note: we never actually trained on that set before we randomly made our 
 choice. The comparison with matplotlib looks like that:
 
-![f](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/mlp/mlp_plt.png)
+![f](./mlp_plt.png)
 
 I know not too impressive but a proof of concept. Green represents the 
 original function, yellow shows how the network behaved in the validation 

@@ -29,9 +29,9 @@ Please refer to the following documentations:
 - [tensorflow docs](https://www.tensorflow.org/api_docs/python/)
 
 ## Python, NumPy, TensorFlow?
-![python](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/python-logo.png)
-![python](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/numpy.jpg)
-![python](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/tensorflow.png)
+![python](./python-logo.png)
+![python](./numpy.jpg)
+![python](./tensorflow.png)
 
 We first have to find out what kind of tools and supports you have for mathematical programming 
 especially for building AI Software.   
@@ -240,7 +240,7 @@ with tf.Session() as sess:
 writer.close()
 ```
 Computation graph:  
-![ex_II](https://raw.githubusercontent.com/f37/f37.github.io/master/assets/tensorflow/ex_II.png)
+![ex_II](./ex_II.png)
 
 As shown in the image of the computation graph you have created 3 nodes 
 (summand, summand, sum) if you ignore the `init` node. We can evaluate every 
