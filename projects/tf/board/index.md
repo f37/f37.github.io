@@ -6,6 +6,7 @@ author: Florens Greßner
 date:   2017-08-12
 mathjax: true
 ---
+*more neurocat Workshops can be found in the official [blog](http://neurocats.github.io)*
 
 ## Introduction
 
@@ -209,3 +210,6 @@ top of that we will, lazy as we are, skip to think about backpropagation or
 gradient descent, because TensorFlow is smart enough to do that for us.
 
 Have a great code. See you in the next tutorial.
+
+- [Tensorflow 101](../)
+- [Tensorflow MLP](../)

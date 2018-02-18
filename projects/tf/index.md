@@ -6,7 +6,7 @@ author: Florens Greßner
 date:   2017-08-11
 mathjax: true
 ---
-
+*more neurocat Workshops can be found in the official [blog](http://neurocats.github.io)*
 
 ## Introduction
 We will explore the different approaches to programming using Python, NumPy and 
@@ -254,3 +254,6 @@ elaborate on that in the next tutorial while I show you how TensorFlow can
 compute symbolic derivatives, impossible for pure Python.
 
 Have a great code. See you in the next tutorial.
+
+- [Tensorboard](./board)
+- [Tensorflow MLP](./mlp)

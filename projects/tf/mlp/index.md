@@ -6,6 +6,7 @@ author: Florens Greßner
 date:   2017-08-14
 mathjax: true
 ---
+*more neurocat Workshops can be found in the official [blog](http://neurocats.github.io)*
 
 ## Introduction
 I assume that the reader has a basic knowledge about neural networks. I 
@@ -281,3 +282,6 @@ choice. The comparison with matplotlib looks like that:
 I know not too impressive but a proof of concept. Green represents the 
 original function, yellow shows how the network behaved in the validation 
 set and red shows the difference between both.
+
+- [Tensorflow 101](../)
+- [Tensorboard](../board)
