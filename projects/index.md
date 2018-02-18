@@ -21,5 +21,6 @@ mathjax: true
 | <img src="./predmain/index.jpg" width="100"/>         | [171128 Predictive Maintainance](./predmain)           |
 | <img src="./hui/index.png" width="100"/>              | [171114 Humboldt Innovation](./hui)                    |
 | <img src="./kNN/index.png" width="100"/>              | [171106 k-Nearest Neighbor](./kNN)                     |
+| <img src="./DINws/exp.png" width="100"/>              | [171023 AI Safety Kickoff DIN Institute](./DINws)      |
 | <img src="./SnaKI/index.png" width="100"/>            | [170918 SnaKI](./SnaKI)                                |
 | <img src="/assets/ncsqr.png" height="100"/>           | *Build on neurocat toolbox.<br>Copyright accordingly.* |
