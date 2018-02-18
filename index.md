@@ -37,5 +37,6 @@ title: florens.io
 | <img src="projects/hui/index.png" width="100"/>              | [171114 Humboldt Innovation](./projects/hui)              |
 | <img src="projects/kNN/index.png" width="100"/>              | [171106 k-Nearest Neighbor](./projects/kNN)               |
 | <img src="projects/DINws/exp.png" width="100"/>              | [171023 AI Safety Kickoff DIN Institute](./projects/DINws)|
+| <img src="projects/priorexprepl/index.png" width="100"/>     | [171009 Prioritized Experience Replay](./projects/priorexprepl)|
 | <img src="projects/SnaKI/index.png" width="100"/>            | [170918 SnaKI](./projects/SnaKI)                          |
 | <img src="/assets/ncsqr.png" height="100"/>                  | *Build on neurocat toolbox.<br>Copyright accordingly.*    |
