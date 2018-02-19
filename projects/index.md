@@ -13,10 +13,6 @@ mathjax: true
  <a href="./linmusicgen">
   <img src="./linmusicgen/index.png" width="350"/></a>
 
-### 180214 Lecture Clustering
- <a href="./ML_EXAM">
-  <img src="./ML_EXAM/index.png" width="350"/></a>
-
 ### 180212 Positive,Negative?
  <a href="./PosNeg">
   <img src="./PosNeg/index.png" width="350"/></a>
