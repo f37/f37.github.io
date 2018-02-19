@@ -28,10 +28,6 @@ title: florens.io
  <a href="projects/linmusicgen">
   <img src="projects/linmusicgen/index.png" width="350"/></a>
 
-### 180214 Lecture Clustering
- <a href="projects/ML_EXAM">
-  <img src="projects/ML_EXAM/index.png" width="350"/></a>
-
 ### 180212 Positive,Negative?
  <a href="projects/PosNeg">
   <img src="projects/PosNeg/index.png" width="350"/></a>
