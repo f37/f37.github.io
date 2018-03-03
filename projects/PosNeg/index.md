@@ -7,7 +7,7 @@ mathjax: true
 ---
 # Positive / Negative ?
 
-In a highdimensional dataworld, finding a hyperplane distinguishing two classes isn't always so complicated. Without domainknowledge nor priors from the language environment a linear regressor gets 80%+ on unseen data. In the appendix you can see the auto generated report for yelp. I took open datasets from Amazon, Yelp, IDMB and twitter for binary segment analysis.
+In a highdimensional dataworld, finding a hyperplane distinguishing two classes isn't always so complicated. Without domainknowledge nor priors from the language environment a linear regressor gets 80%+ on unseen data. In the appendix you can see the auto generated report for yelp. I took open datasets from Amazon, Yelp and ImdB for binary segment analysis.
 
 Even simpler statistical models give a beautiful projection of the generative function from positive or negative words in the given prior. Seen in the following:
 
