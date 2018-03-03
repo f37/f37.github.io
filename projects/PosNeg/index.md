@@ -11,7 +11,6 @@ In a highdimensional dataworld, finding a hyperplane distinguishing two classes 
 
 Even simpler statistical models give a beautiful projection of the generative function from positive or negative words in the given prior. Seen in the following:
 
-![twitter](./twitter.png)
 ![amazon](./amazon.png)
 ![imdb](./imdb.png)
 ![yelp](./yelp.png)
