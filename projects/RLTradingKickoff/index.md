@@ -13,6 +13,8 @@ level on the trading market?
 
 > Same algorithm like in [this post](../SnaKI)
 
+In the following the Agent is making daily decisions, assuming we get the order filled at the worst moment of the day. This is a lower boundary of the Agent performing in the 'Stock Market Game' environment.
+
 ## Figures
 top: actions on history
 botton: account balance, winning/losing order
