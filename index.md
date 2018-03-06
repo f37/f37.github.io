@@ -23,13 +23,12 @@ title: florens.io
 
 ## Projects               
 
- <a href="projects/linmusicgen">
-###180215 Linear Music Generation
+ 
+### <a href="projects/linmusicgen">180215 Linear Music Generation
   <img src="projects/linmusicgen/index.png" width="350"/>
 </a>
 
- <a href="projects/PosNeg">
-### 180212 Positive,Negative?
+### <a href="projects/PosNeg">180212 Positive,Negative?
   <img src="projects/PosNeg/index.png" width="350"/>
 </a>
 
