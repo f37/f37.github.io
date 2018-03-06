@@ -25,12 +25,10 @@ title: florens.io
 
  
 ### <a href="projects/linmusicgen">180215 Linear Music Generation</a>
-<a href="projects/<img src="projects/linmusicgen/index.png" width="350"/>
-</a>
+<a href="projects/linmusicgen"><img src="projects/linmusicgen/index.png" width="350"/></a>
 
-### <a href="projects/PosNeg">180212 Positive,Negative?
-</a><a href="projects/<img src="projects/PosNeg/index.png" width="350"/>
-</a>
+### <a href="projects/PosNeg">180212 Positive,Negative?</a>
+<a href="projects//PosNeg"><img src="projects/PosNeg/index.png" width="350"/></a>
 
 ### <a href="projects/RLTradingKickoff">180210 RLTradingv0.75</a>
 <a href="projects/RLTradingKickoff"><img src="projects/RLTradingKickoff/index.png" width="350"/></a>
