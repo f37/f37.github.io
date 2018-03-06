@@ -24,8 +24,8 @@ title: florens.io
 ## Projects               
 
 
-### 180215 Linear Music Generation
- <a href="projects/linmusicgen">
+###  <a href="projects/linmusicgen"> 180215 Linear Music Generation
+
   <img src="projects/linmusicgen/index.png" width="350"/></a>
 
 ### 180212 Positive,Negative?
