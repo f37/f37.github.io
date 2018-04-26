@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>Easy Spiral</title>
+<link rel="stylesheet">
+<head>
+<meta name="viewport" content="width=device-width;
+	initial-scale=1; maximum-scale=1; user-scalable=0;"/>
+<title>Kretsche (c)</title>
+<style> table, td, th { border: 1px solid black; }
+html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      border: 0;
+      overflow: hidden; /*  Disable scrollbars */
+      display: block;  /* No floating content on sides */
+    }
+</style>
+
+</head>
+ <body onresize="resize_canvas()"  style="background-color:#1A5E21;">
+
+<center>
+<canvas id='canvas' data-processing-sources="easyspiral.pde"></canvas>
+</center>
+<img id="franku" src="franky.png" width="0"></img>
+<img id="cloud1" src="wolke_1_mod.svg" width="0"></img>
+<img id="cloud2" src="wolke_2_mod.svg" width="0"></img>
+<img id="mail" src="mail.svg" width="0"></img>
+<img id="sun" src="sun.svg" width="0"></img>
+
+<!-- Jquery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="processing.js" type="text/javascript"></script>
+<script>
+    (function() {
+        var
+        // Obtain a reference to the canvas element using its id.
+        htmlCanvas = document.getElementById('c'),
+        // Obtain a graphics context on the canvas element for drawing.
+        context = htmlCanvas.getContext('2d');
+
+       // Start listening to resize events and draw canvas.
+       initialize();
+
+       function initialize() {
+           // Register an event listener to call the resizeCanvas() function
+           // each time the window is resized.
+           window.addEventListener('resize', resizeCanvas, false);
+           // Draw canvas border for the first time.
+           resizeCanvas();
+        }
+
+        // Display custom canvas. In this case it's a blue, 5 pixel
+        // border that resizes along with the browser window.
+        function redraw() {
+           context.strokeStyle = 'blue';
+           context.lineWidth = '5';
+           context.strokeRect(0, 0, window.innerWidth, window.innerHeight);
+        }
+
+        // Runs each time the DOM window resize event fires.
+        // Resets the canvas dimensions to match window,
+        // then draws the new borders accordingly.
+        function resizeCanvas() {
+            htmlCanvas.width = window.innerWidth;
+            htmlCanvas.height = window.innerHeight;
+            redraw();
+        }
+    })();
+
+    </script>
+ </body>
+</html>

@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'neotech';
+  src: url('../fonts/neotech.woff') ;
+  format('opentype');
+}
+
+body {
+	background: #fff;
+	font-family: 'neotech', sans-serif;
+	color: #353b42;
+}
+
+.wrapper {
+	width: 80%;
+	max-width: 960px;
+	margin: 0 auto;
+    clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	background: #2f7e95;
+	color: #fdc706;
+	height: 4.5em;
+}
+
+header h1 {
+	font-weight: 700;
+	font-size: 2em;
+	float: left;
+	display: inline-block;
+	margin: 0.5em 0 0 0;
+}
+
+#feature-section {
+	min-height: 500px;
+}
+
+#feature-section h3 {
+	color: #2bacd0;
+	font-weight: 300;
+	font-size: 1.8em;
+	padding: 100px 0 10px 0;
+}
+
+#feature-section p{
+	margin-bottom: 20px;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+#feature-section .description {
+	float: left;
+	width: 50%;
+}
+
+#feature-section .image {
+	float: right;
+    width: 200px;
+	position: relative;
+	height: 400px;
+}
+
+#feature-section .image img {
+    margin-top: 30px;
+}
+
+#feature-section .image svg {
+    margin-top: -20px;
+}
+
+#feature-section .image p {
+    margin-top: -20px;
+    text-align: center;
+
+}
+
+#feature-section .image img {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.feature-left {
+	background: #fff;
+}
+
+footer .copyright {
+	display: block;
+    text-align:left;
+    margin: 28px 0 0 0;
+    font-size: 0.8em;
+}
+
+footer .copyright strong {
+	color: #2bacd0;
+}
+
+/* SVG */
+
+svg{
+    shape-rendering:geometricPrecision;
+    text-rendering:geometricPrecision;
+    image-rendering:optimizeQuality;
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+}
+
+.lulu {
+    fill:#FFFFFF;
+    stroke: url(#id0);
+    stroke-width: 17;
+
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 9000;
+    animation: dash 10s infinite alternate;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+        fill: #2bacd0;
+        stroke-width: 0;
+    }
+}
+
+/* Stupid bullshit for ms fuckturds*/
+.no-smil svg {
+	display: none;
+}
+
+.no-smil .alt {
+    display: inline;
+}
+
+.smil .alt{
+display: none;
+}
+
+
