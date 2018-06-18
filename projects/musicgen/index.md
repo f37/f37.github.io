@@ -68,6 +68,8 @@ The model can solve toyproblems, like extracting the baseline of a music piece.
 
 Patterns are always hierarchical. Thinking about the environment, I don't want to predict in a complexity of a soundwave. Lets go MIDI.
 
+By reducing the dimensions of the environment the model is capable of predicting a MIDI file in perfect manner. The Mixture Density Network creates a Random distribution over the Music peace. What you basically hear in the following are random samples drawn from the probability distribution of the given song. The easiest example is a coinflip. Given a large enough sequence of coinflips my mixture density network would approximate the probability distribution and you would have a random generator for a coinflip. Exactly the same is happening for the music peaces. Just in a higher dimensional manner.
+
 
 ### Starwars
 
