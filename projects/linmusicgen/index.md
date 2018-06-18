@@ -53,7 +53,9 @@ I find very interesting that the algorithm created new music patterns. Those can
   <p>Your browser does not support the audio element.</p>
 </audio>
 
-unfortunally without pictures, too late for now
+---
+
+Unfortunally the following samples are without pictures. R.I.P.
 
 ### Star Wars Theme
 
