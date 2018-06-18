@@ -19,7 +19,7 @@ In the following the Agent is making daily decisions, assuming we get the order 
 top: actions on history
 botton: account balance, winning/losing order
 
-- For conparison, it is always important to check a strategy against a uniform random agent: ![rand](./rand.png) 
+- For convenience, it is always important to check a strategy against a uniform random agent. You can observe that the uniform random agent gets bankrupt a few times: ![rand](./rand.png) 
 - 2 minute calculation on my laptop give me: ![better](./better.png)
 - 2 further minutes that: ![better](./best.png) already overfit? #quadcore #simpledesign
 
