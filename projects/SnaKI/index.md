@@ -8,8 +8,10 @@ mathjax: true
 
 # SnaKI
 
-Was a longer project, getting the Google DeepMind Atari action into the snake game.
+Getting the Google DeepMind Atari action into the snake game.
 More Videos follow...
+
+Basically this algorithm learns a strategy to succed in a Game without any prior domain knowledge. The Agent perceives its environment and gets rewards/punishments after each action. When starting the algorithm the agent makes random movements and slowly learns from its mistakes converging to perfect policy.
 
 ## DQN
 Performs perfect on its environment, but needs very long for training calculation.
