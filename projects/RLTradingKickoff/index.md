@@ -16,8 +16,9 @@ level on the trading market?
 In the following the Agent is making daily decisions, assuming we get the order filled at the worst moment of the day. This is a lower boundary of the Agent performing in the 'Stock Market Game' environment.
 
 ## Figures
-top: actions on history
-botton: account balance, winning/losing order
+You can observe that each figure is divided in two charts. The top one and the bottom one. In the 
+- **top** one you can observe the historic course of a market. The colors show the decision an agent did. Green is buying, red is selling and blue is waiting, doing nothing. Notice that every decision was made at the beginning of the day. The execution of the decision was performed on the worst possible moment during the day. In the second chart on the
+- **bottom** you will see the account balance. In Black we have the amount of money the Agent has for its decisions. When the agent executes a trade I indicated with red and green if it was bringing him loss or profit accordingly. In the beginning of each trade the agent makes loss, because of the costs executing a trade in the market.
 
 - For convenience, it is always important to check a strategy against a uniform random agent. You can observe that the uniform random agent gets bankrupt a few times: ![rand](./rand.png) 
 - 2 minute calculation on my laptop give me: ![better](./better.png)
