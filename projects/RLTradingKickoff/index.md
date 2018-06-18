@@ -20,8 +20,8 @@ You can observe that each figure is divided in two charts. The top one and the b
 
 So les look at the agent perfoming depending on training time:
 
-1. For convenience, it is always important to check a strategy against a uniform random agent. You can observe that the uniform random agent gets bankrupt a few times: ![rand](./rand.png) 
-2. 2 minute calculation on my laptop give me: ![better](./better.png)
-3. 2 further minutes that: ![better](./best.png) already overfit? #quadcore #simpledesign
+1.) For convenience, it is always important to check a strategy against a uniform random agent. You can observe that the uniform random agent gets bankrupt a few times: ![rand](./rand.png) 
+2.) 2 minute calculation on my laptop give me: ![better](./better.png)
+3.) 2 further minutes that: ![better](./best.png) already overfit? #quadcore #simpledesign
 
 Is human level reachable?
